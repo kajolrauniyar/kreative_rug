@@ -1,0 +1,29 @@
+.image-page-header {
+    .image-wrapper {
+        @extend .uk-height-medium;
+        @extend .uk-flex;
+        @extend .uk-flex-right;
+        @extend .uk-flex-middle;
+        @extend .uk-background-cover;
+        @extend .uk-dark !optional;
+        height: 70vh;
+        .image-header-text {
+            @extend .uk-padding-large;
+        }
+    }
+}
+.product-category {
+    &__item {
+        &--img {
+            transition: all .2s;
+            &:hover {
+                transform: scale(1.05) translateY(-0.5rem);
+                box-shadow: 0 1rem 1rem rgba($color-black, 0.5);
+            }
+        }
+        &--name {
+            margin: unset;
+            @extend .uk-padding-small, .uk-padding-remove-horizontal;
+        }
+    }
+}

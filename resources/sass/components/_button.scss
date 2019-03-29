@@ -1,0 +1,43 @@
+.btn {
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    &__outline {
+        color: $color-grey-dark-3;
+        background: $color-white;
+        border: 2px solid $color-grey-dark-3;
+        text-transform: uppercase;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-white;
+            background: $color-grey-dark-3;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+}
+.btn-share{
+    color: $color-grey-dark-3;
+    &:active,
+    &:visited,
+    &:hover{
+        color: $color-grey-dark-3;
+        text-decoration: none;
+    }
+}
+//breadcrumbs
+.breadcrumb-wrapper {
+    @extend .uk-flex, .uk-flex-center;
+    &__breadcrumb {
+        @extend .uk-breadcrumb;
+        &--active {
+            @extend .uk-disabled;
+        }
+    }
+}

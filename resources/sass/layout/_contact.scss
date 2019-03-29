@@ -1,0 +1,31 @@
+.page-header, .contact-form-section {
+    @extend .uk-section, .uk-section-muted;
+}
+.page-header{
+    @extend .uk-padding-remove-bottom;
+}
+.contact-details {
+    p {
+        margin: 10px 0;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+}
+.contact__social-box {
+    @extend .uk-margin-small-top;
+    &__contact__social {
+        @extend .uk-flex, .uk-flex-center, .uk-flex-row;
+        a {
+            padding: 0.5rem;
+            transition: all 0.3s;
+            & span {
+                color:$color-grey-dark-3;
+            }
+        }
+    }
+}
+
+.contact-form-container {
+    @extend .uk-container, .uk-padding;
+    background-color: $color-white;
+}

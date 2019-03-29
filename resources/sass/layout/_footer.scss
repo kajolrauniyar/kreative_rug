@@ -1,0 +1,46 @@
+.footer {
+    background-color: #1a1a1a;
+    &__social {
+        @extend .uk-margin-small-top;
+        &__list {
+            @extend .uk-padding-remove-horizontal;
+            list-style-type: none;
+            &__item {
+                display: inline-block;
+                padding: 1rem 0.5rem;
+                &--link {
+                    & span {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    &__link {
+        @extend .uk-text-right;
+        &__list {
+            list-style-type: none;
+            &__item {
+                display: inline-block;
+                padding: 1rem 0.5rem;
+                &:not(:last-child) {
+                    &::after {
+                        content: "/";
+                        color: #999;
+                        padding-left: 1rem;
+                    }
+                }
+                &--link {
+                    text-decoration: none;
+                    color: #999;
+                    &:hover,
+                    &:active,
+                    &:visited {
+                        color: $color-white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

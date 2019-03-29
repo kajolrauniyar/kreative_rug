@@ -1,0 +1,41 @@
+.content-wrapper {
+    @extend .uk-container;
+}
+.product__share {
+    @extend .uk-flex, .uk-flex-left;
+    &--link {
+        color: $color-black;
+        &:hover,
+        &:visited,
+        &:active {
+            color: $color-black;
+        }
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.uk-accordion-title::before {
+    content: "\e048";
+    font-family: "linea-arrows-10" !important;
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 10px;
+    float: right;
+    background-position: 50% 50%;
+    transition: all 13s;
+    color: $color-black !important;
+    font-size: 2rem !important;
+}
+.uk-open .uk-accordion-title::before {
+    content: "\e041";
+    font-family: "linea-arrows-10" !important;
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 10px;
+    float: right;
+    background-position: 50% 50%;
+    color: $color-black !important;
+    font-size: 2rem !important;
+}
