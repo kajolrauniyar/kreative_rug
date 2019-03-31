@@ -139,14 +139,12 @@
 <section class="uk-section uk-section-default">
   <div class="uk-container">
     <div class="section-title">
-      <h2 class="heading-secondary">Lorem ipsum dolor sit amet.</h2>
+      <h2 class="heading-secondary">{!!$page->content{0}->sectionTitle!!}</h2>
       <span class="divide-line"></span>
     </div>
     <div class="section-content">
       <div class="section-content__centered">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quisquam corporis eius impedit nam in recusandae repellat
-        blanditiis, cum eos accusamus inventore ut sunt quidem accusantium animi quam ullam deleniti assumenda, explicabo
-        eaque ratione qui?
+          {!!$page->content{0}->sectioncontent!!}
       </div>
     </div>
   </div>
