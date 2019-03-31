@@ -144,7 +144,7 @@
     </div>
     <div class="section-content">
       <div class="section-content__centered">
-          {!!$page->content{0}->sectioncontent!!}
+          {!!$page->content{0}->sectionContent!!}
       </div>
     </div>
   </div>

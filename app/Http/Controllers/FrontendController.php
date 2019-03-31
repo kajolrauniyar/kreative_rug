@@ -44,7 +44,9 @@ class FrontendController extends Controller
     public function getAbout()
     {
         $teams = Team::all();
-        return  view('frontend.pages.about')->withTeams($teams);
+        $page = Page::where('slug', 'about')->firstorFail();
+        return  view('frontend.pages.about')->withTeams($teams)
+        >withPage($page);
     }
     public function getContact()
     {
