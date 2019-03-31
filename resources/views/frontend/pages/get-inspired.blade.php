@@ -10,9 +10,7 @@
         <div uk-grid>
             <div class="uk-width-1-1">
                 <div class="section-title">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At deserunt corporis temporibus iste repellat
-                        quia voluptatem? Enim, dignissimos? Officia adipisci facilis odit fugit a quidem porro beatae ab,
-                        ea fugiat?</p>
+                    {!!$page->content{0}->sectionContent!!}
                     <span class="divide-line"></span>
                 </div>
             </div>
@@ -22,9 +20,9 @@
         <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
             @foreach($row as $category)
             <div class="product-category__item">
-                <a href="#">
+                <a href="{{ route('frontend.category',$category->slug ) }}">
                     <img src="{{$category->thumb}}" alt="{{$category->slug}}" class="product-category__item--img">
-                    <h4 class="product-category__item--name">{{$category->name}}</h4>
+                    <h4 class="product-category__item--name"><a href="{{ route('frontend.category',$category->slug ) }}">{{$category->name}}</a></h4>
                 </a>
             </div>
             @endforeach

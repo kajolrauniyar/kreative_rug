@@ -20,17 +20,19 @@
         <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
             @foreach($row as $product)
             <div class="product-category__item">
-                <a href="#">
+                <a href="{{ route('frontend.product', [$product->category->slug,$product->slug]) }}">
                     <img src="{{$product->thumb}}" alt="{{$product->slug}}" class="product-category__item--img">
-                    <h4 class="product-category__item--name">{{$product->name}}</h4>
                 </a>
+                <h4 class="product-category__item--name">
+                    <a href="{{ route('frontend.product', [$product->category->slug,$product->slug]) }}">
+                    {{$product->name}}
+                    </a>
+                </h4>
             </div>
             @endforeach
         </div>
-        @endforeach 
-        {{--
-        <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category"
-            uk-grid>
+        @endforeach {{--
+        <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
             <div class="product-category__item">
                 <img src="https://source.unsplash.com/300x450/?daisy" alt="" class="product-category__item--img">
                 <h4 class="product-category__item--name">Category Name</h4>
@@ -71,5 +73,10 @@
         </div> --}}
     </div>
 </section>
+
+
+
+
+
 
 @stop

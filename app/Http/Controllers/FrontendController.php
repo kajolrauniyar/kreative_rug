@@ -68,4 +68,12 @@ class FrontendController extends Controller
         ->withProducts($products)
         ->withCategory($category);
     }
+
+    public function getProduct($category, $slug){
+        $product =  Product::where('slug',$slug)->firstorFail();
+        $similar = Product::whereHas('category', function ($r) use ($category) {
+            $r->where('categories.slug', $category);
+        })->take(6)->get();
+        return view('frontend.pages.product')->withProduct($product)->withSimilars($similar);
+    }
 }

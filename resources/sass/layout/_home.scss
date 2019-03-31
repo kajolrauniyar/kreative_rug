@@ -21,3 +21,10 @@ section[class^="section"] {
         @extend .uk-text-center;        
     }
 }
+.home-product-category{
+    @extend  .uk-light;
+    &__overlay{
+        @extend .uk-overlay-primary, .uk-position-cover;
+        background-color: rgba(34, 34, 34, 0.2);
+    }
+}

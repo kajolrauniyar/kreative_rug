@@ -66,4 +66,5 @@ Route::name('frontend.')->group(function () {
     Route::post('/contact', 'PostController@contact')->name('contact');
 
     Route::get('/{category}', 'FrontendController@getByCategory')->name('category');
+    Route::get('/{category}/{slug}', 'FrontendController@getProduct')->name('product');
 });

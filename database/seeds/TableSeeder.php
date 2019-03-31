@@ -22,11 +22,11 @@ class TableSeeder extends Seeder
         //     $team->avatar = 1;
         //     $team->save();
         // }
-        for ($i=1; $i <= 10 ; $i++) { 
-            $faq = new Faq;
-            $faq->query = $faker->sentence($nbWords = 6, $variableNbWords = true);
-            $faq->answer = $faker->paragraph($nbSentences = 3, $variableNbSentences = true) ;
-            $faq->save();
-        }
+        // for ($i=1; $i <= 10 ; $i++) { 
+        //     $faq = new Faq;
+        //     $faq->query = $faker->sentence($nbWords = 6, $variableNbWords = true);
+        //     $faq->answer = $faker->paragraph($nbSentences = 3, $variableNbSentences = true) ;
+        //     $faq->save();
+        // }
     }
 }

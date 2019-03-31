@@ -5,8 +5,10 @@
     <div class="uk-container uk-background-default uk-padding">
         <div class="breadcrumb-wrapper">
             <ul class="breadcrumb-wrapper__breadcrumb">
-                <li class="breadcrumb-wrapper__breadcrumb--item"><a href="#">Item</a></li>
-                <li class="breadcrumb-wrapper__breadcrumb--active"><a>Disabled</a></li>
+            <li class="breadcrumb-wrapper__breadcrumb--item"><a href="{{ route('frontend.category',$product->category->slug) }}">
+                {{$product->category->name}}</a>
+            </li>
+            <li class="breadcrumb-wrapper__breadcrumb--active"><a>{{$product->name}}</a></li>
             </ul>
         </div>
         <div class="uk-grid-small uk-padding-small" uk-grid>
@@ -15,7 +17,7 @@
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@s">
                 <div class="uk-text-left">
-                    <h3>Product Name</h3>
+                    <h3>{{$product->name}}</h3>
                 </div>
                 <ul class="uk-child-width-expand" uk-switcher="animation: uk-animation-fade" uk-tab>
                     <li class="uk-active"><a href="#">Descriptioin</a></li>
@@ -25,10 +27,7 @@
 
                 <ul class="uk-switcher uk-margin">
                     <li>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias itaque, maxime cum aliquid sint praesentium
-                            magnam aliquam adipisci eaque dolore voluptate libero officia iusto, fugit placeat at modi. Cupiditate
-                            quam sed officia! Quisquam quia totam iste voluptatem dicta esse odio incidunt minima ipsa ex
-                            sequi illum eum, illo, natus laborum.</p>
+                        {!!$product->description!!}
                         <div uk-grid>
                             <div class="uk-width-1-3">
                                 <h4 class="uk-margin-remove-bottom">Share</h4>
@@ -76,12 +75,29 @@
 
                     </li>
                     <li>
-                        <p>Shown in: 10' x 14'</p>
-                        <p>Material: Silk, Wool</p>
-                        <p>Notice: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ut!</p>
+                        @if (!empty($product->size))
+                            <p>Shown in: {{$product->size}}</p>
+                        @endif                        
+                        <p>Material: 							
+                            @foreach ($product->material as $material)
+                                {{ $loop->first ? '' : ', ' }}
+                                {{ $material->name }}
+                            @endforeach		
+                        </p>
+                        @if (!empty($product->note))
+                        <p>{{$product->note}}</p>
+                        @endif
                     </li>
                     <li>
-                        <h1>Latest Products</h1>
+                        <div uk-grid>
+                            @foreach ($similars as $similar)
+                                @if ($similar->id != $product->id)
+                                <div class="uk-width-1-3">
+                                    <img src="{{ asset($similar->thumb) }}" alt=""> 
+                                </div>
+                                @endif
+                            @endforeach                            
+                        </div>
                     </li>
                 </ul>
             </div>

@@ -16,13 +16,13 @@
             <h2 class="heading-secondary">{{$home->section1_title}}</h2>
             <span class="divide-line"></span>
         </div>
-        <div class="uk-grid-medium uk-child-width-1-2 uk-text-center uk-grid-match" uk-grid>
-            <div>
+        <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
+            <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
                 <p class="paragraph">
                     {{$home->section1_content}}
                 </p>
             </div>
-            <div>
+            <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
                 <!--840x360-->
                 <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
             </div>
@@ -41,11 +41,18 @@
         </div>
         <div class="uk-grid-medium uk-child-width-1-4 uk-text-center uk-grid-match" uk-grid>
             @foreach ($categories as $category)
-                <div>
+            <div>
+                <div class="uk-inline home-product-category">
                     <img src="{{$category->thumb}}" alt="{{$category->slug}}">
+                    <div class="product-category__overlay">
+                        <div class="uk-position-center">
+                            <h3><a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a></h3>
+                        </div>
+                    </div>
                 </div>
-            @endforeach
-            {{-- <div>
+            </div>
+            @endforeach {{--
+            <div>
                 <img src="https://source.unsplash.com/300x450/?daisy" alt="">
             </div>
             <div>
@@ -75,14 +82,16 @@
 
             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light uk-grid-small" uk-grid>
                 @foreach ($products as $product)
-                    <li class="uk-transition-toggle" tabindex="0">
-                        <img src="{{$product->thumb}}" alt="">
-                        <div class="uk-position-center uk-panel">
-                            <h2 class="uk-transition-slide-bottom-small">{{$product->name}}</h2>
-                        </div>
-                    </li>                    
-                @endforeach
-                {{-- <li class="uk-transition-toggle" tabindex="0">
+                <li class="uk-transition-toggle" tabindex="0">
+                    <img src="{{$product->thumb}}" alt="">
+                    <div class="uk-position-center uk-panel">
+                        <h2 class="uk-transition-slide-bottom-small">
+                        <a href="{{ route('frontend.product', [$product->category->slug, $product->slug]) }}">{{$product->name}}</a>
+                        </h2>
+                    </div>
+                </li>
+                @endforeach {{--
+                <li class="uk-transition-toggle" tabindex="0">
                     <img src="https://source.unsplash.com/300x450/?CALIFORNIA POPPY" alt="">
                     <div class="uk-position-center uk-panel">
                         <h1 class="uk-transition-slide-bottom-small">1</h1>
@@ -159,7 +168,7 @@
                 {{$home->section4_content}}
             </div>
         </div>
-        <form action="{{ route('frontend.customDesign') }}" method="POST" class="uk-form-stacked" enctype="multipart/form-data"   >
+        <form action="{{ route('frontend.customDesign') }}" method="POST" class="uk-form-stacked" enctype="multipart/form-data">
             @csrf
             <div uk-grid>
                 <div class="uk-width-1-1 uk-width-1-2@m">
@@ -226,5 +235,6 @@
 });
 
 </script>
+
 
 @stop --}}

@@ -24,6 +24,9 @@
         &--name {
             margin: unset;
             @extend .uk-padding-small, .uk-padding-remove-horizontal;
+            a{
+                color: inherit;
+            }
         }
     }
 }
