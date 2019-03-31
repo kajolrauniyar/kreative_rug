@@ -34,7 +34,9 @@
             </div>
             <div class="section-content">
                 <div class="section-content__centered">
-                    {!!$page->content{1}->sectionContent!!}
+                    <p class="uk-text-center">
+                        {!!$page->content{1}->sectionContent!!}
+                    </p>
                 </div>
             </div>
         </div>
@@ -46,11 +48,11 @@
     <div class="uk-container uk-padding">
         @foreach($teams->chunk(3) as $items)
         <div uk-grid>
-            @foreach ($items as $team)               
+            @foreach ($items as $team)
             <div class="uk-width-1-3@m uk-width-1-1@s">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">                        
+                        <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
                     </div>
                     <div class="uk-card-body uk-padding-small">
                         <h3 class="uk-card-title uk-margin-remove-bottom">{{$team->name}}</h3>
@@ -71,6 +73,7 @@
         </div>
     </div>
 </div>
+
 
 
 @stop
