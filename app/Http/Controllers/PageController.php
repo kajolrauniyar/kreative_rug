@@ -155,14 +155,14 @@ class PageController extends Controller
             for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
                 $content = Content::find($request->sectionTitle[$i]);
                 if(!empty($content)){
-                    $content->page_id => $page->id;
+                    $content->page_id = $page->id;
                     $content->sectionTitle = $request->sectionTitle[$i];
                     $content->sectionContent = $request->sectionTitle[$i];
                     $content->save();
                 }
                 else{
                     $content = new Content;
-                    $content->page_id => $page->id;
+                    $content->page_id = $page->id;
                     $content->sectionTitle = $request->sectionTitle[$i];
                     $content->sectionContent = $request->sectionTitle[$i];
                     $content->save();
