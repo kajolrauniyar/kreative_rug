@@ -30,6 +30,7 @@
                     @foreach ($page->content as $content)                       
                     
                 <div class="row fieldGroup" id="dataRow{{$content->id}}">
+                    <input type="hidden" name="contentID[]" value="{{$content->id}}">
                         <div class="col-sm-10  ">
                             <div class="form-group floating-label {{$errors->has('sectionTitle') ? 'has-error' : ''}}">
                                 <input type="text" name="sectionTitle[]" id="sectionTitle" class="form-control" value="{{$content->sectionTitle}}">                                @if($errors->has('sectionTitle'))

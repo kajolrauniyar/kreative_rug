@@ -153,11 +153,25 @@ class PageController extends Controller
             $page->save();
 
             for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
-                Content::firstOrCreate([
-                    'page_id' => $page->id,
-                    'sectionTitle' => $request->sectionTitle[$i],
-                    'sectionContent' => $request->sectionContent[$i]
-                ]);
+                $content = Content::find($request->sectionTitle[$i]);
+                if(!empty($content)){
+                    $content->page_id => $page->id;
+                    $content->sectionTitle = $request->sectionTitle[$i];
+                    $content->sectionContent = $request->sectionTitle[$i];
+                    $content->save();
+                }
+                else{
+                    $content = new Content;
+                    $content->page_id => $page->id;
+                    $content->sectionTitle = $request->sectionTitle[$i];
+                    $content->sectionContent = $request->sectionTitle[$i];
+                    $content->save();
+                }
+                // Content::firstOrCreate([
+                //     'page_id' => $page->id,
+                //     'sectionTitle' => $request->sectionTitle[$i],
+                //     'sectionContent' => $request->sectionContent[$i]
+                // ]);
             }
 
 

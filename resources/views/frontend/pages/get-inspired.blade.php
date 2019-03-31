@@ -2,7 +2,7 @@
 @section('content')
 <section class="image-page-header">
     <div class="image-wrapper" data-src="{{$page->banner}}" uk-img>
-        <h1 class="image-header-text">{{$page->content{0}->sectionTitle}}</h1>
+        <h1 class="image-header-text">{!!$page->content{0}->sectionTitle!!}</h1>
     </div>
 </section>
 <section class="uk-section uk-section-muted">
