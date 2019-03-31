@@ -17,7 +17,7 @@
             <div class="uk-width-1-5 uk-margin-remove-top"></div>
             <div class="uk-width-3-5 uk-margin-remove-top">
                 <p class="uk-text-center">
-                    {{strip_tags($page->content{0}->sectionContent)}}
+                    {{$page->content{0}->sectionContent}}
                 </p>
             </div>
             <div class="uk-width-1-5 uk-margin-remove-top"></div>
@@ -34,7 +34,7 @@
             </div>
             <div class="section-content">
                 <div class="section-content__centered">
-                    {{strip_tags($page->content{1}->sectionContent)}}
+                    {{$page->content{1}->sectionContent}}
                 </div>
             </div>
         </div>
