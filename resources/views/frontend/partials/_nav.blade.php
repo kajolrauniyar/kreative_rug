@@ -15,7 +15,7 @@
         <ul class="navigation__nav__list">
             <li class="navigation__nav__list__item "><a href="/" class="navigation__nav__list__item__link ">Home</a></li>
             <li class="navigation__nav__list__item ">
-                <a href="/get-inspired" class="navigation__nav__list__item__link ">Get Inspired</a>
+                <a href="{{ route('frontend.inspire') }}" class="navigation__nav__list__item__link ">Get Inspired</a>
                 <div class="mega-menu" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;offset: 5;animation: uk-animation-slide-top-small ; duration: 100">
                     <div uk-grid>
                         <div class="uk-width-small">
