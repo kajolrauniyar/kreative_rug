@@ -9,7 +9,7 @@
         <div class="uk-child-width-1-1 uk-text-center " uk-grid>
             <div class="contact-details">
                 <h3>Say "Hi" or Have Queries ?</h3>
-                <p>Kreative Rugs, Keshar Mahal, Road, Kathmandu, Nepal </p>
+                <p>Kreative Rugs, {{$setting->address}} , {{$setting->city}} </p>
                 <p>example@example.com</p>
                 <p>+1-908xxxx</p>
             </div>
