@@ -77,14 +77,25 @@ class PageController extends Controller
             $page->banner = $imagePath;
 
             $page->save();
+            
+            $contents = Content::where('page_id', $page->id)->get();            
             for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
-                $content= new Content;
-                $content->page_id = $page->id;
-                $content->sectionTitle = $request->sectionTitle[$i];
-                $content->sectionContent = $request->sectionContent[$i];
-                $content->save();
+                foreach ($contents as $db) {
+                    if($db->id == $request->contentID[$i]){
+                        $content = Content::find($request->contentID[$i]);
+                        $content->sectionTitle = $request->sectionTitle[$i];
+                        $content->sectionContent = $request->sectionContent[$i];
+                        $content->save();
+                    }
+                    else{
+                        $new = new Content;
+                        $new->page_id = $page->id;
+                        $new->sectionTitle = $request->sectionTitle[$i];
+                        $new->sectionContent = $request->sectionContent[$i];
+                        $new->save();
+                    }
+                }
             }
-
 
             Session::flash('success', 'Page added sucessfully !');
             return redirect()->route('page.show', $page->id);
