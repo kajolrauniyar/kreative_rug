@@ -1,7 +1,7 @@
 .footer {
     background-color: #1a1a1a;
     &__social {
-        @extend .uk-margin-small-top;
+        @extend .uk-margin-small-top , .uk-text-center;
         &__list {
             @extend .uk-padding-remove-horizontal;
             list-style-type: none;
@@ -17,7 +17,7 @@
         }
     }
     &__link {
-        @extend .uk-text-center;
+        @extend .uk-text-right;
         &__list {
             list-style-type: none;
             &__item {

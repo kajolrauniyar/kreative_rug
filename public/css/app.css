@@ -9212,12 +9212,13 @@ ul.uk-nav-sub {
   text-align: left !important;
 }
 
-.uk-text-right {
+.uk-text-right,
+.footer__link {
   text-align: right !important;
 }
 
 .uk-text-center,
-.footer__link,
+.footer__social,
 .section-content__centered,
 .section-title {
   text-align: center !important;
