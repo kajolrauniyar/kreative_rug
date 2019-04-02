@@ -18,7 +18,8 @@
                 <h3 class="heading-tertiary">Social Links</h3>
                 <div class="contact__social-box__contact__social">
                     @isset($setting->facebook)
-                        <a href="{{$setting->facebook}}"><span uk-icon="facebook"></span></a> @endisset 
+                        <a href="{{$setting->facebook}}"><span uk-icon="facebook"></span></a> 
+                    @endisset 
                     @isset($setting->twiter) 
                         <a href="{{$setting->twitter}}"><span uk-icon="twitter"></span></a>
                     @endisset 
