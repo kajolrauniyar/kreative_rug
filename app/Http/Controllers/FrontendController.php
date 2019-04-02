@@ -51,8 +51,7 @@ class FrontendController extends Controller
     }
     public function getContact()
     {
-        $setting = Setting::firstorFail();
-        return  view('frontend.pages.contact')->withSetting($setting);
+        return  view('frontend.pages.contact');
     }
     public function getSingleProduct()
     {
