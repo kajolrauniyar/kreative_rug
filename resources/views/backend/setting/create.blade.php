@@ -174,7 +174,7 @@
                             @if($errors->has('mailbox'))
                             <span class="help-block">{{ $errors->first('mailbox') }}</span>
                             @endif                            
-                            <label for="mailbox">Mailbox</label>
+                            <label for="mailbox">Email</label>
                         </div>
                     </div>
                 </div>                
