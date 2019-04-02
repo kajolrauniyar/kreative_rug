@@ -7,6 +7,7 @@ use App\Category;
 use App\Page;
 use App\Team;
 use App\Faq;
+use App\Setting;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -50,7 +51,8 @@ class FrontendController extends Controller
     }
     public function getContact()
     {
-        return  view('frontend.pages.contact');
+        $setting = Setting::firstorFail();
+        return  view('frontend.pages.contact')->withSetting($setting);
     }
     public function getSingleProduct()
     {
