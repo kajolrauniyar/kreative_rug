@@ -1,7 +1,7 @@
 @extends('layouts.frontend') 
 @section('content')
 <section class="image-page-header">
-    <div class="image-wrapper" data-src="{{asset('img/hero.jpg')}}" uk-img>
+    <div class="image-wrapper" data-src="{{asset($page->banner)}}" uk-img>
         <h1 class="image-header-text">Background Image</h1>
     </div>
 </section>
