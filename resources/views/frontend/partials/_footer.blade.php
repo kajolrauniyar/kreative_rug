@@ -2,7 +2,7 @@
     <div class="uk-container uk-padding-large">
         <div uk-grid>
             <div class="uk-width-1-1 uk-padding-remove-horizontal" uk-grid>
-                <div class="footer-logo-box uk-width-1-1 uk-text-left">
+                <div class="footer-logo-box uk-width-1-1 uk-text-center">
                     <img src="{{ asset('img/logo-white.png') }}" alt="" style="height:5rem">
                 </div>
                 <div class="footer__social uk-width-1-1">
