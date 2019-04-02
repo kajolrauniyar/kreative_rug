@@ -14,7 +14,7 @@
                         <div class="form-group floating-label {{$errors->has('site_name') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="site_name {{$errors->has('site_name') ? 'inputError' : ''}}" name="site_name"
-                            value="{{ old('site_name') }}" required>
+                            value="{{ old('site_name') }}" >
                             @if($errors->has('site_name'))
                             <span class="help-block">{{ $errors->first('site_name') }}</span>
                             @endif
@@ -25,7 +25,7 @@
                         <div class="form-group floating-label {{$errors->has('facebook') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="facebook {{$errors->has('facebook') ? 'inputError' : ''}}" name="facebook"
-                            value="{{ old('facebook') }}" required>
+                            value="{{ old('facebook') }}" >
                             @if($errors->has('facebook'))
                             <span class="help-block">{{ $errors->first('facebook') }}</span>
                             @endif
@@ -38,7 +38,7 @@
                         <div class="form-group floating-label {{$errors->has('tagline') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="tagline {{$errors->has('tagline') ? 'inputError' : ''}}" name="tagline"
-                            value="{{ old('tagline') }}" required>
+                            value="{{ old('tagline') }}" >
                             @if($errors->has('tagline'))
                             <span class="help-block">{{ $errors->first('tagline') }}</span>
                             @endif
@@ -49,7 +49,7 @@
                         <div class="form-group floating-label {{$errors->has('twitter') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="twitter {{$errors->has('twitter') ? 'inputError' : ''}}" name="twitter"
-                            value="{{ old('twitter') }}" required>
+                            value="{{ old('twitter') }}" >
                             @if($errors->has('twitter'))
                             <span class="help-block">{{ $errors->first('twitter') }}</span>
                             @endif
@@ -62,7 +62,7 @@
                         <div class="form-group floating-label {{$errors->has('address') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="address {{$errors->has('address') ? 'inputError' : ''}}" name="address"
-                            value="{{ old('address') }}" required>
+                            value="{{ old('address') }}" >
                             @if($errors->has('address'))
                             <span class="help-block">{{ $errors->first('address') }}</span>
                             @endif
@@ -73,7 +73,7 @@
                         <div class="form-group floating-label {{$errors->has('instagram') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="instagram {{$errors->has('instagram') ? 'inputError' : ''}}" name="instagram"
-                            value="{{ old('instagram') }}" required>
+                            value="{{ old('instagram') }}" >
                             @if($errors->has('instagram'))
                             <span class="help-block">{{ $errors->first('instagram') }}</span>
                             @endif
@@ -86,7 +86,7 @@
                         <div class="form-group floating-label {{$errors->has('city') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="city {{$errors->has('city') ? 'inputError' : ''}}" name="city"
-                            value="{{ old('city') }}" required>
+                            value="{{ old('city') }}" >
                             @if($errors->has('city'))
                             <span class="help-block">{{ $errors->first('city') }}</span>
                             @endif
@@ -98,7 +98,7 @@
                             <input type="text" class="form-control"
                             id="googleplus {{$errors->has('googleplus') ? 'inputError' : ''}}"
                             name="googleplus"
-                            value="{{ old('googleplus') }}" required>
+                            value="{{ old('googleplus') }}" >
                             @if($errors->has('googleplus'))
                             <span class="help-block">{{ $errors->first('googleplus') }}</span>
                             @endif
@@ -111,7 +111,7 @@
                         <div class="form-group floating-label {{$errors->has('phone') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="phone {{$errors->has('phone') ? 'inputError' : ''}}" name="phone"
-                            value="{{ old('phone') }}" required>
+                            value="{{ old('phone') }}" >
                             @if($errors->has('phone'))
                             <span class="help-block">{{ $errors->first('phone') }}</span>
                             @endif
@@ -122,7 +122,7 @@
                         <div class="form-group floating-label {{$errors->has('youtube') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="youtube {{$errors->has('youtube') ? 'inputError' : ''}}" name="youtube"
-                            value="{{ old('youtube') }}" required>
+                            value="{{ old('youtube') }}" >
                             @if($errors->has('youtube'))
                             <span class="help-block">{{ $errors->first('youtube') }}</span>
                             @endif
@@ -135,7 +135,7 @@
                         <div class="form-group floating-label {{$errors->has('website') ? 'has-error' : ''}}">
                             <input type="website" class="form-control"
                             id="website {{$errors->has('website') ? 'inputError' : ''}}" name="website"
-                            value="{{ old('website') }}" required>
+                            value="{{ old('website') }}" >
                             @if($errors->has('website'))
                             <span class="help-block">{{ $errors->first('website') }}</span>
                             @endif
@@ -146,7 +146,7 @@
                         {{-- <div class="form-group floating-label {{$errors->has('whats_app') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="whats_app {{$errors->has('whats_app') ? 'inputError' : ''}}" name="whats_app"
-                            value="{{ old('whats_app') }}" required>
+                            value="{{ old('whats_app') }}" >
                             @if($errors->has('whats_app'))
                             <span class="help-block">{{ $errors->first('whats_app') }}</span>
                             @endif
@@ -159,7 +159,7 @@
                         <div class="form-group floating-label {{$errors->has('mobile') ? 'has-error' : ''}}">
                             <input type="mobile" class="form-control"
                             id="mobile {{$errors->has('mobile') ? 'inputError' : ''}}" name="mobile"
-                            value="{{ old('mobile') }}" required>
+                            value="{{ old('mobile') }}" >
                             @if($errors->has('mobile'))
                             <span class="help-block">{{ $errors->first('mobile') }}</span>
                             @endif
@@ -170,7 +170,7 @@
                         <div class="form-group floating-label {{$errors->has('mailbox') ? 'has-error' : ''}}">
                             <input type="text" class="form-control"
                             id="mailbox {{$errors->has('mailbox') ? 'inputError' : ''}}" name="mailbox"
-                            value="{{ old('mailbox') }}" required>
+                            value="{{ old('mailbox') }}" >
                             @if($errors->has('mailbox'))
                             <span class="help-block">{{ $errors->first('mailbox') }}</span>
                             @endif                            
@@ -184,7 +184,7 @@
                         <div class="form-group floating-label {{$errors->has('map') ? 'has-error' : ''}}">
                             <textarea name="map"
                             id="map {{$errors->has('map') ? 'inputError' : ''}}"
-                            cols="30" rows="5" required style="width: 100%; resize: none;"></textarea>
+                            cols="30" rows="5"  style="width: 100%; resize: none;"></textarea>
                             @if($errors->has('map'))
                             <span class="help-block">{{ $errors->first('map') }}</span>
                             @endif
@@ -196,7 +196,7 @@
                         <div class="form-group floating-label {{$errors->has('gtag') ? 'has-error' : ''}}">
                             <textarea name="gtag"
                             id="gtag {{$errors->has('gtag') ? 'inputError' : ''}}"
-                            cols="30" rows="5" required style="width: 100%; resize: none;"></textarea>
+                            cols="30" rows="5"  style="width: 100%; resize: none;"></textarea>
                             @if($errors->has('gtag'))
                             <span class="help-block">{{ $errors->first('gtag') }}</span>
                             @endif
