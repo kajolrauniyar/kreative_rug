@@ -33,8 +33,9 @@ class NavigationServiceProvider extends ServiceProvider
     }     
     
     private function footerMenu(){
-        view()->composer('frontend.partials._footer','App\Http\Composers\NavigationComposer@footer');
         view()->composer('frontend.pages.contact','App\Http\Composers\NavigationComposer@footer');
+        // view()->composer('frontend.partials._footer','App\Http\Composers\NavigationComposer@footer');
+        // view()->composer('frontend.pages.contact','App\Http\Composers\NavigationComposer@footer');
         // view()->composer('frontend.contact','App\Http\Composers\NavigationComposer@footer');      
         // view()->composer('frontend.partials._footer','App\Http\Composers\NavigationComposer@getPage');
     }    
