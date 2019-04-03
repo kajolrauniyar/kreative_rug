@@ -31,7 +31,7 @@ Route::prefix('manage')->middleware('role:superadministrator|administrator|user'
     Route::get('product/{id}/publish','ProductController@publish')->name('product.publish');
     Route::get('product/{id}/unpublish','ProductController@unpublish')->name('product.unpublish');
     Route::get('{id}/featured',  'ProductController@setAsfeatured')->name('feature.product');
-	Route::get('{id}/removefeatured', 'roductController@removeAsfeatured')->name('remove.feature');
+	Route::get('{id}/removefeatured', 'ProductController@removeAsfeatured')->name('remove.feature');
 
     Route::resource('product-category', 'CategoryController');
     Route::resource('media','MediaController');

@@ -123,6 +123,7 @@
 <script>
     $(document).ready(function() {
         $(document).on('click', '.edit-modal', function() {
+            var id = val($(this).data('id'));
             $('#id-edit').val($(this).data('id'));
             $('#question-edit').val($(this).data('question'));
             $('#answer-edit').val($(this).data('answer'));
@@ -132,7 +133,7 @@
 
             $.ajax({
                 type: 'post',
-                url: '/manage/itinerary-edit',
+                url: 'manage/faq/'+id+'/edit',
                 data: {
                     '_token': $('meta[name="csrf-token"]').attr('content'),
                     'id': $("#id-edit").val(),
