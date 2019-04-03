@@ -136,7 +136,7 @@
                 data: {
                     '_token': $('meta[name="csrf-token"]').attr('content'),
                     'id': $("#id-edit").val(),
-                    'query': $("#question-edit").val(),
+                    'question': $("#question-edit").val(),
                     'answer': $('#answer-edit').val(),
                 },
                 success: function(data){

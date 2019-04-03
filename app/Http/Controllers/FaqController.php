@@ -84,17 +84,16 @@ class FaqController extends Controller
     public function update(Request $request)
     {
 
-        return response()->json($request);
         $this->validate($request, [
-            'query' => 'required',
+            'question' => 'required',
             'answer' => 'required',
         ]);
-        $carousel->query = $request->query;
-        $carousel->answer = $request->answer;
+        $faq = Faq::find($request->id);
+        $faq->query = $request->question;
+        $faq->answer = $request->answer;  
+        $faq->save();
   
-        $carousel->save();
-  
-      return response()->json($carousel);
+      return response()->json($faq);
     }
 
     /**
