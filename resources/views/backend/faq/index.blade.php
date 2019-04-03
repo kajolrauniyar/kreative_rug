@@ -132,7 +132,7 @@
             var id = $('id-edit').val();
             $.ajax({
                 type: 'post',
-                url: '/manage/faq/'+id+'/edit',
+                url: '/manage/faq/'+id,
                 data: {
                     '_token': $('meta[name="csrf-token"]').attr('content'),
                     'id': $("#id-edit").val(),
