@@ -30,16 +30,16 @@
                             <ul id="component-nav" class="uk-switcher mega-menu-content__list">
                                 @foreach ($categories as $category)
                                 <li class="mega-menu-content__list__item">
-                                        <div class="uk-grid-collapse uk-grid" uk-grid>
-                                            <div class="uk-width-1-2 mega-menu-content__list__item--content">
-                                                <p>{{$category->description}}</p>
-                                                <a href="{{ route('frontend.category', $category->slug) }}" class="mega-menu-content__list__item--content__link">Explore &rarr;</a>
-                                            </div>
-                                            <div class="uk-width-1-2 mega-menu-content__list__item--img">
-                                                <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
-                                            </div>
+                                    <div class="uk-grid-collapse uk-grid" uk-grid>
+                                        <div class="uk-width-1-2 mega-menu-content__list__item--content">
+                                            <p>{{$category->description}}</p>
+                                            <a href="{{ route('frontend.category', $category->slug) }}" class="mega-menu-content__list__item--content__link">Explore &rarr;</a>
                                         </div>
-                                    </li>                                    
+                                        <div class="uk-width-1-2 mega-menu-content__list__item--img">
+                                            <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
+                                        </div>
+                                    </div>
+                                </li>
                                 @endforeach
                             </ul>
 
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </li>
-            <li class="navigation__nav__list__item "><a href="{{route('frontend.design')}}" class="navigation__nav__list__item__link ">Designn Your Rug</a></li>
+            <li class="navigation__nav__list__item "><a href="{{route('frontend.design')}}" class="navigation__nav__list__item__link ">Rug Making Process</a></li>
             <li class="navigation__nav__list__item "><a href="/about" class="navigation__nav__list__item__link ">About Us</a></li>
             <li class="navigation__nav__list__item "><a href="/faq" class="navigation__nav__list__item__link ">FAQ</a></li>
             <li class="navigation__nav__list__item "><a href="/contact" class="navigation__nav__list__item__link ">Contact</a></li>
@@ -76,12 +76,20 @@
 
 <div id="responsive-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
-
-        <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
+        <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+            <li class="uk-active"><a href="/">Home</a></li>
+            <li class="uk-parent">
+                <a href="{{ route('frontend.inspire') }}">Get Inspired</a>
+                <ul class="uk-nav-sub">
+                    @foreach ($categories as $category) 
+                        <li><a href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a></li>
+                    @endforeach                    
+                </ul>
+            </li>
+            <li><a href="{{ route('frontend.design') }}">FAQ</a></li>
+            <li><a href="{{ route('frontend.about') }}">About Us</a></li>
+            <li><a href="{{ route('frontend.faq') }}">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
-
     </div>
 </div>
