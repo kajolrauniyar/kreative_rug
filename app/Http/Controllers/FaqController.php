@@ -87,7 +87,7 @@ class FaqController extends Controller
             'query' => 'required',
             'answer' => 'required',
         ]);
-        $faq = Faq::find($id);
+        $faq = Faq::find($request->id);
         $faq ->question = $request->question;
         $faq ->answer = $request->answer;
         $faq->save();
