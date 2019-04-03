@@ -92,8 +92,7 @@ class FaqController extends Controller
         $faq ->answer = $request->answer;
         $faq->save();
 
-        Session::flash('success', 'FAQ updated sucessfully !');
-        return redirect()->route('faq.index');
+        return response()->json($faq);
     }
 
     /**
@@ -106,6 +105,6 @@ class FaqController extends Controller
     {
         $faq = Faq::find($id);
         $faq->delete();
-        return response()->json(['success'=>'Mail sent sucessfully.']);     
+        return response()->json($faq);
     }
 }
