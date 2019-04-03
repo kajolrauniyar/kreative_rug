@@ -125,12 +125,11 @@
         $(document).on('click', '.edit-modal', function() {            
             $('#id-edit').val($(this).data('id'));
             $('#question-edit').val($(this).data('question'));
-            $('#answer-edit').val($(this).data('answer'));
-            var id = $('id-edit').val();
+            $('#answer-edit').val($(this).data('answer'));            
         });
 
         $('.modal-footer').on('click', '.update', function() {
-
+            var id = $('id-edit').val();
             $.ajax({
                 type: 'post',
                 url: 'manage/faq/'+id+'/edit',
