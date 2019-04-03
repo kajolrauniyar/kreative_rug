@@ -3,7 +3,7 @@
 <section class="page-header">
     <div class="uk-container">
         <div class="section-title">
-            <h2 class="heading-secondary">Lorem ipsum dolor sit amet.</h2>
+            <h2 class="heading-secondary">Contact us</h2>
             <span class="divide-line"></span>
         </div>
         <div class="uk-child-width-1-1 uk-text-center " uk-grid>
