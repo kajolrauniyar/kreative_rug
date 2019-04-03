@@ -123,7 +123,7 @@
 <script>
     $(document).ready(function() {
         $(document).on('click', '.edit-modal', function() {
-            var id = data('id'));
+            var id = data('id');
             $('#id-edit').val($(this).data('id'));
             $('#question-edit').val($(this).data('question'));
             $('#answer-edit').val($(this).data('answer'));
