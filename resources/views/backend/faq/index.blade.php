@@ -131,8 +131,8 @@
         $('.modal-footer').on('click', '.update', function() {
             var id = $('id-edit').val();
             $.ajax({
-                type: 'post',
-                url: "{{route('faq.update'"+id+")}}",
+                type: 'PUT',
+                url: '/manage/faq/' + id,
                 data: {
                     '_token': $('meta[name="csrf-token"]').attr('content'),
                     'id': $("#id-edit").val(),
