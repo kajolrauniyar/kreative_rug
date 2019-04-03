@@ -81,14 +81,13 @@ class FaqController extends Controller
      * @param  \App\Faq  $faq
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, Faq $faq)
     {
         $this->validate($request,[
             'query' => 'required',
             'answer' => 'required',
         ]);
-        $faq = Faq::find($request->id);
-        $faq ->question = $request->question;
+        $faq ->query = $request->query;
         $faq ->answer = $request->answer;
         $faq->save();
 
