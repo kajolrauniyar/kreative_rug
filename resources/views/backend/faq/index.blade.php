@@ -122,11 +122,11 @@
 @section('scripts')
 <script>
     $(document).ready(function() {
-        $(document).on('click', '.edit-modal', function() {
-            var id = data('id');
+        $(document).on('click', '.edit-modal', function() {            
             $('#id-edit').val($(this).data('id'));
             $('#question-edit').val($(this).data('question'));
             $('#answer-edit').val($(this).data('answer'));
+            var id = $('id-edit').val();
         });
 
         $('.modal-footer').on('click', '.update', function() {
