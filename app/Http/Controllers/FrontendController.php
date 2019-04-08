@@ -39,8 +39,9 @@ class FrontendController extends Controller
     }
     public function getDesign()
     {
-        $page = Page::where('slug', 'design-your-rug')->firstorFail();
-        return  view('frontend.pages.design')->withPage($page);
+        // $page = Page::where('slug', 'design-your-rug')->firstorFail();
+        // return  view('frontend.pages.design')->withPage($page);
+        return  view('frontend.pages.design');
     }
     public function getAbout()
     {
