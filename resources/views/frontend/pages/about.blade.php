@@ -2,7 +2,7 @@
 @section('content')
 <section class="image-page-header">
     <div class="image-wrapper uk-light" data-src="{{asset($page->banner)}}" uk-img>
-    <h1 class="image-header-text">{{$page->title}}</h1>
+        <h1 class="image-header-text">{{$page->title}}</h1>
     </div>
 </section>
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
@@ -50,14 +50,32 @@
         <div uk-grid>
             @foreach ($items as $team)
             <div class="uk-width-1-3@m uk-width-1-1@s">
-                <div class="uk-card uk-card-default " uk-tooltip="title: {{$team->description}}; pos: right">
+                <div class="uk-card uk-card-default ">
                     <div class="uk-card-media-top">
                         <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
                     </div>
                     <div class="uk-card-body uk-padding-small uk-text-center">
                         <h3 class="uk-card-title uk-margin-remove-bottom">{{$team->name}}</h3>
                         <p class="designation uk-margin-remove-top">{{$team->designation}}</p>
+                        <p class="description uk-margin-remove-top">
+                            {{ substr($team->description, 0, 300)}} 
+                            @if (strlen($team->description) > 300) 
+                            <a href="#" uk-toggle="target: #team-member-{{$loop->iteration}}" >Read more</a>
+                            @endif
+                        </p>
                     </div>
+                </div>
+            </div>
+            <!-- This is the modal with the outside close button -->
+            <div id="team-member-{{$loop->iteration}}" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-team-member-{{$loop->iteration}}" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Outside</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
             @endforeach
@@ -73,6 +91,7 @@
         </div>
     </div>
 </div>
+
 
 
 
