@@ -51,14 +51,14 @@
                     </div>
                 </div>
             </div>
-            @endforeach 
+            @endforeach
         </div>
     </section>
-    <section class="section-featured">
-        <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/dark.jpg);">
-            <p class="uk-h4">{{$home->section3_content}}</p>
-        </div>
-    </section>
+
+    <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url({{asset('img/nature.jpg')}});">
+        <p class="uk-h4">{{$home->section3_content}}</p>
+    </div>
+
     <section class="section-form">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section4_title}}</h2>
@@ -136,6 +136,7 @@
 });
 
 </script>
+
 
 
 @stop --}}
