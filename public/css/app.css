@@ -9063,6 +9063,7 @@ ul.uk-nav-sub {
 
 .uk-height-medium,
 .image-header,
+.section-bg__image,
 .image-page-header .image-wrapper {
   height: 300px;
 }
@@ -9636,6 +9637,7 @@ iframe.uk-cover {
 
 .uk-background-cover,
 .image-header,
+.section-bg__image,
 .header,
 .image-page-header .image-wrapper,
 .uk-background-contain {
@@ -9645,6 +9647,7 @@ iframe.uk-cover {
 
 .uk-background-cover,
 .image-header,
+.section-bg__image,
 .header,
 .image-page-header .image-wrapper {
   background-size: cover;
@@ -10525,6 +10528,7 @@ iframe.uk-cover {
 .product__share,
 .image-header,
 .contact__social-box__contact__social,
+.section-bg__image,
 .header,
 .image-page-header .image-wrapper,
 .breadcrumb-wrapper {
@@ -10543,6 +10547,7 @@ iframe.uk-cover {
 .product__share::before,
 .image-header::before,
 .contact__social-box__contact__social::before,
+.section-bg__image::before,
 .header::before,
 .image-page-header .image-wrapper::before,
 .breadcrumb-wrapper::before,
@@ -10550,6 +10555,7 @@ iframe.uk-cover {
 .product__share::after,
 .image-header::after,
 .contact__social-box__contact__social::after,
+.section-bg__image::after,
 .header::after,
 .image-page-header .image-wrapper::after,
 .breadcrumb-wrapper::after,
@@ -10573,6 +10579,7 @@ iframe.uk-cover {
 
 .uk-flex-center,
 .image-header,
+.section-bg__image,
 .breadcrumb-wrapper {
   justify-content: center;
 }
@@ -10702,6 +10709,7 @@ iframe.uk-cover {
 
 .uk-flex-middle,
 .image-header,
+.section-bg__image,
 .header,
 .image-page-header .image-wrapper {
   align-items: center;
@@ -11886,6 +11894,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light,
 .image-header,
+.section-bg__image,
 .home-product-category,
 .header,
 .uk-section-primary:not(.uk-preserve-color),
@@ -11904,6 +11913,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a,
 .image-header a,
+.section-bg__image a,
 .home-product-category a,
 .header a,
 .uk-section-primary:not(.uk-preserve-color) a,
@@ -11919,6 +11929,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a,
 .uk-light .uk-link,
 .image-header .uk-link,
+.section-bg__image .uk-link,
 .home-product-category .uk-link,
 .header .uk-link,
 .uk-section-primary:not(.uk-preserve-color) .uk-link,
@@ -11937,6 +11948,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a:hover,
 .image-header a:hover,
+.section-bg__image a:hover,
 .home-product-category a:hover,
 .header a:hover,
 .uk-section-primary:not(.uk-preserve-color) a:hover,
@@ -11952,6 +11964,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a:hover,
 .uk-light .uk-link:hover,
 .image-header .uk-link:hover,
+.section-bg__image .uk-link:hover,
 .home-product-category .uk-link:hover,
 .header .uk-link:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-link:hover,
@@ -11970,6 +11983,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light :not(pre) > code,
 .image-header :not(pre) > code,
+.section-bg__image :not(pre) > code,
 .home-product-category :not(pre) > code,
 .header :not(pre) > code,
 .uk-section-primary:not(.uk-preserve-color) :not(pre) > code,
@@ -11985,6 +11999,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar :not(pre) > code,
 .uk-light :not(pre) > kbd,
 .image-header :not(pre) > kbd,
+.section-bg__image :not(pre) > kbd,
 .home-product-category :not(pre) > kbd,
 .header :not(pre) > kbd,
 .uk-section-primary:not(.uk-preserve-color) :not(pre) > kbd,
@@ -12000,6 +12015,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar :not(pre) > kbd,
 .uk-light :not(pre) > samp,
 .image-header :not(pre) > samp,
+.section-bg__image :not(pre) > samp,
 .home-product-category :not(pre) > samp,
 .header :not(pre) > samp,
 .uk-section-primary:not(.uk-preserve-color) :not(pre) > samp,
@@ -12018,6 +12034,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light em,
 .image-header em,
+.section-bg__image em,
 .home-product-category em,
 .header em,
 .uk-section-primary:not(.uk-preserve-color) em,
@@ -12036,6 +12053,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light h1,
 .image-header h1,
+.section-bg__image h1,
 .home-product-category h1,
 .header h1,
 .uk-section-primary:not(.uk-preserve-color) h1,
@@ -12051,6 +12069,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h1,
 .uk-light .uk-h1,
 .image-header .uk-h1,
+.section-bg__image .uk-h1,
 .home-product-category .uk-h1,
 .header .uk-h1,
 .uk-section-primary:not(.uk-preserve-color) .uk-h1,
@@ -12066,6 +12085,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-h1,
 .uk-light h2,
 .image-header h2,
+.section-bg__image h2,
 .home-product-category h2,
 .header h2,
 .uk-section-primary:not(.uk-preserve-color) h2,
@@ -12081,6 +12101,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h2,
 .uk-light .uk-h2,
 .image-header .uk-h2,
+.section-bg__image .uk-h2,
 .home-product-category .uk-h2,
 .header .uk-h2,
 .uk-section-primary:not(.uk-preserve-color) .uk-h2,
@@ -12096,6 +12117,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-h2,
 .uk-light h3,
 .image-header h3,
+.section-bg__image h3,
 .home-product-category h3,
 .header h3,
 .uk-section-primary:not(.uk-preserve-color) h3,
@@ -12111,6 +12133,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h3,
 .uk-light .uk-h3,
 .image-header .uk-h3,
+.section-bg__image .uk-h3,
 .home-product-category .uk-h3,
 .header .uk-h3,
 .uk-section-primary:not(.uk-preserve-color) .uk-h3,
@@ -12126,6 +12149,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-h3,
 .uk-light h4,
 .image-header h4,
+.section-bg__image h4,
 .home-product-category h4,
 .header h4,
 .uk-section-primary:not(.uk-preserve-color) h4,
@@ -12141,6 +12165,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h4,
 .uk-light .uk-h4,
 .image-header .uk-h4,
+.section-bg__image .uk-h4,
 .home-product-category .uk-h4,
 .header .uk-h4,
 .uk-section-primary:not(.uk-preserve-color) .uk-h4,
@@ -12156,6 +12181,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-h4,
 .uk-light h5,
 .image-header h5,
+.section-bg__image h5,
 .home-product-category h5,
 .header h5,
 .uk-section-primary:not(.uk-preserve-color) h5,
@@ -12171,6 +12197,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h5,
 .uk-light .uk-h5,
 .image-header .uk-h5,
+.section-bg__image .uk-h5,
 .home-product-category .uk-h5,
 .header .uk-h5,
 .uk-section-primary:not(.uk-preserve-color) .uk-h5,
@@ -12186,6 +12213,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-h5,
 .uk-light h6,
 .image-header h6,
+.section-bg__image h6,
 .home-product-category h6,
 .header h6,
 .uk-section-primary:not(.uk-preserve-color) h6,
@@ -12201,6 +12229,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h6,
 .uk-light .uk-h6,
 .image-header .uk-h6,
+.section-bg__image .uk-h6,
 .home-product-category .uk-h6,
 .header .uk-h6,
 .uk-section-primary:not(.uk-preserve-color) .uk-h6,
@@ -12219,6 +12248,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light hr,
 .image-header hr,
+.section-bg__image hr,
 .home-product-category hr,
 .header hr,
 .uk-section-primary:not(.uk-preserve-color) hr,
@@ -12234,6 +12264,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar hr,
 .uk-light .uk-hr,
 .image-header .uk-hr,
+.section-bg__image .uk-hr,
 .home-product-category .uk-hr,
 .header .uk-hr,
 .uk-section-primary:not(.uk-preserve-color) .uk-hr,
@@ -12252,6 +12283,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a.uk-link-muted,
 .image-header a.uk-link-muted,
+.section-bg__image a.uk-link-muted,
 .home-product-category a.uk-link-muted,
 .header a.uk-link-muted,
 .uk-section-primary:not(.uk-preserve-color) a.uk-link-muted,
@@ -12267,6 +12299,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a.uk-link-muted,
 .uk-light .uk-link-muted a,
 .image-header .uk-link-muted a,
+.section-bg__image .uk-link-muted a,
 .home-product-category .uk-link-muted a,
 .header .uk-link-muted a,
 .uk-section-primary:not(.uk-preserve-color) .uk-link-muted a,
@@ -12285,6 +12318,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a.uk-link-muted:hover,
 .image-header a.uk-link-muted:hover,
+.section-bg__image a.uk-link-muted:hover,
 .home-product-category a.uk-link-muted:hover,
 .header a.uk-link-muted:hover,
 .uk-section-primary:not(.uk-preserve-color) a.uk-link-muted:hover,
@@ -12300,6 +12334,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a.uk-link-muted:hover,
 .uk-light .uk-link-muted a:hover,
 .image-header .uk-link-muted a:hover,
+.section-bg__image .uk-link-muted a:hover,
 .home-product-category .uk-link-muted a:hover,
 .header .uk-link-muted a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-link-muted a:hover,
@@ -12318,6 +12353,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a.uk-link-text:hover,
 .image-header a.uk-link-text:hover,
+.section-bg__image a.uk-link-text:hover,
 .home-product-category a.uk-link-text:hover,
 .header a.uk-link-text:hover,
 .uk-section-primary:not(.uk-preserve-color) a.uk-link-text:hover,
@@ -12333,6 +12369,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a.uk-link-text:hover,
 .uk-light .uk-link-text a:hover,
 .image-header .uk-link-text a:hover,
+.section-bg__image .uk-link-text a:hover,
 .home-product-category .uk-link-text a:hover,
 .header .uk-link-text a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-link-text a:hover,
@@ -12351,6 +12388,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light a.uk-link-heading:hover,
 .image-header a.uk-link-heading:hover,
+.section-bg__image a.uk-link-heading:hover,
 .home-product-category a.uk-link-heading:hover,
 .header a.uk-link-heading:hover,
 .uk-section-primary:not(.uk-preserve-color) a.uk-link-heading:hover,
@@ -12366,6 +12404,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar a.uk-link-heading:hover,
 .uk-light .uk-link-heading a:hover,
 .image-header .uk-link-heading a:hover,
+.section-bg__image .uk-link-heading a:hover,
 .home-product-category .uk-link-heading a:hover,
 .header .uk-link-heading a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-link-heading a:hover,
@@ -12384,6 +12423,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-heading-divider,
 .image-header .uk-heading-divider,
+.section-bg__image .uk-heading-divider,
 .home-product-category .uk-heading-divider,
 .header .uk-heading-divider,
 .uk-section-primary:not(.uk-preserve-color) .uk-heading-divider,
@@ -12402,6 +12442,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-heading-bullet::before,
 .image-header .uk-heading-bullet::before,
+.section-bg__image .uk-heading-bullet::before,
 .home-product-category .uk-heading-bullet::before,
 .header .uk-heading-bullet::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-heading-bullet::before,
@@ -12420,6 +12461,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-heading-line > ::before,
 .image-header .uk-heading-line > ::before,
+.section-bg__image .uk-heading-line > ::before,
 .home-product-category .uk-heading-line > ::before,
 .header .uk-heading-line > ::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-heading-line > ::before,
@@ -12435,6 +12477,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-heading-line > ::before,
 .uk-light .uk-heading-line > ::after,
 .image-header .uk-heading-line > ::after,
+.section-bg__image .uk-heading-line > ::after,
 .home-product-category .uk-heading-line > ::after,
 .header .uk-heading-line > ::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-heading-line > ::after,
@@ -12453,6 +12496,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-divider-icon,
 .image-header .uk-divider-icon,
+.section-bg__image .uk-divider-icon,
 .home-product-category .uk-divider-icon,
 .header .uk-divider-icon,
 .uk-section-primary:not(.uk-preserve-color) .uk-divider-icon,
@@ -12471,6 +12515,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-divider-icon::before,
 .image-header .uk-divider-icon::before,
+.section-bg__image .uk-divider-icon::before,
 .home-product-category .uk-divider-icon::before,
 .header .uk-divider-icon::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-divider-icon::before,
@@ -12486,6 +12531,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-divider-icon::before,
 .uk-light .uk-divider-icon::after,
 .image-header .uk-divider-icon::after,
+.section-bg__image .uk-divider-icon::after,
 .home-product-category .uk-divider-icon::after,
 .header .uk-divider-icon::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-divider-icon::after,
@@ -12504,6 +12550,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-divider-small::after,
 .image-header .uk-divider-small::after,
+.section-bg__image .uk-divider-small::after,
 .home-product-category .uk-divider-small::after,
 .header .uk-divider-small::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-divider-small::after,
@@ -12522,6 +12569,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-divider-vertical::after,
 .image-header .uk-divider-vertical::after,
+.section-bg__image .uk-divider-vertical::after,
 .home-product-category .uk-divider-vertical::after,
 .header .uk-divider-vertical::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-divider-vertical::after,
@@ -12540,6 +12588,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-list-divider > li:nth-child(n+2),
 .image-header .uk-list-divider > li:nth-child(n+2),
+.section-bg__image .uk-list-divider > li:nth-child(n+2),
 .home-product-category .uk-list-divider > li:nth-child(n+2),
 .header .uk-list-divider > li:nth-child(n+2),
 .uk-section-primary:not(.uk-preserve-color) .uk-list-divider > li:nth-child(n+2),
@@ -12558,6 +12607,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-list-striped > li:nth-of-type(odd),
 .image-header .uk-list-striped > li:nth-of-type(odd),
+.section-bg__image .uk-list-striped > li:nth-of-type(odd),
 .home-product-category .uk-list-striped > li:nth-of-type(odd),
 .header .uk-list-striped > li:nth-of-type(odd),
 .uk-section-primary:not(.uk-preserve-color) .uk-list-striped > li:nth-of-type(odd),
@@ -12576,6 +12626,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-list-bullet > li::before,
 .image-header .uk-list-bullet > li::before,
+.section-bg__image .uk-list-bullet > li::before,
 .home-product-category .uk-list-bullet > li::before,
 .header .uk-list-bullet > li::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-list-bullet > li::before,
@@ -12594,6 +12645,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-link,
 .image-header .uk-icon-link,
+.section-bg__image .uk-icon-link,
 .home-product-category .uk-icon-link,
 .header .uk-icon-link,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-link,
@@ -12612,6 +12664,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-link:hover,
 .image-header .uk-icon-link:hover,
+.section-bg__image .uk-icon-link:hover,
 .home-product-category .uk-icon-link:hover,
 .header .uk-icon-link:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-link:hover,
@@ -12627,6 +12680,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-icon-link:hover,
 .uk-light .uk-icon-link:focus,
 .image-header .uk-icon-link:focus,
+.section-bg__image .uk-icon-link:focus,
 .home-product-category .uk-icon-link:focus,
 .header .uk-icon-link:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-link:focus,
@@ -12645,6 +12699,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-link:active,
 .image-header .uk-icon-link:active,
+.section-bg__image .uk-icon-link:active,
 .home-product-category .uk-icon-link:active,
 .header .uk-icon-link:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-link:active,
@@ -12660,6 +12715,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-icon-link:active,
 .uk-light .uk-active > .uk-icon-link,
 .image-header .uk-active > .uk-icon-link,
+.section-bg__image .uk-active > .uk-icon-link,
 .home-product-category .uk-active > .uk-icon-link,
 .header .uk-active > .uk-icon-link,
 .uk-section-primary:not(.uk-preserve-color) .uk-active > .uk-icon-link,
@@ -12678,6 +12734,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-button,
 .image-header .uk-icon-button,
+.section-bg__image .uk-icon-button,
 .home-product-category .uk-icon-button,
 .header .uk-icon-button,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-button,
@@ -12697,6 +12754,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-button:hover,
 .image-header .uk-icon-button:hover,
+.section-bg__image .uk-icon-button:hover,
 .home-product-category .uk-icon-button:hover,
 .header .uk-icon-button:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-button:hover,
@@ -12712,6 +12770,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-icon-button:hover,
 .uk-light .uk-icon-button:focus,
 .image-header .uk-icon-button:focus,
+.section-bg__image .uk-icon-button:focus,
 .home-product-category .uk-icon-button:focus,
 .header .uk-icon-button:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-button:focus,
@@ -12731,6 +12790,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-icon-button:active,
 .image-header .uk-icon-button:active,
+.section-bg__image .uk-icon-button:active,
 .home-product-category .uk-icon-button:active,
 .header .uk-icon-button:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-icon-button:active,
@@ -12750,6 +12810,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input,
 .image-header .uk-input,
+.section-bg__image .uk-input,
 .home-product-category .uk-input,
 .header .uk-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-input,
@@ -12765,6 +12826,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-input,
 .uk-light .uk-select,
 .image-header .uk-select,
+.section-bg__image .uk-select,
 .home-product-category .uk-select,
 .header .uk-select,
 .uk-section-primary:not(.uk-preserve-color) .uk-select,
@@ -12780,6 +12842,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-select,
 .uk-light .uk-textarea,
 .image-header .uk-textarea,
+.section-bg__image .uk-textarea,
 .home-product-category .uk-textarea,
 .header .uk-textarea,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea,
@@ -12800,6 +12863,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input:focus,
 .image-header .uk-input:focus,
+.section-bg__image .uk-input:focus,
 .home-product-category .uk-input:focus,
 .header .uk-input:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-input:focus,
@@ -12815,6 +12879,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-input:focus,
 .uk-light .uk-select:focus,
 .image-header .uk-select:focus,
+.section-bg__image .uk-select:focus,
 .home-product-category .uk-select:focus,
 .header .uk-select:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-select:focus,
@@ -12830,6 +12895,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-select:focus,
 .uk-light .uk-textarea:focus,
 .image-header .uk-textarea:focus,
+.section-bg__image .uk-textarea:focus,
 .home-product-category .uk-textarea:focus,
 .header .uk-textarea:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea:focus,
@@ -12849,6 +12915,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input::-ms-input-placeholder,
 .image-header .uk-input::-ms-input-placeholder,
+.section-bg__image .uk-input::-ms-input-placeholder,
 .home-product-category .uk-input::-ms-input-placeholder,
 .header .uk-input::-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-input::-ms-input-placeholder,
@@ -12867,6 +12934,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input::-webkit-input-placeholder,
 .image-header .uk-input::-webkit-input-placeholder,
+.section-bg__image .uk-input::-webkit-input-placeholder,
 .home-product-category .uk-input::-webkit-input-placeholder,
 .header .uk-input::-webkit-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-input::-webkit-input-placeholder,
@@ -12885,6 +12953,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input:-ms-input-placeholder,
 .image-header .uk-input:-ms-input-placeholder,
+.section-bg__image .uk-input:-ms-input-placeholder,
 .home-product-category .uk-input:-ms-input-placeholder,
 .header .uk-input:-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-input:-ms-input-placeholder,
@@ -12903,6 +12972,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-input::placeholder,
 .image-header .uk-input::placeholder,
+.section-bg__image .uk-input::placeholder,
 .home-product-category .uk-input::placeholder,
 .header .uk-input::placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-input::placeholder,
@@ -12921,6 +12991,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-textarea::-ms-input-placeholder,
 .image-header .uk-textarea::-ms-input-placeholder,
+.section-bg__image .uk-textarea::-ms-input-placeholder,
 .home-product-category .uk-textarea::-ms-input-placeholder,
 .header .uk-textarea::-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea::-ms-input-placeholder,
@@ -12939,6 +13010,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-textarea::-webkit-input-placeholder,
 .image-header .uk-textarea::-webkit-input-placeholder,
+.section-bg__image .uk-textarea::-webkit-input-placeholder,
 .home-product-category .uk-textarea::-webkit-input-placeholder,
 .header .uk-textarea::-webkit-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea::-webkit-input-placeholder,
@@ -12957,6 +13029,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-textarea:-ms-input-placeholder,
 .image-header .uk-textarea:-ms-input-placeholder,
+.section-bg__image .uk-textarea:-ms-input-placeholder,
 .home-product-category .uk-textarea:-ms-input-placeholder,
 .header .uk-textarea:-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea:-ms-input-placeholder,
@@ -12975,6 +13048,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-textarea::placeholder,
 .image-header .uk-textarea::placeholder,
+.section-bg__image .uk-textarea::placeholder,
 .home-product-category .uk-textarea::placeholder,
 .header .uk-textarea::placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-textarea::placeholder,
@@ -12993,6 +13067,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-select:not([multiple]):not([size]),
 .image-header .uk-select:not([multiple]):not([size]),
+.section-bg__image .uk-select:not([multiple]):not([size]),
 .home-product-category .uk-select:not([multiple]):not([size]),
 .header .uk-select:not([multiple]):not([size]),
 .uk-section-primary:not(.uk-preserve-color) .uk-select:not([multiple]):not([size]),
@@ -13011,6 +13086,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-radio,
 .image-header .uk-radio,
+.section-bg__image .uk-radio,
 .home-product-category .uk-radio,
 .header .uk-radio,
 .uk-section-primary:not(.uk-preserve-color) .uk-radio,
@@ -13026,6 +13102,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-radio,
 .uk-light .uk-checkbox,
 .image-header .uk-checkbox,
+.section-bg__image .uk-checkbox,
 .home-product-category .uk-checkbox,
 .header .uk-checkbox,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox,
@@ -13044,6 +13121,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-radio:checked,
 .image-header .uk-radio:checked,
+.section-bg__image .uk-radio:checked,
 .home-product-category .uk-radio:checked,
 .header .uk-radio:checked,
 .uk-section-primary:not(.uk-preserve-color) .uk-radio:checked,
@@ -13059,6 +13137,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-radio:checked,
 .uk-light .uk-checkbox:checked,
 .image-header .uk-checkbox:checked,
+.section-bg__image .uk-checkbox:checked,
 .home-product-category .uk-checkbox:checked,
 .header .uk-checkbox:checked,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:checked,
@@ -13074,6 +13153,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-checkbox:checked,
 .uk-light .uk-checkbox:indeterminate,
 .image-header .uk-checkbox:indeterminate,
+.section-bg__image .uk-checkbox:indeterminate,
 .home-product-category .uk-checkbox:indeterminate,
 .header .uk-checkbox:indeterminate,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:indeterminate,
@@ -13092,6 +13172,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-radio:checked:focus,
 .image-header .uk-radio:checked:focus,
+.section-bg__image .uk-radio:checked:focus,
 .home-product-category .uk-radio:checked:focus,
 .header .uk-radio:checked:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-radio:checked:focus,
@@ -13107,6 +13188,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-radio:checked:focus,
 .uk-light .uk-checkbox:checked:focus,
 .image-header .uk-checkbox:checked:focus,
+.section-bg__image .uk-checkbox:checked:focus,
 .home-product-category .uk-checkbox:checked:focus,
 .header .uk-checkbox:checked:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:checked:focus,
@@ -13122,6 +13204,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-checkbox:checked:focus,
 .uk-light .uk-checkbox:indeterminate:focus,
 .image-header .uk-checkbox:indeterminate:focus,
+.section-bg__image .uk-checkbox:indeterminate:focus,
 .home-product-category .uk-checkbox:indeterminate:focus,
 .header .uk-checkbox:indeterminate:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:indeterminate:focus,
@@ -13140,6 +13223,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-radio:checked,
 .image-header .uk-radio:checked,
+.section-bg__image .uk-radio:checked,
 .home-product-category .uk-radio:checked,
 .header .uk-radio:checked,
 .uk-section-primary:not(.uk-preserve-color) .uk-radio:checked,
@@ -13158,6 +13242,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-checkbox:checked,
 .image-header .uk-checkbox:checked,
+.section-bg__image .uk-checkbox:checked,
 .home-product-category .uk-checkbox:checked,
 .header .uk-checkbox:checked,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:checked,
@@ -13176,6 +13261,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-checkbox:indeterminate,
 .image-header .uk-checkbox:indeterminate,
+.section-bg__image .uk-checkbox:indeterminate,
 .home-product-category .uk-checkbox:indeterminate,
 .header .uk-checkbox:indeterminate,
 .uk-section-primary:not(.uk-preserve-color) .uk-checkbox:indeterminate,
@@ -13194,6 +13280,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-form-icon,
 .image-header .uk-form-icon,
+.section-bg__image .uk-form-icon,
 .home-product-category .uk-form-icon,
 .header .uk-form-icon,
 .uk-section-primary:not(.uk-preserve-color) .uk-form-icon,
@@ -13212,6 +13299,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-form-icon:hover,
 .image-header .uk-form-icon:hover,
+.section-bg__image .uk-form-icon:hover,
 .home-product-category .uk-form-icon:hover,
 .header .uk-form-icon:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-form-icon:hover,
@@ -13230,6 +13318,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-default,
 .image-header .uk-button-default,
+.section-bg__image .uk-button-default,
 .home-product-category .uk-button-default,
 .header .uk-button-default,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-default,
@@ -13249,6 +13338,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-default:hover,
 .image-header .uk-button-default:hover,
+.section-bg__image .uk-button-default:hover,
 .home-product-category .uk-button-default:hover,
 .header .uk-button-default:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-default:hover,
@@ -13264,6 +13354,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-default:hover,
 .uk-light .uk-button-default:focus,
 .image-header .uk-button-default:focus,
+.section-bg__image .uk-button-default:focus,
 .home-product-category .uk-button-default:focus,
 .header .uk-button-default:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-default:focus,
@@ -13283,6 +13374,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-default:active,
 .image-header .uk-button-default:active,
+.section-bg__image .uk-button-default:active,
 .home-product-category .uk-button-default:active,
 .header .uk-button-default:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-default:active,
@@ -13298,6 +13390,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-default:active,
 .uk-light .uk-button-default.uk-active,
 .image-header .uk-button-default.uk-active,
+.section-bg__image .uk-button-default.uk-active,
 .home-product-category .uk-button-default.uk-active,
 .header .uk-button-default.uk-active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-default.uk-active,
@@ -13317,6 +13410,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-primary,
 .image-header .uk-button-primary,
+.section-bg__image .uk-button-primary,
 .home-product-category .uk-button-primary,
 .header .uk-button-primary,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-primary,
@@ -13336,6 +13430,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-primary:hover,
 .image-header .uk-button-primary:hover,
+.section-bg__image .uk-button-primary:hover,
 .home-product-category .uk-button-primary:hover,
 .header .uk-button-primary:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-primary:hover,
@@ -13351,6 +13446,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-primary:hover,
 .uk-light .uk-button-primary:focus,
 .image-header .uk-button-primary:focus,
+.section-bg__image .uk-button-primary:focus,
 .home-product-category .uk-button-primary:focus,
 .header .uk-button-primary:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-primary:focus,
@@ -13370,6 +13466,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-primary:active,
 .image-header .uk-button-primary:active,
+.section-bg__image .uk-button-primary:active,
 .home-product-category .uk-button-primary:active,
 .header .uk-button-primary:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-primary:active,
@@ -13385,6 +13482,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-primary:active,
 .uk-light .uk-button-primary.uk-active,
 .image-header .uk-button-primary.uk-active,
+.section-bg__image .uk-button-primary.uk-active,
 .home-product-category .uk-button-primary.uk-active,
 .header .uk-button-primary.uk-active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-primary.uk-active,
@@ -13404,6 +13502,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-secondary,
 .image-header .uk-button-secondary,
+.section-bg__image .uk-button-secondary,
 .home-product-category .uk-button-secondary,
 .header .uk-button-secondary,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary,
@@ -13423,6 +13522,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-secondary:hover,
 .image-header .uk-button-secondary:hover,
+.section-bg__image .uk-button-secondary:hover,
 .home-product-category .uk-button-secondary:hover,
 .header .uk-button-secondary:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary:hover,
@@ -13438,6 +13538,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-secondary:hover,
 .uk-light .uk-button-secondary:focus,
 .image-header .uk-button-secondary:focus,
+.section-bg__image .uk-button-secondary:focus,
 .home-product-category .uk-button-secondary:focus,
 .header .uk-button-secondary:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary:focus,
@@ -13457,6 +13558,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-secondary:active,
 .image-header .uk-button-secondary:active,
+.section-bg__image .uk-button-secondary:active,
 .home-product-category .uk-button-secondary:active,
 .header .uk-button-secondary:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary:active,
@@ -13472,6 +13574,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-secondary:active,
 .uk-light .uk-button-secondary.uk-active,
 .image-header .uk-button-secondary.uk-active,
+.section-bg__image .uk-button-secondary.uk-active,
 .home-product-category .uk-button-secondary.uk-active,
 .header .uk-button-secondary.uk-active,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-secondary.uk-active,
@@ -13491,6 +13594,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-text,
 .image-header .uk-button-text,
+.section-bg__image .uk-button-text,
 .home-product-category .uk-button-text,
 .header .uk-button-text,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-text,
@@ -13509,6 +13613,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-text:hover,
 .image-header .uk-button-text:hover,
+.section-bg__image .uk-button-text:hover,
 .home-product-category .uk-button-text:hover,
 .header .uk-button-text:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-text:hover,
@@ -13524,6 +13629,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-text:hover,
 .uk-light .uk-button-text:focus,
 .image-header .uk-button-text:focus,
+.section-bg__image .uk-button-text:focus,
 .home-product-category .uk-button-text:focus,
 .header .uk-button-text:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-text:focus,
@@ -13542,6 +13648,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-text:disabled,
 .image-header .uk-button-text:disabled,
+.section-bg__image .uk-button-text:disabled,
 .home-product-category .uk-button-text:disabled,
 .header .uk-button-text:disabled,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-text:disabled,
@@ -13560,6 +13667,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-link,
 .image-header .uk-button-link,
+.section-bg__image .uk-button-link,
 .home-product-category .uk-button-link,
 .header .uk-button-link,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-link,
@@ -13578,6 +13686,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-button-link:hover,
 .image-header .uk-button-link:hover,
+.section-bg__image .uk-button-link:hover,
 .home-product-category .uk-button-link:hover,
 .header .uk-button-link:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-link:hover,
@@ -13593,6 +13702,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-button-link:hover,
 .uk-light .uk-button-link:focus,
 .image-header .uk-button-link:focus,
+.section-bg__image .uk-button-link:focus,
 .home-product-category .uk-button-link:focus,
 .header .uk-button-link:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-button-link:focus,
@@ -13611,6 +13721,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-grid-divider > :not(.uk-first-column)::before,
 .image-header .uk-grid-divider > :not(.uk-first-column)::before,
+.section-bg__image .uk-grid-divider > :not(.uk-first-column)::before,
 .home-product-category .uk-grid-divider > :not(.uk-first-column)::before,
 .header .uk-grid-divider > :not(.uk-first-column)::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-grid-divider > :not(.uk-first-column)::before,
@@ -13629,6 +13740,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
 .image-header .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
+.section-bg__image .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
 .home-product-category .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
 .header .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-grid-divider.uk-grid-stack > .uk-grid-margin::before,
@@ -13647,6 +13759,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-close,
 .image-header .uk-close,
+.section-bg__image .uk-close,
 .home-product-category .uk-close,
 .header .uk-close,
 .uk-section-primary:not(.uk-preserve-color) .uk-close,
@@ -13665,6 +13778,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-close:hover,
 .image-header .uk-close:hover,
+.section-bg__image .uk-close:hover,
 .home-product-category .uk-close:hover,
 .header .uk-close:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-close:hover,
@@ -13680,6 +13794,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-close:hover,
 .uk-light .uk-close:focus,
 .image-header .uk-close:focus,
+.section-bg__image .uk-close:focus,
 .home-product-category .uk-close:focus,
 .header .uk-close:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-close:focus,
@@ -13698,6 +13813,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-totop,
 .image-header .uk-totop,
+.section-bg__image .uk-totop,
 .home-product-category .uk-totop,
 .header .uk-totop,
 .uk-section-primary:not(.uk-preserve-color) .uk-totop,
@@ -13716,6 +13832,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-totop:hover,
 .image-header .uk-totop:hover,
+.section-bg__image .uk-totop:hover,
 .home-product-category .uk-totop:hover,
 .header .uk-totop:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-totop:hover,
@@ -13731,6 +13848,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-totop:hover,
 .uk-light .uk-totop:focus,
 .image-header .uk-totop:focus,
+.section-bg__image .uk-totop:focus,
 .home-product-category .uk-totop:focus,
 .header .uk-totop:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-totop:focus,
@@ -13749,6 +13867,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-totop:active,
 .image-header .uk-totop:active,
+.section-bg__image .uk-totop:active,
 .home-product-category .uk-totop:active,
 .header .uk-totop:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-totop:active,
@@ -13767,6 +13886,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-badge,
 .image-header .uk-badge,
+.section-bg__image .uk-badge,
 .home-product-category .uk-badge,
 .header .uk-badge,
 .uk-section-primary:not(.uk-preserve-color) .uk-badge,
@@ -13786,6 +13906,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-badge:hover,
 .image-header .uk-badge:hover,
+.section-bg__image .uk-badge:hover,
 .home-product-category .uk-badge:hover,
 .header .uk-badge:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-badge:hover,
@@ -13801,6 +13922,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-badge:hover,
 .uk-light .uk-badge:focus,
 .image-header .uk-badge:focus,
+.section-bg__image .uk-badge:focus,
 .home-product-category .uk-badge:focus,
 .header .uk-badge:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-badge:focus,
@@ -13819,6 +13941,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-label,
 .image-header .uk-label,
+.section-bg__image .uk-label,
 .home-product-category .uk-label,
 .header .uk-label,
 .uk-section-primary:not(.uk-preserve-color) .uk-label,
@@ -13838,6 +13961,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-article-meta,
 .image-header .uk-article-meta,
+.section-bg__image .uk-article-meta,
 .home-product-category .uk-article-meta,
 .header .uk-article-meta,
 .uk-section-primary:not(.uk-preserve-color) .uk-article-meta,
@@ -13856,6 +13980,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-input,
 .image-header .uk-search-input,
+.section-bg__image .uk-search-input,
 .home-product-category .uk-search-input,
 .header .uk-search-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-input,
@@ -13874,6 +13999,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-input:-ms-input-placeholder,
 .image-header .uk-search-input:-ms-input-placeholder,
+.section-bg__image .uk-search-input:-ms-input-placeholder,
 .home-product-category .uk-search-input:-ms-input-placeholder,
 .header .uk-search-input:-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-input:-ms-input-placeholder,
@@ -13892,6 +14018,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-input::-webkit-input-placeholder,
 .image-header .uk-search-input::-webkit-input-placeholder,
+.section-bg__image .uk-search-input::-webkit-input-placeholder,
 .home-product-category .uk-search-input::-webkit-input-placeholder,
 .header .uk-search-input::-webkit-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-input::-webkit-input-placeholder,
@@ -13910,6 +14037,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-input::-ms-input-placeholder,
 .image-header .uk-search-input::-ms-input-placeholder,
+.section-bg__image .uk-search-input::-ms-input-placeholder,
 .home-product-category .uk-search-input::-ms-input-placeholder,
 .header .uk-search-input::-ms-input-placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-input::-ms-input-placeholder,
@@ -13928,6 +14056,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-input::placeholder,
 .image-header .uk-search-input::placeholder,
+.section-bg__image .uk-search-input::placeholder,
 .home-product-category .uk-search-input::placeholder,
 .header .uk-search-input::placeholder,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-input::placeholder,
@@ -13946,6 +14075,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search .uk-search-icon,
 .image-header .uk-search .uk-search-icon,
+.section-bg__image .uk-search .uk-search-icon,
 .home-product-category .uk-search .uk-search-icon,
 .header .uk-search .uk-search-icon,
 .uk-section-primary:not(.uk-preserve-color) .uk-search .uk-search-icon,
@@ -13964,6 +14094,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search .uk-search-icon:hover,
 .image-header .uk-search .uk-search-icon:hover,
+.section-bg__image .uk-search .uk-search-icon:hover,
 .home-product-category .uk-search .uk-search-icon:hover,
 .header .uk-search .uk-search-icon:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-search .uk-search-icon:hover,
@@ -13982,6 +14113,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-default .uk-search-input,
 .image-header .uk-search-default .uk-search-input,
+.section-bg__image .uk-search-default .uk-search-input,
 .home-product-category .uk-search-default .uk-search-input,
 .header .uk-search-default .uk-search-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-default .uk-search-input,
@@ -14000,6 +14132,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-default .uk-search-input:focus,
 .image-header .uk-search-default .uk-search-input:focus,
+.section-bg__image .uk-search-default .uk-search-input:focus,
 .home-product-category .uk-search-default .uk-search-input:focus,
 .header .uk-search-default .uk-search-input:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-default .uk-search-input:focus,
@@ -14018,6 +14151,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-navbar .uk-search-input,
 .image-header .uk-search-navbar .uk-search-input,
+.section-bg__image .uk-search-navbar .uk-search-input,
 .home-product-category .uk-search-navbar .uk-search-input,
 .header .uk-search-navbar .uk-search-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-navbar .uk-search-input,
@@ -14036,6 +14170,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-large .uk-search-input,
 .image-header .uk-search-large .uk-search-input,
+.section-bg__image .uk-search-large .uk-search-input,
 .home-product-category .uk-search-large .uk-search-input,
 .header .uk-search-large .uk-search-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-large .uk-search-input,
@@ -14054,6 +14189,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-toggle,
 .image-header .uk-search-toggle,
+.section-bg__image .uk-search-toggle,
 .home-product-category .uk-search-toggle,
 .header .uk-search-toggle,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-toggle,
@@ -14072,6 +14208,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-search-toggle:hover,
 .image-header .uk-search-toggle:hover,
+.section-bg__image .uk-search-toggle:hover,
 .home-product-category .uk-search-toggle:hover,
 .header .uk-search-toggle:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-toggle:hover,
@@ -14087,6 +14224,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-search-toggle:hover,
 .uk-light .uk-search-toggle:focus,
 .image-header .uk-search-toggle:focus,
+.section-bg__image .uk-search-toggle:focus,
 .home-product-category .uk-search-toggle:focus,
 .header .uk-search-toggle:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-toggle:focus,
@@ -14105,6 +14243,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-parent-icon > .uk-parent > a::after,
 .image-header .uk-nav-parent-icon > .uk-parent > a::after,
+.section-bg__image .uk-nav-parent-icon > .uk-parent > a::after,
 .home-product-category .uk-nav-parent-icon > .uk-parent > a::after,
 .header .uk-nav-parent-icon > .uk-parent > a::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-parent-icon > .uk-parent > a::after,
@@ -14123,6 +14262,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
 .image-header .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
+.section-bg__image .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
 .home-product-category .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
 .header .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-parent-icon > .uk-parent.uk-open > a::after,
@@ -14141,6 +14281,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default > li > a,
 .image-header .uk-nav-default > li > a,
+.section-bg__image .uk-nav-default > li > a,
 .home-product-category .uk-nav-default > li > a,
 .header .uk-nav-default > li > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a,
@@ -14159,6 +14300,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default > li > a:hover,
 .image-header .uk-nav-default > li > a:hover,
+.section-bg__image .uk-nav-default > li > a:hover,
 .home-product-category .uk-nav-default > li > a:hover,
 .header .uk-nav-default > li > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a:hover,
@@ -14174,6 +14316,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-nav-default > li > a:hover,
 .uk-light .uk-nav-default > li > a:focus,
 .image-header .uk-nav-default > li > a:focus,
+.section-bg__image .uk-nav-default > li > a:focus,
 .home-product-category .uk-nav-default > li > a:focus,
 .header .uk-nav-default > li > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a:focus,
@@ -14192,6 +14335,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default > li.uk-active > a,
 .image-header .uk-nav-default > li.uk-active > a,
+.section-bg__image .uk-nav-default > li.uk-active > a,
 .home-product-category .uk-nav-default > li.uk-active > a,
 .header .uk-nav-default > li.uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a,
@@ -14210,6 +14354,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default .uk-nav-header,
 .image-header .uk-nav-default .uk-nav-header,
+.section-bg__image .uk-nav-default .uk-nav-header,
 .home-product-category .uk-nav-default .uk-nav-header,
 .header .uk-nav-default .uk-nav-header,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header,
@@ -14228,6 +14373,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default .uk-nav-divider,
 .image-header .uk-nav-default .uk-nav-divider,
+.section-bg__image .uk-nav-default .uk-nav-divider,
 .home-product-category .uk-nav-default .uk-nav-divider,
 .header .uk-nav-default .uk-nav-divider,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider,
@@ -14246,6 +14392,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default .uk-nav-sub a,
 .image-header .uk-nav-default .uk-nav-sub a,
+.section-bg__image .uk-nav-default .uk-nav-sub a,
 .home-product-category .uk-nav-default .uk-nav-sub a,
 .header .uk-nav-default .uk-nav-sub a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a,
@@ -14264,6 +14411,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default .uk-nav-sub a:hover,
 .image-header .uk-nav-default .uk-nav-sub a:hover,
+.section-bg__image .uk-nav-default .uk-nav-sub a:hover,
 .home-product-category .uk-nav-default .uk-nav-sub a:hover,
 .header .uk-nav-default .uk-nav-sub a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a:hover,
@@ -14279,6 +14427,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a:hover,
 .uk-light .uk-nav-default .uk-nav-sub a:focus,
 .image-header .uk-nav-default .uk-nav-sub a:focus,
+.section-bg__image .uk-nav-default .uk-nav-sub a:focus,
 .home-product-category .uk-nav-default .uk-nav-sub a:focus,
 .header .uk-nav-default .uk-nav-sub a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a:focus,
@@ -14297,6 +14446,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-default .uk-nav-sub li.uk-active > a,
 .image-header .uk-nav-default .uk-nav-sub li.uk-active > a,
+.section-bg__image .uk-nav-default .uk-nav-sub li.uk-active > a,
 .home-product-category .uk-nav-default .uk-nav-sub li.uk-active > a,
 .header .uk-nav-default .uk-nav-sub li.uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub li.uk-active > a,
@@ -14315,6 +14465,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary > li > a,
 .image-header .uk-nav-primary > li > a,
+.section-bg__image .uk-nav-primary > li > a,
 .home-product-category .uk-nav-primary > li > a,
 .header .uk-nav-primary > li > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li > a,
@@ -14333,6 +14484,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary > li > a:hover,
 .image-header .uk-nav-primary > li > a:hover,
+.section-bg__image .uk-nav-primary > li > a:hover,
 .home-product-category .uk-nav-primary > li > a:hover,
 .header .uk-nav-primary > li > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li > a:hover,
@@ -14348,6 +14500,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-nav-primary > li > a:hover,
 .uk-light .uk-nav-primary > li > a:focus,
 .image-header .uk-nav-primary > li > a:focus,
+.section-bg__image .uk-nav-primary > li > a:focus,
 .home-product-category .uk-nav-primary > li > a:focus,
 .header .uk-nav-primary > li > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li > a:focus,
@@ -14366,6 +14519,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary > li.uk-active > a,
 .image-header .uk-nav-primary > li.uk-active > a,
+.section-bg__image .uk-nav-primary > li.uk-active > a,
 .home-product-category .uk-nav-primary > li.uk-active > a,
 .header .uk-nav-primary > li.uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary > li.uk-active > a,
@@ -14384,6 +14538,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary .uk-nav-header,
 .image-header .uk-nav-primary .uk-nav-header,
+.section-bg__image .uk-nav-primary .uk-nav-header,
 .home-product-category .uk-nav-primary .uk-nav-header,
 .header .uk-nav-primary .uk-nav-header,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-header,
@@ -14402,6 +14557,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary .uk-nav-divider,
 .image-header .uk-nav-primary .uk-nav-divider,
+.section-bg__image .uk-nav-primary .uk-nav-divider,
 .home-product-category .uk-nav-primary .uk-nav-divider,
 .header .uk-nav-primary .uk-nav-divider,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-divider,
@@ -14420,6 +14576,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary .uk-nav-sub a,
 .image-header .uk-nav-primary .uk-nav-sub a,
+.section-bg__image .uk-nav-primary .uk-nav-sub a,
 .home-product-category .uk-nav-primary .uk-nav-sub a,
 .header .uk-nav-primary .uk-nav-sub a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub a,
@@ -14438,6 +14595,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary .uk-nav-sub a:hover,
 .image-header .uk-nav-primary .uk-nav-sub a:hover,
+.section-bg__image .uk-nav-primary .uk-nav-sub a:hover,
 .home-product-category .uk-nav-primary .uk-nav-sub a:hover,
 .header .uk-nav-primary .uk-nav-sub a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub a:hover,
@@ -14453,6 +14611,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-nav-primary .uk-nav-sub a:hover,
 .uk-light .uk-nav-primary .uk-nav-sub a:focus,
 .image-header .uk-nav-primary .uk-nav-sub a:focus,
+.section-bg__image .uk-nav-primary .uk-nav-sub a:focus,
 .home-product-category .uk-nav-primary .uk-nav-sub a:focus,
 .header .uk-nav-primary .uk-nav-sub a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub a:focus,
@@ -14471,6 +14630,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-nav-primary .uk-nav-sub li.uk-active > a,
 .image-header .uk-nav-primary .uk-nav-sub li.uk-active > a,
+.section-bg__image .uk-nav-primary .uk-nav-sub li.uk-active > a,
 .home-product-category .uk-nav-primary .uk-nav-sub li.uk-active > a,
 .header .uk-nav-primary .uk-nav-sub li.uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-nav-primary .uk-nav-sub li.uk-active > a,
@@ -14489,9 +14649,11 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-nav > li > a,
 .image-header .uk-navbar-nav > li > a,
+.section-bg__image .uk-navbar-nav > li > a,
 .home-product-category .uk-navbar-nav > li > a,
 .uk-light .navigation__nav__list > li > a,
 .image-header .navigation__nav__list > li > a,
+.section-bg__image .navigation__nav__list > li > a,
 .home-product-category .navigation__nav__list > li > a,
 .header .uk-navbar-nav > li > a,
 .header .navigation__nav__list > li > a,
@@ -14522,9 +14684,11 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-nav > li:hover > a,
 .image-header .uk-navbar-nav > li:hover > a,
+.section-bg__image .uk-navbar-nav > li:hover > a,
 .home-product-category .uk-navbar-nav > li:hover > a,
 .uk-light .navigation__nav__list > li:hover > a,
 .image-header .navigation__nav__list > li:hover > a,
+.section-bg__image .navigation__nav__list > li:hover > a,
 .home-product-category .navigation__nav__list > li:hover > a,
 .header .uk-navbar-nav > li:hover > a,
 .header .navigation__nav__list > li:hover > a,
@@ -14552,9 +14716,11 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .navigation__nav__list > li:hover > a,
 .uk-light .uk-navbar-nav > li > a:focus,
 .image-header .uk-navbar-nav > li > a:focus,
+.section-bg__image .uk-navbar-nav > li > a:focus,
 .home-product-category .uk-navbar-nav > li > a:focus,
 .uk-light .navigation__nav__list > li > a:focus,
 .image-header .navigation__nav__list > li > a:focus,
+.section-bg__image .navigation__nav__list > li > a:focus,
 .home-product-category .navigation__nav__list > li > a:focus,
 .header .uk-navbar-nav > li > a:focus,
 .header .navigation__nav__list > li > a:focus,
@@ -14582,9 +14748,11 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .navigation__nav__list > li > a:focus,
 .uk-light .uk-navbar-nav > li > a.uk-open,
 .image-header .uk-navbar-nav > li > a.uk-open,
+.section-bg__image .uk-navbar-nav > li > a.uk-open,
 .home-product-category .uk-navbar-nav > li > a.uk-open,
 .uk-light .navigation__nav__list > li > a.uk-open,
 .image-header .navigation__nav__list > li > a.uk-open,
+.section-bg__image .navigation__nav__list > li > a.uk-open,
 .home-product-category .navigation__nav__list > li > a.uk-open,
 .header .uk-navbar-nav > li > a.uk-open,
 .header .navigation__nav__list > li > a.uk-open,
@@ -14615,9 +14783,11 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-nav > li > a:active,
 .image-header .uk-navbar-nav > li > a:active,
+.section-bg__image .uk-navbar-nav > li > a:active,
 .home-product-category .uk-navbar-nav > li > a:active,
 .uk-light .navigation__nav__list > li > a:active,
 .image-header .navigation__nav__list > li > a:active,
+.section-bg__image .navigation__nav__list > li > a:active,
 .home-product-category .navigation__nav__list > li > a:active,
 .header .uk-navbar-nav > li > a:active,
 .header .navigation__nav__list > li > a:active,
@@ -14648,9 +14818,11 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-nav > li.uk-active > a,
 .image-header .uk-navbar-nav > li.uk-active > a,
+.section-bg__image .uk-navbar-nav > li.uk-active > a,
 .home-product-category .uk-navbar-nav > li.uk-active > a,
 .uk-light .navigation__nav__list > li.uk-active > a,
 .image-header .navigation__nav__list > li.uk-active > a,
+.section-bg__image .navigation__nav__list > li.uk-active > a,
 .home-product-category .navigation__nav__list > li.uk-active > a,
 .header .uk-navbar-nav > li.uk-active > a,
 .header .navigation__nav__list > li.uk-active > a,
@@ -14681,6 +14853,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-item,
 .image-header .uk-navbar-item,
+.section-bg__image .uk-navbar-item,
 .home-product-category .uk-navbar-item,
 .header .uk-navbar-item,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-item,
@@ -14699,6 +14872,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-toggle,
 .image-header .uk-navbar-toggle,
+.section-bg__image .uk-navbar-toggle,
 .home-product-category .uk-navbar-toggle,
 .header .uk-navbar-toggle,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle,
@@ -14717,6 +14891,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-navbar-toggle:hover,
 .image-header .uk-navbar-toggle:hover,
+.section-bg__image .uk-navbar-toggle:hover,
 .home-product-category .uk-navbar-toggle:hover,
 .header .uk-navbar-toggle:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle:hover,
@@ -14732,6 +14907,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-navbar-toggle:hover,
 .uk-light .uk-navbar-toggle:focus,
 .image-header .uk-navbar-toggle:focus,
+.section-bg__image .uk-navbar-toggle:focus,
 .home-product-category .uk-navbar-toggle:focus,
 .header .uk-navbar-toggle:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle:focus,
@@ -14747,6 +14923,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-navbar-toggle:focus,
 .uk-light .uk-navbar-toggle.uk-open,
 .image-header .uk-navbar-toggle.uk-open,
+.section-bg__image .uk-navbar-toggle.uk-open,
 .home-product-category .uk-navbar-toggle.uk-open,
 .header .uk-navbar-toggle.uk-open,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle.uk-open,
@@ -14765,6 +14942,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav > * > :first-child,
 .image-header .uk-subnav > * > :first-child,
+.section-bg__image .uk-subnav > * > :first-child,
 .home-product-category .uk-subnav > * > :first-child,
 .header .uk-subnav > * > :first-child,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > * > :first-child,
@@ -14783,6 +14961,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav > * > a:hover,
 .image-header .uk-subnav > * > a:hover,
+.section-bg__image .uk-subnav > * > a:hover,
 .home-product-category .uk-subnav > * > a:hover,
 .header .uk-subnav > * > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > * > a:hover,
@@ -14798,6 +14977,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-subnav > * > a:hover,
 .uk-light .uk-subnav > * > a:focus,
 .image-header .uk-subnav > * > a:focus,
+.section-bg__image .uk-subnav > * > a:focus,
 .home-product-category .uk-subnav > * > a:focus,
 .header .uk-subnav > * > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > * > a:focus,
@@ -14816,6 +14996,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav > .uk-active > a,
 .image-header .uk-subnav > .uk-active > a,
+.section-bg__image .uk-subnav > .uk-active > a,
 .home-product-category .uk-subnav > .uk-active > a,
 .header .uk-subnav > .uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > .uk-active > a,
@@ -14834,6 +15015,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
 .image-header .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
+.section-bg__image .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
 .home-product-category .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
 .header .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before,
@@ -14852,6 +15034,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav-pill > * > :first-child,
 .image-header .uk-subnav-pill > * > :first-child,
+.section-bg__image .uk-subnav-pill > * > :first-child,
 .home-product-category .uk-subnav-pill > * > :first-child,
 .header .uk-subnav-pill > * > :first-child,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > * > :first-child,
@@ -14871,6 +15054,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav-pill > * > a:hover,
 .image-header .uk-subnav-pill > * > a:hover,
+.section-bg__image .uk-subnav-pill > * > a:hover,
 .home-product-category .uk-subnav-pill > * > a:hover,
 .header .uk-subnav-pill > * > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > * > a:hover,
@@ -14886,6 +15070,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-subnav-pill > * > a:hover,
 .uk-light .uk-subnav-pill > * > a:focus,
 .image-header .uk-subnav-pill > * > a:focus,
+.section-bg__image .uk-subnav-pill > * > a:focus,
 .home-product-category .uk-subnav-pill > * > a:focus,
 .header .uk-subnav-pill > * > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > * > a:focus,
@@ -14905,6 +15090,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav-pill > * > a:active,
 .image-header .uk-subnav-pill > * > a:active,
+.section-bg__image .uk-subnav-pill > * > a:active,
 .home-product-category .uk-subnav-pill > * > a:active,
 .header .uk-subnav-pill > * > a:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > * > a:active,
@@ -14924,6 +15110,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav-pill > .uk-active > a,
 .image-header .uk-subnav-pill > .uk-active > a,
+.section-bg__image .uk-subnav-pill > .uk-active > a,
 .home-product-category .uk-subnav-pill > .uk-active > a,
 .header .uk-subnav-pill > .uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav-pill > .uk-active > a,
@@ -14943,10 +15130,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-subnav > .uk-disabled > a,
 .image-header .uk-subnav > .uk-disabled > a,
+.section-bg__image .uk-subnav > .uk-disabled > a,
 .home-product-category .uk-subnav > .uk-disabled > a,
 .header .uk-subnav > .uk-disabled > a,
 .uk-light .uk-subnav > .breadcrumb-wrapper__breadcrumb--active > a,
 .image-header .uk-subnav > .breadcrumb-wrapper__breadcrumb--active > a,
+.section-bg__image .uk-subnav > .breadcrumb-wrapper__breadcrumb--active > a,
 .home-product-category .uk-subnav > .breadcrumb-wrapper__breadcrumb--active > a,
 .header .uk-subnav > .breadcrumb-wrapper__breadcrumb--active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a,
@@ -14976,10 +15165,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-breadcrumb > * > *,
 .image-header .uk-breadcrumb > * > *,
+.section-bg__image .uk-breadcrumb > * > *,
 .home-product-category .uk-breadcrumb > * > *,
 .header .uk-breadcrumb > * > *,
 .uk-light .breadcrumb-wrapper__breadcrumb > * > *,
 .image-header .breadcrumb-wrapper__breadcrumb > * > *,
+.section-bg__image .breadcrumb-wrapper__breadcrumb > * > *,
 .home-product-category .breadcrumb-wrapper__breadcrumb > * > *,
 .header .breadcrumb-wrapper__breadcrumb > * > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > * > *,
@@ -15009,10 +15200,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-breadcrumb > * > :hover,
 .image-header .uk-breadcrumb > * > :hover,
+.section-bg__image .uk-breadcrumb > * > :hover,
 .home-product-category .uk-breadcrumb > * > :hover,
 .header .uk-breadcrumb > * > :hover,
 .uk-light .breadcrumb-wrapper__breadcrumb > * > :hover,
 .image-header .breadcrumb-wrapper__breadcrumb > * > :hover,
+.section-bg__image .breadcrumb-wrapper__breadcrumb > * > :hover,
 .home-product-category .breadcrumb-wrapper__breadcrumb > * > :hover,
 .header .breadcrumb-wrapper__breadcrumb > * > :hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :hover,
@@ -15039,10 +15232,12 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .breadcrumb-wrapper__breadcrumb > * > :hover,
 .uk-light .uk-breadcrumb > * > :focus,
 .image-header .uk-breadcrumb > * > :focus,
+.section-bg__image .uk-breadcrumb > * > :focus,
 .home-product-category .uk-breadcrumb > * > :focus,
 .header .uk-breadcrumb > * > :focus,
 .uk-light .breadcrumb-wrapper__breadcrumb > * > :focus,
 .image-header .breadcrumb-wrapper__breadcrumb > * > :focus,
+.section-bg__image .breadcrumb-wrapper__breadcrumb > * > :focus,
 .home-product-category .breadcrumb-wrapper__breadcrumb > * > :focus,
 .header .breadcrumb-wrapper__breadcrumb > * > :focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :focus,
@@ -15072,10 +15267,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-breadcrumb > :last-child > *,
 .image-header .uk-breadcrumb > :last-child > *,
+.section-bg__image .uk-breadcrumb > :last-child > *,
 .home-product-category .uk-breadcrumb > :last-child > *,
 .header .uk-breadcrumb > :last-child > *,
 .uk-light .breadcrumb-wrapper__breadcrumb > :last-child > *,
 .image-header .breadcrumb-wrapper__breadcrumb > :last-child > *,
+.section-bg__image .breadcrumb-wrapper__breadcrumb > :last-child > *,
 .home-product-category .breadcrumb-wrapper__breadcrumb > :last-child > *,
 .header .breadcrumb-wrapper__breadcrumb > :last-child > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > :last-child > *,
@@ -15105,10 +15302,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .image-header .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
+.section-bg__image .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .home-product-category .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .header .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .uk-light .breadcrumb-wrapper__breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .image-header .breadcrumb-wrapper__breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
+.section-bg__image .breadcrumb-wrapper__breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .home-product-category .breadcrumb-wrapper__breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .header .breadcrumb-wrapper__breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before,
@@ -15138,6 +15337,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-pagination > * > *,
 .image-header .uk-pagination > * > *,
+.section-bg__image .uk-pagination > * > *,
 .home-product-category .uk-pagination > * > *,
 .header .uk-pagination > * > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-pagination > * > *,
@@ -15156,6 +15356,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-pagination > * > :hover,
 .image-header .uk-pagination > * > :hover,
+.section-bg__image .uk-pagination > * > :hover,
 .home-product-category .uk-pagination > * > :hover,
 .header .uk-pagination > * > :hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-pagination > * > :hover,
@@ -15171,6 +15372,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-pagination > * > :hover,
 .uk-light .uk-pagination > * > :focus,
 .image-header .uk-pagination > * > :focus,
+.section-bg__image .uk-pagination > * > :focus,
 .home-product-category .uk-pagination > * > :focus,
 .header .uk-pagination > * > :focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-pagination > * > :focus,
@@ -15189,6 +15391,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-pagination > .uk-active > *,
 .image-header .uk-pagination > .uk-active > *,
+.section-bg__image .uk-pagination > .uk-active > *,
 .home-product-category .uk-pagination > .uk-active > *,
 .header .uk-pagination > .uk-active > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-pagination > .uk-active > *,
@@ -15207,10 +15410,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-pagination > .uk-disabled > *,
 .image-header .uk-pagination > .uk-disabled > *,
+.section-bg__image .uk-pagination > .uk-disabled > *,
 .home-product-category .uk-pagination > .uk-disabled > *,
 .header .uk-pagination > .uk-disabled > *,
 .uk-light .uk-pagination > .breadcrumb-wrapper__breadcrumb--active > *,
 .image-header .uk-pagination > .breadcrumb-wrapper__breadcrumb--active > *,
+.section-bg__image .uk-pagination > .breadcrumb-wrapper__breadcrumb--active > *,
 .home-product-category .uk-pagination > .breadcrumb-wrapper__breadcrumb--active > *,
 .header .uk-pagination > .breadcrumb-wrapper__breadcrumb--active > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-pagination > .uk-disabled > *,
@@ -15240,6 +15445,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-tab > * > a,
 .image-header .uk-tab > * > a,
+.section-bg__image .uk-tab > * > a,
 .home-product-category .uk-tab > * > a,
 .header .uk-tab > * > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-tab > * > a,
@@ -15258,6 +15464,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-tab > * > a:hover,
 .image-header .uk-tab > * > a:hover,
+.section-bg__image .uk-tab > * > a:hover,
 .home-product-category .uk-tab > * > a:hover,
 .header .uk-tab > * > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-tab > * > a:hover,
@@ -15273,6 +15480,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-tab > * > a:hover,
 .uk-light .uk-tab > * > a:focus,
 .image-header .uk-tab > * > a:focus,
+.section-bg__image .uk-tab > * > a:focus,
 .home-product-category .uk-tab > * > a:focus,
 .header .uk-tab > * > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-tab > * > a:focus,
@@ -15291,6 +15499,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-tab > .uk-active > a,
 .image-header .uk-tab > .uk-active > a,
+.section-bg__image .uk-tab > .uk-active > a,
 .home-product-category .uk-tab > .uk-active > a,
 .header .uk-tab > .uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-tab > .uk-active > a,
@@ -15309,10 +15518,12 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-tab > .uk-disabled > a,
 .image-header .uk-tab > .uk-disabled > a,
+.section-bg__image .uk-tab > .uk-disabled > a,
 .home-product-category .uk-tab > .uk-disabled > a,
 .header .uk-tab > .uk-disabled > a,
 .uk-light .uk-tab > .breadcrumb-wrapper__breadcrumb--active > a,
 .image-header .uk-tab > .breadcrumb-wrapper__breadcrumb--active > a,
+.section-bg__image .uk-tab > .breadcrumb-wrapper__breadcrumb--active > a,
 .home-product-category .uk-tab > .breadcrumb-wrapper__breadcrumb--active > a,
 .header .uk-tab > .breadcrumb-wrapper__breadcrumb--active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-tab > .uk-disabled > a,
@@ -15342,6 +15553,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-slidenav,
 .image-header .uk-slidenav,
+.section-bg__image .uk-slidenav,
 .home-product-category .uk-slidenav,
 .header .uk-slidenav,
 .uk-section-primary:not(.uk-preserve-color) .uk-slidenav,
@@ -15360,6 +15572,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-slidenav:hover,
 .image-header .uk-slidenav:hover,
+.section-bg__image .uk-slidenav:hover,
 .home-product-category .uk-slidenav:hover,
 .header .uk-slidenav:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:hover,
@@ -15375,6 +15588,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-slidenav:hover,
 .uk-light .uk-slidenav:focus,
 .image-header .uk-slidenav:focus,
+.section-bg__image .uk-slidenav:focus,
 .home-product-category .uk-slidenav:focus,
 .header .uk-slidenav:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:focus,
@@ -15393,6 +15607,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-slidenav:active,
 .image-header .uk-slidenav:active,
+.section-bg__image .uk-slidenav:active,
 .home-product-category .uk-slidenav:active,
 .header .uk-slidenav:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:active,
@@ -15411,6 +15626,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-dotnav > * > *,
 .image-header .uk-dotnav > * > *,
+.section-bg__image .uk-dotnav > * > *,
 .home-product-category .uk-dotnav > * > *,
 .header .uk-dotnav > * > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > *,
@@ -15429,6 +15645,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-dotnav > * > :hover,
 .image-header .uk-dotnav > * > :hover,
+.section-bg__image .uk-dotnav > * > :hover,
 .home-product-category .uk-dotnav > * > :hover,
 .header .uk-dotnav > * > :hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :hover,
@@ -15444,6 +15661,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-dotnav > * > :hover,
 .uk-light .uk-dotnav > * > :focus,
 .image-header .uk-dotnav > * > :focus,
+.section-bg__image .uk-dotnav > * > :focus,
 .home-product-category .uk-dotnav > * > :focus,
 .header .uk-dotnav > * > :focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :focus,
@@ -15462,6 +15680,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-dotnav > * > :active,
 .image-header .uk-dotnav > * > :active,
+.section-bg__image .uk-dotnav > * > :active,
 .home-product-category .uk-dotnav > * > :active,
 .header .uk-dotnav > * > :active,
 .uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :active,
@@ -15480,6 +15699,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-dotnav > .uk-active > *,
 .image-header .uk-dotnav > .uk-active > *,
+.section-bg__image .uk-dotnav > .uk-active > *,
 .home-product-category .uk-dotnav > .uk-active > *,
 .header .uk-dotnav > .uk-active > *,
 .uk-section-primary:not(.uk-preserve-color) .uk-dotnav > .uk-active > *,
@@ -15498,6 +15718,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-accordion-title,
 .image-header .uk-accordion-title,
+.section-bg__image .uk-accordion-title,
 .home-product-category .uk-accordion-title,
 .header .uk-accordion-title,
 .uk-section-primary:not(.uk-preserve-color) .uk-accordion-title,
@@ -15516,6 +15737,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-accordion-title:hover,
 .image-header .uk-accordion-title:hover,
+.section-bg__image .uk-accordion-title:hover,
 .home-product-category .uk-accordion-title:hover,
 .header .uk-accordion-title:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-accordion-title:hover,
@@ -15531,6 +15753,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-accordion-title:hover,
 .uk-light .uk-accordion-title:focus,
 .image-header .uk-accordion-title:focus,
+.section-bg__image .uk-accordion-title:focus,
 .home-product-category .uk-accordion-title:focus,
 .header .uk-accordion-title:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-accordion-title:focus,
@@ -15549,6 +15772,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-iconnav > * > a,
 .image-header .uk-iconnav > * > a,
+.section-bg__image .uk-iconnav > * > a,
 .home-product-category .uk-iconnav > * > a,
 .header .uk-iconnav > * > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a,
@@ -15567,6 +15791,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-iconnav > * > a:hover,
 .image-header .uk-iconnav > * > a:hover,
+.section-bg__image .uk-iconnav > * > a:hover,
 .home-product-category .uk-iconnav > * > a:hover,
 .header .uk-iconnav > * > a:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
@@ -15582,6 +15807,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-iconnav > * > a:hover,
 .uk-light .uk-iconnav > * > a:focus,
 .image-header .uk-iconnav > * > a:focus,
+.section-bg__image .uk-iconnav > * > a:focus,
 .home-product-category .uk-iconnav > * > a:focus,
 .header .uk-iconnav > * > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a:focus,
@@ -15600,6 +15826,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-iconnav > .uk-active > a,
 .image-header .uk-iconnav > .uk-active > a,
+.section-bg__image .uk-iconnav > .uk-active > a,
 .home-product-category .uk-iconnav > .uk-active > a,
 .header .uk-iconnav > .uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
@@ -15626,6 +15853,11 @@ section[class^=section]:not(:last-child) {
 .second-row .second-row-step .image-header .step-title,
 .image-header .first-row .step-first-row .step-title,
 .first-row .step-first-row .image-header .step-title,
+.section-bg__image .uk-text-lead,
+.section-bg__image .second-row .second-row-step .step-title,
+.second-row .second-row-step .section-bg__image .step-title,
+.section-bg__image .first-row .step-first-row .step-title,
+.first-row .step-first-row .section-bg__image .step-title,
 .home-product-category .uk-text-lead,
 .home-product-category .second-row .second-row-step .step-title,
 .second-row .second-row-step .home-product-category .step-title,
@@ -15696,6 +15928,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-text-meta,
 .image-header .uk-text-meta,
+.section-bg__image .uk-text-meta,
 .home-product-category .uk-text-meta,
 .header .uk-text-meta,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-meta,
@@ -15714,6 +15947,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-text-muted,
 .image-header .uk-text-muted,
+.section-bg__image .uk-text-muted,
 .home-product-category .uk-text-muted,
 .header .uk-text-muted,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-muted,
@@ -15732,6 +15966,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-text-emphasis,
 .image-header .uk-text-emphasis,
+.section-bg__image .uk-text-emphasis,
 .home-product-category .uk-text-emphasis,
 .header .uk-text-emphasis,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-emphasis,
@@ -15750,6 +15985,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-text-primary,
 .image-header .uk-text-primary,
+.section-bg__image .uk-text-primary,
 .home-product-category .uk-text-primary,
 .header .uk-text-primary,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-primary,
@@ -15768,6 +16004,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-column-divider,
 .image-header .uk-column-divider,
+.section-bg__image .uk-column-divider,
 .home-product-category .uk-column-divider,
 .header .uk-column-divider,
 .uk-section-primary:not(.uk-preserve-color) .uk-column-divider,
@@ -15787,6 +16024,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-logo,
 .image-header .uk-logo,
+.section-bg__image .uk-logo,
 .home-product-category .uk-logo,
 .header .uk-logo,
 .uk-section-primary:not(.uk-preserve-color) .uk-logo,
@@ -15805,6 +16043,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-logo:hover,
 .image-header .uk-logo:hover,
+.section-bg__image .uk-logo:hover,
 .home-product-category .uk-logo:hover,
 .header .uk-logo:hover,
 .uk-section-primary:not(.uk-preserve-color) .uk-logo:hover,
@@ -15820,6 +16059,7 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar .uk-logo:hover,
 .uk-light .uk-logo:focus,
 .image-header .uk-logo:focus,
+.section-bg__image .uk-logo:focus,
 .home-product-category .uk-logo:focus,
 .header .uk-logo:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-logo:focus,
@@ -15838,6 +16078,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
 .image-header .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
+.section-bg__image .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
 .home-product-category .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
 .header .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
 .uk-section-primary:not(.uk-preserve-color) .uk-logo > :not(.uk-logo-inverse):not(:only-of-type),
@@ -15856,6 +16097,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-light .uk-logo-inverse,
 .image-header .uk-logo-inverse,
+.section-bg__image .uk-logo-inverse,
 .home-product-category .uk-logo-inverse,
 .header .uk-logo-inverse,
 .uk-section-primary:not(.uk-preserve-color) .uk-logo-inverse,
@@ -16128,6 +16370,10 @@ a:hover {
 
 .section-bg {
   background-color: #fff;
+}
+
+.section-bg__image {
+  height: 65vh;
 }
 
 .footer {

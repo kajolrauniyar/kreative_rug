@@ -31,4 +31,8 @@ section[class^="section"] {
 .section-bg{
     @extend .uk-container,  .uk-padding;
     background-color: $color-white;    
+    &__image{
+        @extend .uk-height-medium, .uk-flex ,.uk-flex-center ,.uk-flex-middle, .uk-background-cover, .uk-light;
+        height: 65vh;
+    }
 }

@@ -56,9 +56,9 @@
     </section>
 
     <section class="section-bg">
-            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="{{asset('img/nature.jpg')}}"
+            <div class="section-bg__image" data-src="{{asset('img/nature.jpg')}}"
             uk-img>
-            <p class="uk-text-lead">{{$home->section3_content}}</p>
+            <p class="uk-h4">{{$home->section3_content}}</p>
         </div>
     </section>
     <section class="section-form">
