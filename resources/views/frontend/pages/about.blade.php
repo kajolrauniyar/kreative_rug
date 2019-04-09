@@ -68,16 +68,7 @@
             <div id="team-member-{{$loop->iteration}}" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                     <button class="uk-modal-close-outside" type="button" uk-close></button>
-                    <div class="uk-grid">
-                        <div class="uk-width-1-3">
-                            <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
-                            <p class="uk-margin-remove-top uk-text-lead">{{$team->name}}</p>
-                            <p class="uk-margin-remove-top">{{$team->designation}}</p>
-                        </div>
-                        <div class="uk-width-2-3">
-                            <p class="uk-margin-remove-top">{!!$team->description!!}</p>
-                        </div>
-                    </div>
+                    <p class="uk-margin-remove-top">{!!$team->description!!}</p>
                 </div>
             </div>
             @endforeach
