@@ -184,7 +184,8 @@
           Strike Off
         </div>
         <div class="step-content">
-          Upon approva, a carefully selected sample of selected portion of the rug will be woven and sen to you to ensure the color is right. (Not mandatory, however advised, as rug color may be slightly vary from the digital rendition).
+          Upon approva, a carefully selected sample of selected portion of the rug will be woven and sen to you to ensure the color
+          is right. (Not mandatory, however advised, as rug color may be slightly vary from the digital rendition).
         </div>
       </div>
       <div class="second-row-step">
@@ -202,7 +203,8 @@
           Update
         </div>
         <div class="step-content">
-          Interested in getting updates ? Let us know, and we would be more than happy to send your pictures of your rug as it undergoes different stages of production.
+          Interested in getting updates ? Let us know, and we would be more than happy to send your pictures of your rug as it undergoes
+          different stages of production.
         </div>
       </div>
       <div class="second-row-step">
@@ -216,7 +218,15 @@
       </div>
     </div>
 
+    <div class="section-title">
+      <h2 class="heading-secondary">{!!$page->content{0}->sectionTitle!!}</h2>
+      <span class="divide-line"></span>
+    </div>
+    <div class="section-content">
+      <div class="section-content__centered">
+        {!!$page->content{0}->sectionContent!!}
+      </div>
+    </div>
   </div>
-
 </section>
 @endsection
