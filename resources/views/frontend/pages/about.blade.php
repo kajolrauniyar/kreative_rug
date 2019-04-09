@@ -58,8 +58,8 @@
                         <h3 class="uk-card-title uk-margin-remove-bottom">{{$team->name}}</h3>
                         <p class="designation uk-margin-remove-top">{{$team->designation}}</p>
                         <p class="description uk-margin-remove-top">
-                            {{ substr($team->description, 0, 300)}} 
-                            @if (strlen($team->description) > 300) 
+                            {!! substr($team->description, 0, 100) !!} 
+                            @if (strlen($team->description) > 100) 
                             <a href="#" uk-toggle="target: #team-member-{{$loop->iteration}}" >Read more</a>
                             @endif
                         </p>
@@ -69,7 +69,7 @@
             <!-- This is the modal with the outside close button -->
             <div id="team-member-{{$loop->iteration}}" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
-                    <button class="uk-team-member-{{$loop->iteration}}" type="button" uk-close></button>
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
                     <h2 class="uk-modal-title">Outside</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
