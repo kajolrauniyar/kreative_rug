@@ -1,5 +1,5 @@
 .section-intro, .section-featured, .section-carousel, .section-form{
-    @extend .uk-container,  .uk-padding-large;
+    @extend .uk-container,  .uk-padding;
     background-color: $color-white;    
 }
 section[class^="section"] {
@@ -27,4 +27,8 @@ section[class^="section"] {
         @extend .uk-overlay-primary, .uk-position-cover;
         background-color: rgba(34, 34, 34, 0.2);
     }
+}
+.section-bg{
+    @extend .uk-container,  .uk-padding;
+    background-color: $color-white;    
 }

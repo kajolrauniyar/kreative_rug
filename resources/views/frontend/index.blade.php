@@ -55,10 +55,12 @@
         </div>
     </section>
 
-    <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url({{asset('img/nature.jpg')}});">
-        <p class="uk-h4">{{$home->section3_content}}</p>
-    </div>
-
+    <section class="section-bg">
+            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="{{asset('img/nature.jpg')}}"
+            uk-img>
+            <p class="uk-text-lead">{{$home->section3_content}}</p>
+        </div>
+    </section>
     <section class="section-form">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section4_title}}</h2>
@@ -136,6 +138,8 @@
 });
 
 </script>
+
+
 
 
 

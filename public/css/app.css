@@ -2664,6 +2664,7 @@ select.uk-form-width-xsmall {
 
 .uk-container,
 .content-wrapper,
+.section-bg,
 .section-intro,
 .section-featured,
 .section-carousel,
@@ -2684,6 +2685,7 @@ select.uk-form-width-xsmall {
 @media (min-width: 640px) {
   .uk-container,
   .content-wrapper,
+  .section-bg,
   .section-intro,
   .section-featured,
   .section-carousel,
@@ -2700,6 +2702,7 @@ select.uk-form-width-xsmall {
 @media (min-width: 960px) {
   .uk-container,
   .content-wrapper,
+  .section-bg,
   .section-intro,
   .section-featured,
   .section-carousel,
@@ -2717,6 +2720,7 @@ select.uk-form-width-xsmall {
 
 .uk-container::before,
 .content-wrapper::before,
+.section-bg::before,
 .section-intro::before,
 .section-featured::before,
 .section-carousel::before,
@@ -2725,6 +2729,7 @@ select.uk-form-width-xsmall {
 .logo-wrapper__logo-box::before,
 .uk-container::after,
 .content-wrapper::after,
+.section-bg::after,
 .section-intro::after,
 .section-featured::after,
 .section-carousel::after,
@@ -2737,6 +2742,7 @@ select.uk-form-width-xsmall {
 
 .uk-container::after,
 .content-wrapper::after,
+.section-bg::after,
 .section-intro::after,
 .section-featured::after,
 .section-carousel::after,
@@ -2752,6 +2758,7 @@ select.uk-form-width-xsmall {
 
 .uk-container > :last-child,
 .content-wrapper > :last-child,
+.section-bg > :last-child,
 .section-intro > :last-child,
 .section-featured > :last-child,
 .section-carousel > :last-child,
@@ -2769,46 +2776,61 @@ select.uk-form-width-xsmall {
 .content-wrapper .uk-container,
 .uk-container .content-wrapper,
 .content-wrapper .content-wrapper,
+.section-bg .uk-container,
+.section-bg .content-wrapper,
+.uk-container .section-bg,
+.content-wrapper .section-bg,
+.section-bg .section-bg,
 .section-intro .uk-container,
 .section-intro .content-wrapper,
+.section-intro .section-bg,
 .section-featured .uk-container,
 .section-featured .content-wrapper,
+.section-featured .section-bg,
 .section-carousel .uk-container,
 .section-carousel .content-wrapper,
+.section-carousel .section-bg,
 .section-form .uk-container,
 .section-form .content-wrapper,
+.section-form .section-bg,
 .uk-container .section-intro,
 .content-wrapper .section-intro,
+.section-bg .section-intro,
 .section-intro .section-intro,
 .section-featured .section-intro,
 .section-carousel .section-intro,
 .section-form .section-intro,
 .uk-container .section-featured,
 .content-wrapper .section-featured,
+.section-bg .section-featured,
 .section-intro .section-featured,
 .section-featured .section-featured,
 .section-carousel .section-featured,
 .section-form .section-featured,
 .uk-container .section-carousel,
 .content-wrapper .section-carousel,
+.section-bg .section-carousel,
 .section-intro .section-carousel,
 .section-featured .section-carousel,
 .section-carousel .section-carousel,
 .section-form .section-carousel,
 .uk-container .section-form,
 .content-wrapper .section-form,
+.section-bg .section-form,
 .section-intro .section-form,
 .section-featured .section-form,
 .section-carousel .section-form,
 .section-form .section-form,
 .mega-menu .uk-container,
 .mega-menu .content-wrapper,
+.mega-menu .section-bg,
 .mega-menu .section-intro,
 .mega-menu .section-featured,
 .mega-menu .section-carousel,
 .mega-menu .section-form,
 .uk-container .mega-menu,
 .content-wrapper .mega-menu,
+.section-bg .mega-menu,
 .section-intro .mega-menu,
 .section-featured .mega-menu,
 .section-carousel .mega-menu,
@@ -2816,6 +2838,7 @@ select.uk-form-width-xsmall {
 .mega-menu .mega-menu,
 .logo-wrapper__logo-box .uk-container,
 .logo-wrapper__logo-box .content-wrapper,
+.logo-wrapper__logo-box .section-bg,
 .logo-wrapper__logo-box .section-intro,
 .logo-wrapper__logo-box .section-featured,
 .logo-wrapper__logo-box .section-carousel,
@@ -2823,6 +2846,7 @@ select.uk-form-width-xsmall {
 .logo-wrapper__logo-box .mega-menu,
 .uk-container .logo-wrapper__logo-box,
 .content-wrapper .logo-wrapper__logo-box,
+.section-bg .logo-wrapper__logo-box,
 .section-intro .logo-wrapper__logo-box,
 .section-featured .logo-wrapper__logo-box,
 .section-carousel .logo-wrapper__logo-box,
@@ -11117,6 +11141,11 @@ section[class^=section]:last-child {
  ========================================================================== */
 
 .uk-padding,
+.section-bg,
+.section-intro,
+.section-featured,
+.section-carousel,
+.section-form,
 .mega-menu-content__list__item--img,
 .mega-menu {
   padding: 30px;
@@ -11126,6 +11155,11 @@ section[class^=section]:last-child {
 
 @media (min-width: 1200px) {
   .uk-padding,
+  .section-bg,
+  .section-intro,
+  .section-featured,
+  .section-carousel,
+  .section-form,
   .mega-menu-content__list__item--img,
   .mega-menu {
     padding: 40px;
@@ -11144,10 +11178,6 @@ section[class^=section]:last-child {
  ========================================================================== */
 
 .uk-padding-large,
-.section-intro,
-.section-featured,
-.section-carousel,
-.section-form,
 .image-page-header .image-wrapper .image-header-text {
   padding: 30px;
 }
@@ -11156,10 +11186,6 @@ section[class^=section]:last-child {
 
 @media (min-width: 1200px) {
   .uk-padding-large,
-  .section-intro,
-  .section-featured,
-  .section-carousel,
-  .section-form,
   .image-page-header .image-wrapper .image-header-text {
     padding: 70px;
   }
@@ -16098,6 +16124,10 @@ a:hover {
 
 .home-product-category__overlay {
   background-color: rgba(34, 34, 34, 0.2);
+}
+
+.section-bg {
+  background-color: #fff;
 }
 
 .footer {
