@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="row">
-                        <h4>Featured Product Section</h4>
+                        <h4>Section 4</h4>
                         <div class="col-sm-12">
                             <div class="form-group floating-label {{$errors->has('section3_title') ? 'has-error' : ''}}">
                                 <input type="text" class="form-control" id="section3_title {{$errors->has('section3_title') ? 'inputError' : ''}}" name="section3_title"
@@ -99,7 +99,7 @@
                     </div>          
                     
                     <div class="row">
-                        <h4>Featured Product Section</h4>
+                        <h4>Form Section</h4>
                         <div class="col-sm-12">
                             <div class="form-group floating-label {{$errors->has('section4_title') ? 'has-error' : ''}}">
                                 <input type="text" class="form-control" id="section4_title {{$errors->has('section4_title') ? 'inputError' : ''}}" name="section4_title"
