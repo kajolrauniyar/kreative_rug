@@ -32,7 +32,10 @@ section[class^="section"] {
     @extend .uk-container,  .uk-padding;
     background-color: $color-white;    
     &__image{
-        @extend .uk-height-medium, .uk-flex ,.uk-flex-center ,.uk-flex-middle, .uk-background-cover, .uk-light;
+        @extend .uk-height-medium, .uk-flex ,.uk-flex-center ,.uk-flex-middle, .uk-background-cover, .uk-light, .uk-background-bottom-center, .uk-text-center;
         height: 65vh;
+        p{
+            @extend .uk-padding;
+        }
     }
 }
