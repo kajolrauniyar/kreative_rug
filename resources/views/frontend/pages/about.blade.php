@@ -50,7 +50,7 @@
         <div uk-grid>
             @foreach ($items as $team)
             <div class="uk-width-1-3@m uk-width-1-1@s">
-                <div class="uk-card uk-card-default "  uk-tooltip="{{$team->description}}">
+                <div class="uk-card uk-card-default " uk-tooltip="title: {{$team->description}}; pos: right">
                     <div class="uk-card-media-top">
                         <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
                     </div>
