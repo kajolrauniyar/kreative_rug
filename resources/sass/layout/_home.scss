@@ -1,41 +1,95 @@
-.section-intro, .section-featured, .section-carousel, .section-form{
-    @extend .uk-container,  .uk-padding;
-    background-color: $color-white;    
+.section-intro,
+.section-featured,
+.section-carousel,
+.section-form {
+    @extend .uk-container, .uk-padding;
+    background-color: $color-white;
 }
 section[class^="section"] {
-    &:last-child{
+    &:last-child {
         @extend .uk-margin-large-bottom;
     }
-    &:not(:last-child){
+    &:not(:last-child) {
         @extend .uk-padding-remove-bottom;
     }
-  }
-.section-title{
+}
+.section-title {
     @extend .uk-text-center, .uk-text-uppercase;
     position: relative;
 }
 
-.section-content{
+.section-content {
     @extend .uk-margin-medium-bottom;
-    &__centered{
-        @extend .uk-text-center;        
+    &__centered {
+        @extend .uk-text-center;
     }
 }
-.home-product-category{
-    @extend  .uk-light;
-    &__overlay{
+.home-product-category {
+    @extend .uk-light;
+    &__overlay {
         @extend .uk-overlay-primary, .uk-position-cover;
         background-color: rgba(34, 34, 34, 0.2);
     }
 }
-.section-bg{
-    @extend .uk-container,  .uk-padding;
-    background-color: $color-white;    
-    &__image{
-        @extend .uk-height-medium, .uk-flex ,.uk-flex-center ,.uk-flex-middle, .uk-background-cover, .uk-light, .uk-background-bottom-center, .uk-text-center;
+.section-bg {
+    @extend .uk-container, .uk-padding;
+    background-color: $color-white;
+    &__image {
+        @extend .uk-height-medium,
+            .uk-flex,
+            .uk-flex-center,
+            .uk-flex-middle,
+            .uk-background-cover,
+            .uk-light,
+            .uk-background-bottom-center,
+            .uk-text-center;
         height: 65vh;
-        p{
+        p {
             @extend .uk-padding;
         }
     }
 }
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%; /* 2:1 */
+}
+
+.content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-bottom: 0;
+    }
+    .content {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+    }
+}
+
+

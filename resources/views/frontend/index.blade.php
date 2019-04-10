@@ -56,11 +56,13 @@
     </section>
 
     <section class="section-bg">
-            <div class="section-bg__image" data-src="{{asset('img/nature.jpg')}}"
-            uk-img>
-            <p class="uk-h4">{{$home->section3_content}}</p>
+        <div class="container" style=" background-image: url({{asset('img/nature.jpg')}});">
+            <div class="content">
+                <p class="uk-h4">{{$home->section3_content}}</p>
+            </div>
         </div>
     </section>
+
     <section class="section-form">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section4_title}}</h2>

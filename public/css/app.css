@@ -16380,6 +16380,43 @@ a:hover {
   height: 65vh;
 }
 
+.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%;
+  /* 2:1 */
+}
+
+.content {
+  display: -moz-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-bottom: 0;
+  }
+
+  .content {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+  }
+}
+
 .footer {
   background-color: #1a1a1a;
 }
