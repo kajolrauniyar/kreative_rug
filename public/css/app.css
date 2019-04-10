@@ -287,6 +287,7 @@ h3,
 .uk-h3,
 h4,
 .uk-h4,
+.content p,
 h5,
 .uk-h5,
 h6,
@@ -308,6 +309,7 @@ h6,
 * + .uk-h3,
 * + h4,
 * + .uk-h4,
+.content * + p,
 * + h5,
 * + .uk-h5,
 * + h6,
@@ -338,7 +340,8 @@ h3,
 }
 
 h4,
-.uk-h4 {
+.uk-h4,
+.content p {
   font-size: 1.25rem;
   line-height: 1.4;
 }
@@ -9213,6 +9216,7 @@ ul.uk-nav-sub {
 .first-row .step-first-row .step-content,
 .first-row .step-first-row .step-title,
 .footer__social,
+.content p,
 .section-bg__image,
 .section-content__centered,
 .section-title {
@@ -11087,7 +11091,8 @@ section[class^=section]:last-child {
 /* Remove
  ========================================================================== */
 
-.uk-margin-remove {
+.uk-margin-remove,
+.content p {
   margin: 0 !important;
 }
 
@@ -12169,20 +12174,52 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h4,
 .uk-light .uk-h4,
 .image-header .uk-h4,
+.uk-light .content p,
+.image-header .content p,
+.content .uk-light p,
+.content .image-header p,
 .section-bg__image .uk-h4,
+.section-bg__image .content p,
+.content .section-bg__image p,
 .home-product-category .uk-h4,
+.home-product-category .content p,
+.content .home-product-category p,
 .header .uk-h4,
+.header .content p,
+.content .header p,
 .uk-section-primary:not(.uk-preserve-color) .uk-h4,
+.uk-section-primary:not(.uk-preserve-color) .content p,
+.content .uk-section-primary:not(.uk-preserve-color) p,
 .uk-section-secondary:not(.uk-preserve-color) .uk-h4,
+.uk-section-secondary:not(.uk-preserve-color) .content p,
+.content .uk-section-secondary:not(.uk-preserve-color) p,
 .uk-tile-primary:not(.uk-preserve-color) .uk-h4,
+.uk-tile-primary:not(.uk-preserve-color) .content p,
+.content .uk-tile-primary:not(.uk-preserve-color) p,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-h4,
+.uk-tile-secondary:not(.uk-preserve-color) .content p,
+.content .uk-tile-secondary:not(.uk-preserve-color) p,
 .uk-card-primary.uk-card-body .uk-h4,
+.uk-card-primary.uk-card-body .content p,
+.content .uk-card-primary.uk-card-body p,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-h4,
+.uk-card-primary > :not([class*=uk-card-media]) .content p,
+.content .uk-card-primary > :not([class*=uk-card-media]) p,
 .uk-card-secondary.uk-card-body .uk-h4,
+.uk-card-secondary.uk-card-body .content p,
+.content .uk-card-secondary.uk-card-body p,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-h4,
+.uk-card-secondary > :not([class*=uk-card-media]) .content p,
+.content .uk-card-secondary > :not([class*=uk-card-media]) p,
 .uk-overlay-primary .uk-h4,
+.uk-overlay-primary .content p,
+.content .uk-overlay-primary p,
 .home-product-category__overlay .uk-h4,
+.home-product-category__overlay .content p,
+.content .home-product-category__overlay p,
 .uk-offcanvas-bar .uk-h4,
+.uk-offcanvas-bar .content p,
+.content .uk-offcanvas-bar p,
 .uk-light h5,
 .image-header h5,
 .section-bg__image h5,
@@ -16190,6 +16227,7 @@ h6,
 .uk-h2,
 .uk-h3,
 .uk-h4,
+.content p,
 .uk-h5,
 .uk-h6 {
   font-family: "Helvetica Neue", sans-serif !important;
@@ -16400,6 +16438,10 @@ a:hover {
   bottom: 0;
   left: 30px;
   right: 30px;
+}
+
+.content p {
+  color: #fff;
 }
 
 @media only screen and (max-width: 480px) {

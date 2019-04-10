@@ -58,7 +58,7 @@
     <section class="section-bg">
         <div class="container" style=" background-image: url({{asset('img/nature.jpg')}});">
             <div class="content">
-                <p class="uk-h4">{{$home->section3_content}}</p>
+                <p>{{$home->section3_content}}</p>
             </div>
         </div>
     </section>
