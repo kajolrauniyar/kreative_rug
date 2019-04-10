@@ -287,6 +287,7 @@ h3,
 .uk-h3,
 h4,
 .uk-h4,
+.content-wrapper .content,
 h5,
 .uk-h5,
 h6,
@@ -308,6 +309,7 @@ h6,
 * + .uk-h3,
 * + h4,
 * + .uk-h4,
+.content-wrapper * + .content,
 * + h5,
 * + .uk-h5,
 * + h6,
@@ -338,7 +340,8 @@ h3,
 }
 
 h4,
-.uk-h4 {
+.uk-h4,
+.content-wrapper .content {
   font-size: 1.25rem;
   line-height: 1.4;
 }
@@ -9213,6 +9216,7 @@ ul.uk-nav-sub {
 .first-row .step-first-row .step-content,
 .first-row .step-first-row .step-title,
 .footer__social,
+.content-wrapper .content,
 .section-bg__image,
 .section-content__centered,
 .section-title {
@@ -12169,20 +12173,52 @@ section[class^=section]:not(:last-child) {
 .uk-offcanvas-bar h4,
 .uk-light .uk-h4,
 .image-header .uk-h4,
+.uk-light .content-wrapper .content,
+.image-header .content-wrapper .content,
+.content-wrapper .uk-light .content,
+.content-wrapper .image-header .content,
 .section-bg__image .uk-h4,
+.section-bg__image .content-wrapper .content,
+.content-wrapper .section-bg__image .content,
 .home-product-category .uk-h4,
+.home-product-category .content-wrapper .content,
+.content-wrapper .home-product-category .content,
 .header .uk-h4,
+.header .content-wrapper .content,
+.content-wrapper .header .content,
 .uk-section-primary:not(.uk-preserve-color) .uk-h4,
+.uk-section-primary:not(.uk-preserve-color) .content-wrapper .content,
+.content-wrapper .uk-section-primary:not(.uk-preserve-color) .content,
 .uk-section-secondary:not(.uk-preserve-color) .uk-h4,
+.uk-section-secondary:not(.uk-preserve-color) .content-wrapper .content,
+.content-wrapper .uk-section-secondary:not(.uk-preserve-color) .content,
 .uk-tile-primary:not(.uk-preserve-color) .uk-h4,
+.uk-tile-primary:not(.uk-preserve-color) .content-wrapper .content,
+.content-wrapper .uk-tile-primary:not(.uk-preserve-color) .content,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-h4,
+.uk-tile-secondary:not(.uk-preserve-color) .content-wrapper .content,
+.content-wrapper .uk-tile-secondary:not(.uk-preserve-color) .content,
 .uk-card-primary.uk-card-body .uk-h4,
+.uk-card-primary.uk-card-body .content-wrapper .content,
+.content-wrapper .uk-card-primary.uk-card-body .content,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-h4,
+.uk-card-primary > :not([class*=uk-card-media]) .content-wrapper .content,
+.content-wrapper .uk-card-primary > :not([class*=uk-card-media]) .content,
 .uk-card-secondary.uk-card-body .uk-h4,
+.uk-card-secondary.uk-card-body .content-wrapper .content,
+.content-wrapper .uk-card-secondary.uk-card-body .content,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-h4,
+.uk-card-secondary > :not([class*=uk-card-media]) .content-wrapper .content,
+.content-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .content,
 .uk-overlay-primary .uk-h4,
+.uk-overlay-primary .content-wrapper .content,
+.content-wrapper .uk-overlay-primary .content,
 .home-product-category__overlay .uk-h4,
+.home-product-category__overlay .content-wrapper .content,
+.content-wrapper .home-product-category__overlay .content,
 .uk-offcanvas-bar .uk-h4,
+.uk-offcanvas-bar .content-wrapper .content,
+.content-wrapper .uk-offcanvas-bar .content,
 .uk-light h5,
 .image-header h5,
 .section-bg__image h5,
@@ -16190,6 +16226,7 @@ h6,
 .uk-h2,
 .uk-h3,
 .uk-h4,
+.content-wrapper .content,
 .uk-h5,
 .uk-h6 {
   font-family: "Helvetica Neue", sans-serif !important;
@@ -16390,7 +16427,7 @@ a:hover {
   /* 2:1 */
 }
 
-.content {
+.content-wrapper {
   display: -moz-flex;
   display: flex;
   flex-direction: column;
@@ -16402,7 +16439,7 @@ a:hover {
   right: 30px;
 }
 
-.content p {
+.content-wrapper .content {
   color: #fff !important;
 }
 
@@ -16411,7 +16448,7 @@ a:hover {
     padding-bottom: 0;
   }
 
-  .content {
+  .content-wrapper {
     position: relative;
     top: 0;
     bottom: 0;

@@ -58,7 +58,7 @@ section[class^="section"] {
     padding-bottom: 40%; /* 2:1 */
 }
 
-.content {
+.content-wrapper {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -76,7 +76,8 @@ section[class^="section"] {
     bottom: 0;
     left: 30px;
     right: 30px;
-    p{
+    .content{
+        @extend .uk-h4 ,.uk-text-center;
         color: $color-white !important;
     }
 }
@@ -85,7 +86,7 @@ section[class^="section"] {
     .container {
         padding-bottom: 0;
     }
-    .content {
+    .content-wrapper {
         position: relative;
         top: 0;
         bottom: 0;
