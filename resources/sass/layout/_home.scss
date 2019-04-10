@@ -77,8 +77,7 @@ section[class^="section"] {
     left: 30px;
     right: 30px;
     p{
-        @extend .uk-margin-remove, .uk-text-center, .uk-h4;
-        color: $color-white;
+        color: $color-white !important;
     }
 }
 
