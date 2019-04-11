@@ -56,6 +56,7 @@ Route::prefix('manage')->middleware('role:superadministrator|administrator|user'
 Route::name('frontend.')->group(function () {
     Route::get('/', 'FrontendController@getIndex')->name('index');
     Route::get('/get-inspired', 'FrontendController@getInspired')->name('inspire');
+    Route::get('/order-process', 'FrontendController@orderProcess')->name('order');
     Route::get('/rug-making-process', 'FrontendController@getDesign')->name('design');
     Route::get('/contact', 'FrontendController@getContact')->name('contact');
     Route::get('/about', 'FrontendController@getAbout')->name('about');
