@@ -1,3 +1,4 @@
+@section('title') | Contact Us @endsection
 @extends('layouts.frontend') 
 @section('content')
 <div class="image-header" data-src="https://source.unsplash.com/weekly?contact"
