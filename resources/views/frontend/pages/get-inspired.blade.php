@@ -1,3 +1,4 @@
+@section('title') | Get Inspired @endsection
 @extends('layouts.frontend') 
 @section('content')
 <section class="image-page-header">

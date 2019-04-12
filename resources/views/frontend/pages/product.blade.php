@@ -1,3 +1,4 @@
+@section('title') | {!!$product->name!!} @endsection
 @extends('layouts.frontend') 
 @section('content')
 <section class="uk-section uk-section-muted">

@@ -1,3 +1,4 @@
+@section('title') | {!!$category->name!!} @endsection
 @extends('layouts.frontend') 
 @section('content')
 <section class="image-page-header">
