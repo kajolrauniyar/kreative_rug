@@ -26,6 +26,7 @@ Route::prefix('admin/dashboard')->group(function() {
 });
 Route::prefix('manage')->middleware('role:superadministrator|administrator|user')->group(function () {
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+    Route::resource('user','UserController',['only' => ['create','edit','show','update']]);
 
     Route::resource('product','ProductController');
     Route::get('product/{id}/publish','ProductController@publish')->name('product.publish');

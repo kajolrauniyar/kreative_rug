@@ -26,7 +26,7 @@
                         {{-- @if($reviews->count() > 0)<sup class="badge style-danger">{{$reviews->count()}}</sup> @endif --}}
                     </a>
                     <ul class="dropdown-menu animation-expand">
-{{--                         @foreach($reviews as $review)
+                        {{-- @foreach($reviews as $review)
                         <li>
                             <a class="alert alert-callout alert-info" href="javascript:void(0);">
                                 <img class="pull-right img-circle dropdown-avatar"
@@ -39,23 +39,34 @@
                         <li class="dropdown-header">Options</li>
                         <li><a href="#">View all reviews <span class="pull-right"><i
                             class="fa fa-arrow-right"></i></span></a></li>
-                        </ul><!--end .dropdown-menu -->
-                    </li><!--end .dropdown -->
-                </ul><!--end .header-nav-options -->
-                <ul class="header-nav header-nav-profile">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+                    </ul>
+                    <!--end .dropdown-menu -->
+                </li>
+                <!--end .dropdown -->
+            </ul>
+            <!--end .header-nav-options -->
+            <ul class="header-nav header-nav-profile">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
                             <img src="{{ asset('assets/backend/img/avatar1.jpg') }}" alt=""/>
                             <span class="profile-info">
                                {{auth()->user()->name}}
                            </span>
                        </a>
-                       <ul class="dropdown-menu animation-dock">
+                    <ul class="dropdown-menu animation-dock">
+                        <li>
+                            <a href="{{route('user.show',auth()->user()->id )}}"><i class="fa fa-fw fa-user"></i>
+                                My Profile</a>
+                            </li>
                         <li><a href="{{route('logout')}}"><i class="fa fa-fw fa-power-off text-danger"></i>
                         Logout</a></li>
-                    </ul><!--end .dropdown-menu -->
-                </li><!--end .dropdown -->
-            </ul><!--end .header-nav-profile -->
-        </div><!--end #header-navbar-collapse -->
+                    </ul>
+                    <!--end .dropdown-menu -->
+                </li>
+                <!--end .dropdown -->
+            </ul>
+            <!--end .header-nav-profile -->
+        </div>
+        <!--end #header-navbar-collapse -->
     </div>
 </header>
