@@ -39,23 +39,9 @@
                 {{$home->section2_content}}
             </div>
         </div>
-        <div class="uk-grid-medium uk-child-width-1-4 uk-text-center uk-grid-match" uk-grid>
-            @foreach ($categories as $category)
-            <div>
-                <div class="uk-inline home-product-category">
-                    <img src="{{$category->thumb}}" alt="{{$category->slug}}">
-                    <div class="product-category__overlay">
-                        <div class="uk-position-center">
-                            <h3><a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
                 @foreach ($categories as $category)
                 <li>
                     <img src="{{$category->thumb}}" alt="{{$category->slug}}">
