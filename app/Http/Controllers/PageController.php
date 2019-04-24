@@ -163,28 +163,45 @@ class PageController extends Controller
 
             $page->save();
 
+            // for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
+            //     $content = Content::find($request->sectionTitle[$i]);
+            //     if(!empty($content)){
+            //         $content->page_id = $page->id;
+            //         $content->sectionTitle = $request->sectionTitle[$i];
+            //         $content->sectionContent = $request->sectionTitle[$i];
+            //         $content->save();
+            //     }
+            //     else{
+            //         $content = new Content;
+            //         $content->page_id = $page->id;
+            //         $content->sectionTitle = $request->sectionTitle[$i];
+            //         $content->sectionContent = $request->sectionTitle[$i];
+            //         $content->save();
+            //     }
+            //     // Content::firstOrCreate([
+            //     //     'page_id' => $page->id,
+            //     //     'sectionTitle' => $request->sectionTitle[$i],
+            //     //     'sectionContent' => $request->sectionContent[$i]
+            //     // ]);
+            // }
+            $contents = Content::where('page_id', $page->id)->get();            
             for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
-                $content = Content::find($request->sectionTitle[$i]);
-                if(!empty($content)){
-                    $content->page_id = $page->id;
-                    $content->sectionTitle = $request->sectionTitle[$i];
-                    $content->sectionContent = $request->sectionTitle[$i];
-                    $content->save();
+                foreach ($contents as $db) {
+                    if($db->id == $request->contentID[$i]){
+                        $content = Content::find($request->contentID[$i]);
+                        $content->sectionTitle = $request->sectionTitle[$i];
+                        $content->sectionContent = $request->sectionContent[$i];
+                        $content->save();
+                    }
+                    else{
+                        $new = new Content;
+                        $new->page_id = $page->id;
+                        $new->sectionTitle = $request->sectionTitle[$i];
+                        $new->sectionContent = $request->sectionContent[$i];
+                        $new->save();
+                    }
                 }
-                else{
-                    $content = new Content;
-                    $content->page_id = $page->id;
-                    $content->sectionTitle = $request->sectionTitle[$i];
-                    $content->sectionContent = $request->sectionTitle[$i];
-                    $content->save();
-                }
-                // Content::firstOrCreate([
-                //     'page_id' => $page->id,
-                //     'sectionTitle' => $request->sectionTitle[$i],
-                //     'sectionContent' => $request->sectionContent[$i]
-                // ]);
             }
-
 
             Session::flash('success', 'Page updated sucessfully !');
             return redirect()->route('page.show', $page->id);
