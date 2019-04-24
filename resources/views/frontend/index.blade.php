@@ -61,7 +61,7 @@
     <section class="section-bg">
         <div class="uk-inline uk-margin">
             <img src="{{asset('img/h-highquality.jpg')}}" alt="">
-            <div class="uk-position-large uk-position-center-right uk-overlay">
+            <div class="uk-position-large uk-position-center-right uk-overlay overlay__right">
                 <h3 class="heading-secondary">{{$home->section3_title}}</h3>
                 <p>{{$home->section3_content}}</p>
             </div>
@@ -81,8 +81,8 @@
         </div>
         <div class="uk-inline uk-margin">
             <img src="{{asset('img/beinspired-2nd.jpg')}}" alt="">
-            <div class="uk-position-large uk-position-center-left uk-overlay">
-                <h2 class="heading-secondary">{{$home->section3_title}}</h2>
+            <div class="uk-position-large uk-position-center-left uk-overlay overlay__left">
+                <h3 class="heading-secondary">{{$home->section3_title}}</h3>
                 <p>{{$home->section3_content}}</p>
             </div>
         </div>
