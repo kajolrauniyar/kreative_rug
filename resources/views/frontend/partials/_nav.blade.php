@@ -16,8 +16,8 @@
             <li class="navigation__nav__list__item "><a href="/" class="navigation__nav__list__item__link ">Home</a></li>
             <li class="navigation__nav__list__item ">
                 <a href="{{ route('frontend.inspire') }}" class="navigation__nav__list__item__link ">Get Inspired</a>
-                <div class="mega-menu" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;offset: 5;animation: uk-animation-slide-top-small ; duration: 100">
-                    <div class="uk-position-relative uk-visible-toggle uk-dark uk-padding-small" tabindex="-1" uk-slider>
+                <div class="mega-menu uk-padding-small" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;offset: 5;animation: uk-animation-slide-top-small ; duration: 100">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
                         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
                             @foreach ($categories as $category)
