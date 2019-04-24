@@ -29,20 +29,20 @@
     }
 }
 .mega-menu-content {
-    &__list {
-        &__item {
-            &--content {
-                &__link {
-                    font-size: 1rem !important;
-                    &:hover{
-                        text-decoration: none;
-                        font-size: 1.125rem;
-                    }
-                }
-            }
-            &--img{
-                @extend .uk-padding, .uk-padding-remove-vertical;
-            }
-        }
-    }
+    // &__list {
+    //     &__item {
+    //         &--content {
+    //             &__link {
+    //                 font-size: 1rem !important;
+    //                 &:hover{
+    //                     text-decoration: none;
+    //                     font-size: 1.125rem;
+    //                 }
+    //             }
+    //         }
+    //         &--img{
+    //             @extend .uk-padding, .uk-padding-remove-vertical;
+    //         }
+    //     }
+    // }
 }

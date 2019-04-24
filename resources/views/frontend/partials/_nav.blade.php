@@ -17,8 +17,28 @@
             <li class="navigation__nav__list__item ">
                 <a href="{{ route('frontend.inspire') }}" class="navigation__nav__list__item__link ">Get Inspired</a>
                 <div class="mega-menu" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;offset: 5;animation: uk-animation-slide-top-small ; duration: 100">
-                    <div uk-grid>
-                        <div class="uk-width-small">
+                    <div class="uk-position-relative uk-visible-toggle uk-dark uk-padding-small" tabindex="-1" uk-slider>
+
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
+                            @foreach ($categories as $category)
+                            <li>
+                                <div class="uk-panel">
+                                    <a href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a>
+                                    <a href="{{ route('frontend.category', $category->slug) }}">
+                                        <img src="{{ asset($category->nav) }}"  alt="{{$category->name}}">
+                                    </a>
+                                </div>
+                            </li>
+                            @endforeach
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+                    
+                    {{-- <div uk-grid> --}}
+                        {{-- <div class="uk-width-small">
                             <ul class="mega-menu__list" uk-tab="connect: #component-nav; animation: uk-animation-fade">
                                 @foreach ($categories as $category)
                                 <li class="mega-menu__list__item"><a class="mega-menu__list__item__link">{{$category->name}}</a></li>
@@ -43,8 +63,8 @@
                                 @endforeach
                             </ul>
 
-                        </div>
-                    </div>
+                        </div> --}}
+                    {{-- </div> --}}
                 </div>
             </li>
             <li class="navigation__nav__list__item "><a href="{{route('frontend.order')}}" class="navigation__nav__list__item__link ">Order Process</a></li>

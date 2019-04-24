@@ -11161,7 +11161,6 @@ section[class^=section]:last-child {
 .section-featured,
 .section-carousel,
 .section-form,
-.mega-menu-content__list__item--img,
 .mega-menu {
   padding: 30px;
 }
@@ -11176,7 +11175,6 @@ section[class^=section]:last-child {
   .section-featured,
   .section-carousel,
   .section-form,
-  .mega-menu-content__list__item--img,
   .mega-menu {
     padding: 40px;
   }
@@ -11231,8 +11229,7 @@ section[class^=section]:not(:last-child) {
   padding-right: 0 !important;
 }
 
-.uk-padding-remove-vertical,
-.mega-menu-content__list__item--img {
+.uk-padding-remove-vertical {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -16383,15 +16380,6 @@ a:hover {
 
 .navigation-mobile {
   background-color: #fff !important;
-}
-
-.mega-menu-content__list__item--content__link {
-  font-size: 1rem !important;
-}
-
-.mega-menu-content__list__item--content__link:hover {
-  text-decoration: none;
-  font-size: 1.125rem;
 }
 
 .section-intro,
