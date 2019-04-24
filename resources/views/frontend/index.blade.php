@@ -59,76 +59,33 @@
     </section>
 
     <section class="section-bg">
-        <div class="container" style=" background-image: url({{asset('img/nature.jpg')}});">
-            <div class="content-wrapper">
-                <p class="content">{{$home->section3_content}}</p>
+        <div class="uk-inline uk-margin">
+            <img src="{{asset('img/h-highquality.jpg')}}" alt="">
+            <div class="uk-position-large uk-position-center-right uk-overlay">
+                <h3 class="heading-secondary">{{$home->section3_title}}</h3>
+                <p>{{$home->section3_content}}</p>
             </div>
         </div>
     </section>
 
     <section class="section-form">
         <div class="section-title">
-            <h2 class="heading-secondary">{{$home->section4_title}}</h2>
+            <h3 class="heading-secondary">{{$home->section4_title}}</h3>
             <span class="divide-line"></span>
         </div>
-        <div class="section-content">
+        <div class="section-content uk-text-center">
             <div class="section-content__centered">
                 {{$home->section4_content}}
             </div>
+            <button class="uk-button uk-button-secondary">Secondary</button>
         </div>
-        <form action="{{ route('frontend.customDesign') }}" method="POST" class="uk-form-stacked" enctype="multipart/form-data">
-            @csrf
-            <div uk-grid>
-                <div class="uk-width-1-1 uk-width-1-2@m">
-                    <label class="uk-form-label" for="name">Name</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="name" type="text" placeholder="Jane Doe" name="fullName">
-                    </div>
-                </div>
-                <div class="uk-width-1-1 uk-width-1-2@m">
-                    <label class="uk-form-label" for="email">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="email" type="email" name="email" placeholder="jane.doe@example.com">
-                    </div>
-                </div>
+        <div class="uk-inline uk-margin">
+            <img src="{{asset('img/beinspired-2nd.jpg')}}" alt="">
+            <div class="uk-position-large uk-position-center-left uk-overlay">
+                <h2 class="heading-secondary">{{$home->section3_title}}</h2>
+                <p>{{$home->section3_content}}</p>
             </div>
-            <div uk-grid>
-                <div class="uk-width-1-1 uk-width-1-3@m">
-                    <label class="uk-form-label" for="phone">Phone number</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="phone" name="phone" type="tel">
-                    </div>
-                </div>
-                <div class="uk-width-1-1 uk-width-1-3@m">
-                    <label class="uk-form-label" for="rugSize">Rug Size</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="rugSize" name="rugSize" type="text" placeholder="8.ft x 5.ft">
-                    </div>
-                </div>
-                <div class="uk-width-1-1 uk-width-1-3@m">
-                    <label class="uk-form-label" for="upload">Upload Your Design</label>
-                    <div class="uk-form-controls">
-                        <div uk-form-custom="target: true">
-                            <input type="file" name="upload">
-                            <input class="uk-input uk-form-width-medium" id="upload " type="text" placeholder="Select file" disabled>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div uk-grid>
-                <div class="uk-width-1-1">
-                    <label class="uk-form-label" for="otherDetails">Other Details</label>
-                    <div class="uk-form-controls">
-                        <textarea class="uk-textarea" rows="5" id="otherDetails" placeholder="Other Details" name="otherDetails" style="resize: none"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div uk-grid>
-                <div class="uk-width-1-1 uk-text-center">
-                    <button class="btn btn__outline" type="submit">Send</button>
-                </div>
-            </div>
-        </form>
+        </div>
     </section>
 </main>
 @endsection
@@ -143,6 +100,10 @@
 });
 
 </script>
+
+
+
+
 
 
 
