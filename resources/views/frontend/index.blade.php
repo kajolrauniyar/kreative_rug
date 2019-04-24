@@ -73,11 +73,10 @@
             <h3 class="heading-secondary">{{$home->section4_title}}</h3>
             <span class="divide-line"></span>
         </div>
-        <div class="section-content uk-text-center">
-            <div class="section-content__centered">
-                {{$home->section4_content}}
-            </div>
-            <button class="uk-button uk-button-secondary">Secondary</button>
+        <div class="section-content__centered">
+            {{$home->section4_content}}
+            <br>
+            <a href="#" class="uk-button uk-button-secondary uk-button-small">View Our Rugs</a>
         </div>
         <div class="uk-inline uk-margin">
             <img src="{{asset('img/beinspired-2nd.jpg')}}" alt="">
@@ -100,6 +99,7 @@
 });
 
 </script>
+
 
 
 
