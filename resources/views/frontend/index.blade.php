@@ -70,19 +70,19 @@
 
     <section class="section-form">
         <div class="section-title">
-            <h3 class="heading-secondary">{{$home->section4_title}}</h3>
+            <h3 class="heading-secondary">View Our Rugs</h3>
             <span class="divide-line"></span>
         </div>
         <div class="section-content__centered">
-            {{$home->section4_content}}
+            Get inspired by exploring the latest collections of our designers.
             <br>
-            <a href="#" class="uk-button uk-button-secondary uk-button-small">View Our Rugs</a>
+            <a href="#" class="uk-button uk-button-secondary uk-button-small">Browse</a>
         </div>
         <div class="uk-inline uk-margin">
             <img src="{{asset('img/beinspired-2nd.jpg')}}" alt="">
             <div class="uk-position-large uk-position-center-left uk-overlay overlay__left">
-                <h3 class="heading-secondary">{{$home->section3_title}}</h3>
-                <p>{{$home->section3_content}}</p>
+                <h3 class="heading-secondary">{{$home->section4_title}}</h3>
+                <p>{{$home->section4_content}}</p>
             </div>
         </div>
     </section>
