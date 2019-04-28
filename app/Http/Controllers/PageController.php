@@ -172,7 +172,7 @@ class PageController extends Controller
                         'id' => $request->contentID[$i],
                         'page_id' => $page->id,
                         'sectionTitle' => $request->sectionTitle[$i],
-                        'sectionContent' => $request->sectionTitle[$i],
+                        'sectionContent' => $request->sectionContent[$i],
                     ]);
                 } else {
                     $new = new Content;

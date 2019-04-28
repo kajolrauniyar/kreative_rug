@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="429d3aec-861e-40df-9203-f5f8054a9030" name="Default Changelist" comment="" />
+    <list default="true" id="429d3aec-861e-40df-9203-f5f8054a9030" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kreative-rugs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kreative-rugs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,21 +18,102 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/common.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/product_tabs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="299">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="n#render#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
+                <element signature="n#index#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/quickview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="184">
+              <caret line="551" column="31" selection-start-line="551" selection-start-column="31" selection-end-line="551" selection-end-column="31" />
+              <folding>
+                <element signature="n#renderView#0;n#ControllerJournal2Quickview#0;n#!!top" />
+                <element signature="n#index#0;n#ControllerJournal2Quickview#0;n#!!top" />
+                <element signature="n#index2#0;n#ControllerJournal2Quickview#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/search.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/settings.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/snippets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1311" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/ajax.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/assets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding>
+                <element signature="n#render#0;n#ControllerJournal2Assets#0;n#!!top" />
+                <element signature="n#css#0;n#ControllerJournal2Assets#0;n#!!top" />
+                <element signature="e#808#1554#0#PHP" />
+                <element signature="n#js#0;n#ControllerJournal2Assets#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
+              <folding>
+                <element signature="n#renderView#0;n#ControllerJournal2Blog#0;n#!!top" />
+                <element signature="n#__construct#0;n#ControllerJournal2Blog#0;n#!!top" />
+                <element signature="n#index#0;n#ControllerJournal2Blog#0;n#!!top" />
+                <element signature="n#post#0;n#ControllerJournal2Blog#0;n#!!top" />
+                <element signature="n#comment#0;n#ControllerJournal2Blog#0;n#!!top" />
+                <element signature="n#feed#0;n#ControllerJournal2Blog#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding>
+                <element signature="n#render#0;n#ControllerJournal2Category#0;n#!!top" />
+                <element signature="n#refine_images#0;n#ControllerJournal2Category#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,7 +127,18 @@
       <find>height</find>
       <find>hero</find>
       <find>hero-wrapper</find>
+      <find>h1</find>
+      <find>breadcrumb</find>
+      <find>heading_title</find>
+      <find>getProduct</find>
+      <find>setOut</find>
+      <find>setO</find>
+      <find>view</find>
+      <find>get</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,6 +153,9 @@
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" />
+        <option value="$USER_HOME$/Desktop/product.tpl" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" />
+        <option value="$USER_HOME$/Desktop/product_title.ocmod.xml" />
       </list>
     </option>
   </component>
@@ -135,71 +236,45 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="300" />
-    <option name="y" value="-30" />
+    <option name="x" value="166" />
+    <option name="y" value="-35" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="uikit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="uikit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="uikit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kreative-rugs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kreative-rugs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,16 +307,19 @@
       <workItem from="1551349994428" duration="328000" />
       <workItem from="1551350465649" duration="13366000" />
       <workItem from="1551415559863" duration="589000" />
+      <workItem from="1556265976174" duration="485000" />
+      <workItem from="1556266953365" duration="284000" />
+      <workItem from="1556267424623" duration="6362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14283000" />
+    <option name="totallyTimeSpent" value="21414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
+      <window_info content_ui="combo" id="Project" order="0" show_stripe_button="false" weight="0.19436997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -255,7 +333,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.4969605" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.8621746" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -266,84 +344,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FrontendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../crusade-himalaya/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1225">
-          <caret column="21" selection-start-column="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../crusade-himalaya/resources/views/emails/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="87" selection-start-line="87" selection-end-line="91" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../trillo/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trillo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3151">
@@ -483,16 +495,205 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="205">
+          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" selection-start-line="27" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="437">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/product_title.ocmod.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/product.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="297" column="51" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="51" />
+          <folding>
+            <element signature="e#98#105#1" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/product_title.ocmod.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/startup/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="n#index#0;n#ControllerStartupRouter#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/update/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1809">
+          <caret selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/designer/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="158" column="76" selection-start-line="158" selection-start-column="76" selection-end-line="158" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/system/startup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="116" column="60" lean-forward="true" selection-start-line="116" selection-start-column="60" selection-end-line="116" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/product/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="835" column="27" lean-forward="true" selection-start-line="835" selection-start-column="27" selection-end-line="835" selection-end-column="27" />
+          <folding>
+            <element signature="n#index#0;n#ControllerProductProduct#0;n#!!top" />
+            <element signature="n#review#0;n#ControllerProductProduct#0;n#!!top" />
+            <element signature="n#write#0;n#ControllerProductProduct#0;n#!!top" />
+            <element signature="n#getRecurringDescription#0;n#ControllerProductProduct#0;n#!!top" />
+            <element signature="n#add#0;n#ControllerProductProduct#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/model/journal2/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="411" column="90" selection-start-line="411" selection-start-column="90" selection-end-line="411" selection-end-column="90" />
+          <folding>
+            <element signature="n#__construct#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#addLabel#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#hasLabel#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getLabels#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getSpecialCountdown#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getProductViews#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getProductSoldCount#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getRandomProducts#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getFeatured#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getFeaturedProducts#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getBestsellers#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getSpecials#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getLatest#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getProductsByCategory#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getProductsByManufacturer#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getPeopleAlsoBought#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getMostViewed#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getRecentlyViewed#0;n#ModelJournal2Product#0;n#!!top" />
+            <element signature="n#getProductOptionsOC1#0;n#ModelJournal2Product#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/checkout.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/common.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/layout_parser.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/menu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/modules.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/product_tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="n#render#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
+            <element signature="n#index#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/quickview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="551" column="31" selection-start-line="551" selection-start-column="31" selection-end-line="551" selection-end-column="31" />
+          <folding>
+            <element signature="n#renderView#0;n#ControllerJournal2Quickview#0;n#!!top" />
+            <element signature="n#index#0;n#ControllerJournal2Quickview#0;n#!!top" />
+            <element signature="n#index2#0;n#ControllerJournal2Quickview#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/search.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/settings.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="n#render#0;n#ControllerJournal2Category#0;n#!!top" />
+            <element signature="n#refine_images#0;n#ControllerJournal2Category#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
+          <folding>
+            <element signature="n#renderView#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#__construct#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#index#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#post#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#comment#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#feed#0;n#ControllerJournal2Blog#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="n#render#0;n#ControllerJournal2Assets#0;n#!!top" />
+            <element signature="n#css#0;n#ControllerJournal2Assets#0;n#!!top" />
+            <element signature="e#808#1554#0#PHP" />
+            <element signature="n#js#0;n#ControllerJournal2Assets#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/ajax.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/snippets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311" />
       </provider>
     </entry>
   </component>

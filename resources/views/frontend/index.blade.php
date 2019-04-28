@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="section-featured">
+    {{-- <section class="section-featured">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section2_title}}</h2>
             <span class="divide-line"></span>
@@ -56,7 +56,7 @@
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
         </div>
-    </section>
+    </section> --}}
 
     <section class="section-bg">
         <div class="uk-inline uk-margin">
