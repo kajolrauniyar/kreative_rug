@@ -1,26 +1,31 @@
 @extends('layouts.frontend') 
 @section('content')
-<section class="header9 cid-roViXoCzPj mbr-fullscreen" style="background-image: url({{asset($home->banner)}});" id="header9-0">
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
-    </div>
+<section class="header9 cid-roViXoCzPj mbr-fullscreen" id="header9-0" style="background-image: url('{{$home->banner}}');">
 
-    <div class="container">
-        <div class="media-container-column mbr-white col-lg-8 col-md-10 ml-auto">
-            <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1"><span style="font-weight: normal;">
+    
+
+        <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+        </div>
+    
+        <div class="container">
+            <div class="media-container-column mbr-white col-lg-8 col-md-10 m-auto">
+                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1"><span style="font-weight: normal;">
                     {{$home->heading}}
                 </span></h1>
-            <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2"><span style="font-style: normal;">
+                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2"><span style="font-style: normal;">
                         {{$home->subheading}}</span>
-            </h3>
+                </h3>
+                
+                
+            </div>
         </div>
-    </div>
-
-    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-        <a href="#next">
+    
+        <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+            <a href="#next">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
-    </div>
-</section>
+        </div>
+    </section>
 
 <section class="header3 cid-roVkN41TA4" id="header3-7">
     <div class="container">
@@ -69,6 +74,7 @@
     </div>
 
 </section>
+
 <section class="mbr-section info3 cid-roVmqkjWQh" id="info3-b" style="background-image: url({{asset($home->section3_image)}});" >    
 
         <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
@@ -130,7 +136,4 @@
         </div>
     </div>
 </section>
-
-
-
 @stop
