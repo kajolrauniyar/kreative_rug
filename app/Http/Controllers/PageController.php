@@ -167,6 +167,8 @@ class PageController extends Controller
 
                 if (isset($request->contentID[$i])) {
                     if (!empty($request->sectionImage[$i])) {
+                        $oldImg = $page->sectionImage;
+                        
                         $media = Media::find($request->sectionImage[$i]);
                         $upload = new UploadImage;
                         $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
@@ -178,6 +180,7 @@ class PageController extends Controller
                             'sectionContent' => $request->sectionContent[$i],
                             'sectionImage' => $image,
                         ]);
+                        File::delete(public_path($oldImg));
                     }
                     Content::updateOrCreate([
                         'id' => $request->contentID[$i],
@@ -190,7 +193,16 @@ class PageController extends Controller
                     $new->page_id = $page->id;
                     $new->sectionTitle = $request->sectionTitle[$i];
                     $new->sectionContent = $request->sectionContent[$i];
+
+                    if (!empty($request->sectionImage[$i])) {
+                        $media = Media::find($request->sectionImage[$i]);
+                        $upload = new UploadImage;
+                        $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+                        $new->contentImage = $imagePath;
+                    }
+
                     $new-> save();
+
                 }
             }
 
@@ -208,6 +220,7 @@ class PageController extends Controller
     public function destroy(Page $page)
     {
         File::delete(public_path($page->banner));
+        File::delete(public_path($page->sectionImage));
         $page->delete();
 
         Session::flash('success', 'Page deleted sucessfully !');
