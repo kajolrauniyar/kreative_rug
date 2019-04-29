@@ -50,7 +50,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-figure" style="width: 90%;">
-                <img src="{{$home->section2_image}}" alt="Mobirise">
+                <img src="{{$home->section2_image}}" alt="{{config('app.name')}}">
             </div>
 
             <div class="media-content">
@@ -94,7 +94,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-figure" style="width: 90%;">
-                <img src="{{$home->section4_image}}" alt="Mobirise">
+                <img src="{{$home->section4_image}}" alt="{{config('app.name')}}">
             </div>
 
             <div class="media-content">
