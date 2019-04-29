@@ -73,28 +73,19 @@ class PageController extends Controller
 
             $media = Media::find($request->image);
             $upload = new UploadImage;
-            $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,512);
+            $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
             $page->banner = $imagePath;
 
             $page->save();
             
             $contents = Content::where('page_id', $page->id)->get();            
             for ($i=0; $i < count($request->sectionTitle) ; $i++) { 
-                foreach ($contents as $db) {
-                    if($db->id == $request->contentID[$i]){
-                        $content = Content::find($request->contentID[$i]);
-                        $content->sectionTitle = $request->sectionTitle[$i];
-                        $content->sectionContent = $request->sectionContent[$i];
-                        $content->save();
-                    }
-                    else{
-                        $new = new Content;
-                        $new->page_id = $page->id;
-                        $new->sectionTitle = $request->sectionTitle[$i];
-                        $new->sectionContent = $request->sectionContent[$i];
-                        $new->save();
-                    }
-                }
+                $new = new Content;
+                $new->page_id = $page->id;
+                $new->sectionTitle = $request->sectionTitle[$i];
+                $new->sectionContent = $request->sectionContent[$i];
+                $new->save();                    
+                
             }
 
             Session::flash('success', 'Page added sucessfully !');
@@ -155,7 +146,7 @@ class PageController extends Controller
 
                 $media = Media::find($request->image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,512);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
 
                 $page->banner = $imagePath;
 

@@ -68,8 +68,16 @@
   <meta name="msapplication-TileImage" content="{{ asset('img/ms-icon-144x144.png') }}">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="{{asset('css/app.css')}}">
-  <link rel="stylesheet" href="{{asset('css/icon-font.css')}}">
+  <link rel="stylesheet" href="{{ asset('assets/web/assets/mobirise-icons/mobirise-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/tether/tether.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/soundcloud-plugin/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/socicon/css/styles.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
 
 </head>
 
@@ -77,7 +85,14 @@
   @include('frontend.partials._nav') @yield('content')
 </body>
   @include('frontend.partials._footer')
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="{{asset('js/app.js')}}"></script>
+  <script src="{{ asset('assets/web/assets/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('assets/popper/popper.min.js') }}"></script>
+  <script src="{{ asset('assets/tether/tether.min.js') }}"></script>
+  <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('assets/smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ asset('assets/parallax/jarallax.min.js') }}"></script>
+  <script src="{{ asset('assets/dropdown/js/script.min.js') }}"></script>
+  <script src="{{ asset('assets/touchswipe/jquery.touch-swipe.min.js') }}"></script>
+  <script src="{{ asset('assets/theme/js/script.js') }}"></script>
 
 </html>

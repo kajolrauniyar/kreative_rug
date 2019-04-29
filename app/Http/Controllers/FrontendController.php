@@ -46,6 +46,7 @@ class FrontendController extends Controller
     {
         $page = Page::where('slug', 'design-your-rug')->firstorFail();
         return  view('frontend.pages.design')->withPage($page);
+        // return  view('frontend.pages.design');
     }
     public function getAbout()
     {
@@ -64,8 +65,9 @@ class FrontendController extends Controller
     }
     public function getFAQ()
     {
+        $page = Page::where('slug', '=', 'faq')->firstorFail();
         $faqs = Faq::all();
-        return  view('frontend.pages.faq')->withFaqs($faqs);
+        return  view('frontend.pages.faq')->withFaqs($faqs)->withPage($page);
     }
     public function getByCategory($slug)
     {
@@ -85,4 +87,6 @@ class FrontendController extends Controller
         })->take(6)->get();
         return view('frontend.pages.product')->withProduct($product)->withSimilars($similar);
     }
+
+
 }

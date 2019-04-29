@@ -70,6 +70,9 @@ class HomeController extends Controller
 
             'section4_title' => 'required',
             'section4_content' => 'required',
+
+            'section5_title' => 'required',
+            'section5_content' => 'required',
             ]);
 
             $home = new Home;
@@ -88,15 +91,38 @@ class HomeController extends Controller
             $home->section4_title = $request->section4_title;
             $home->section4_content = $request->section4_content;
 
+            $home->section5_title = $request->section5_title;
+            $home->section5_content = $request->section5_content;            
+
             $media = Media::find($request->image);
             $upload = new UploadImage;
             $banner = $upload->uploadSingle($this->image, $media->path, 1024,512);
             $home->banner = $banner;
 
-            $media = Media::find($request->image);
+            $media = Media::find($request->section1_image);
             $upload = new UploadImage;
             $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
             $home->section1_image = $thumb;
+
+            $media = Media::find($request->section2_image);
+            $upload = new UploadImage;
+            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $home->section2_image = $thumb;            
+
+            $media = Media::find($request->section3_image);
+            $upload = new UploadImage;
+            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $home->section3_image = $thumb;
+
+            $media = Media::find($request->section4_image);
+            $upload = new UploadImage;
+            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $home->section4_image = $thumb;     
+            
+            $media = Media::find($request->section5_image);
+            $upload = new UploadImage;
+            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $home->section5_image = $thumb;            
 
             $home->save();
             Session::flash('success', 'Home page contents updated !');
@@ -122,6 +148,9 @@ class HomeController extends Controller
 
             'section4_title' => 'required',
             'section4_content' => 'required',
+
+            'section5_title' => 'required',
+            'section5_content' => 'required',
             ]);
 
             $home->heading = $request->heading;
@@ -138,6 +167,9 @@ class HomeController extends Controller
 
             $home->section4_title = $request->section4_title;
             $home->section4_content = $request->section4_content;
+
+            $home->section5_title = $request->section5_title;
+            $home->section5_content = $request->section5_content;
             
             if (!empty($request->image)) {
                 $oldBanner = $home->banner;
@@ -157,11 +189,61 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section1_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 840,360);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
 
                 $home->section1_image = $imagePath;
                 File::delete(public_path($oldImage));
             }      
+
+            if (!empty($request->section2_image)) {
+                $oldImage = $home->section2_image;
+
+
+                $media = Media::find($request->section2_image);
+                $upload = new UploadImage;
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
+
+                $home->section2_image = $imagePath;
+                File::delete(public_path($oldImage));
+            }      
+
+            if (!empty($request->section3_image)) {
+                $oldImage = $home->section3_image;
+
+
+                $media = Media::find($request->section3_image);
+                $upload = new UploadImage;
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
+
+                $home->section3_image = $imagePath;
+                File::delete(public_path($oldImage));
+            }      
+
+            if (!empty($request->section4_image)) {
+                $oldImage = $home->section4_image;
+
+
+                $media = Media::find($request->section4_image);
+                $upload = new UploadImage;
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
+
+                $home->section4_image = $imagePath;
+                File::delete(public_path($oldImage));
+            }      
+
+            if (!empty($request->section5_image)) {
+                $oldImage = $home->section5_image;
+
+
+                $media = Media::find($request->section5_image);
+                $upload = new UploadImage;
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
+
+                $home->section5_image = $imagePath;
+                File::delete(public_path($oldImage));
+            }      
+            
+            
             
             $home->save();
             Session::flash('success', 'Home page contents updated !');
