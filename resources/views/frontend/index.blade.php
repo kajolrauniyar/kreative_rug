@@ -1,6 +1,6 @@
 @extends('layouts.frontend') 
 @section('content')
-<section class="header9 cid-roViXoCzPj mbr-fullscreen mbr-parallax-background" style="background-image: url({{asset($home->banner)}});" id="header9-0">
+<section class="header9 cid-roViXoCzPj mbr-fullscreen" style="background-image: url({{asset($home->banner)}});" id="header9-0">
     <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
     </div>
 
@@ -114,7 +114,7 @@
 
 </section>
 
-<section class="mbr-section content5 cid-roVniTiCv4 mbr-parallax-background" style="background-image: url({{asset($home->section5_image)}});" id="content5-e">
+<section class="mbr-section content5 cid-roVniTiCv4" style="background-image: url({{asset($home->section5_image)}});" id="content5-e">
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">

@@ -36,26 +36,6 @@
         </div>
     </section>
     
-    <section class="mbr-section content4 cid-roVsJxRefd" id="content4-1b">
-        <div class="container">
-            <div class="media-container-row">
-                <div class="title col-12 col-md-8">
-                    <h2 class="align-center pb-3 mbr-fonts-style display-5">
-                            @isset($page->content{1}->sectionTitle)
-                            {!!$page->content{1}->sectionTitle!!}
-                            @endisset
-                    </h2>
-                    <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
-                            @isset($page->content{1}->sectionTitle)
-                            {!!$page->content{1}->sectionTitle!!}
-                            @endisset
-                    </h3>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section class="testimonials1 cid-roVvQHup0F" id="testimonials1-1s">
         <div class="container">
             <div class="media-container-row">
@@ -108,8 +88,8 @@
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
                     <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                            @isset($page->content{2}->sectionTitle)
-                            {!!$page->content{2}->sectionTitle!!}
+                            @isset($page->content{1}->sectionTitle)
+                            {!!$page->content{1}->sectionTitle!!}
                             @endisset
                     </h2>
                     
@@ -131,8 +111,8 @@
         <div class="container">
             <div class="media-container-row">
                 <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
-                    @isset($page->content{2}->sectionContent)
-                    {!!$page->content{2}->sectionContent!!}
+                    @isset($page->content{1}->sectionContent)
+                    {!!$page->content{1}->sectionContent!!}
                     @endisset                    
             </div>
         </div>

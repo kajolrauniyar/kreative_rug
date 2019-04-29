@@ -29,12 +29,12 @@
                         Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-4" href="{{ route('frontend.inspire') }}" data-toggle="dropdown-submenu" aria-expanded="false">
-                        Get Inspired</a>
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="{{ route('frontend.inspire') }}" data-toggle="dropdown-submenu"
+                        aria-expanded="false">
+                                Get Inspired</a>
                     <div class="dropdown-menu">
                         @foreach ($categories as $category)
-                        <a class="text-black dropdown-item display-4" href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a>                        
-                        @endforeach
+                        <a class="text-black dropdown-item display-4" href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a>                        @endforeach
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link link text-black display-4" href="{{route('frontend.design')}}" aria-expanded="false">

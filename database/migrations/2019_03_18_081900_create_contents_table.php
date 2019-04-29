@@ -18,6 +18,7 @@ class CreateContentsTable extends Migration
             $table->bigInteger('page_id')->unsigned();
             $table->string('sectionTitle');
             $table->text('sectionContent');
+            $table->text('sectionImage');
             $table->timestamps();
             $table->foreign('page_id')->references('id')->on('pages')->onDelete('cascade');
         });

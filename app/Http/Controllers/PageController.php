@@ -73,7 +73,7 @@ class PageController extends Controller
 
             $media = Media::find($request->image);
             $upload = new UploadImage;
-            $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
+            $imagePath = $upload->uploadSingle($this->image, $media->path, 1920,1080);
             $page->banner = $imagePath;
 
             $page->save();
@@ -84,6 +84,13 @@ class PageController extends Controller
                 $new->page_id = $page->id;
                 $new->sectionTitle = $request->sectionTitle[$i];
                 $new->sectionContent = $request->sectionContent[$i];
+                
+                if (!empty($request->sectionImage[$i])) {
+                    $media = Media::find($request->sectionImage[$i]);
+                    $upload = new UploadImage;
+                    $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+                    $new->contentImage = $imagePath;
+                }
                 $new->save();                    
                 
             }
@@ -159,6 +166,19 @@ class PageController extends Controller
             for ($i = 0; $i < count($request-> sectionTitle); $i++) {
 
                 if (isset($request->contentID[$i])) {
+                    if (!empty($request->sectionImage[$i])) {
+                        $media = Media::find($request->sectionImage[$i]);
+                        $upload = new UploadImage;
+                        $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+                        $image = $imagePath;
+                        Content::updateOrCreate([
+                            'id' => $request->contentID[$i],
+                            'page_id' => $page->id,
+                            'sectionTitle' => $request->sectionTitle[$i],
+                            'sectionContent' => $request->sectionContent[$i],
+                            'sectionImage' => $image,
+                        ]);
+                    }
                     Content::updateOrCreate([
                         'id' => $request->contentID[$i],
                         'page_id' => $page->id,
