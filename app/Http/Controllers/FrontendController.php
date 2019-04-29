@@ -54,6 +54,7 @@ class FrontendController extends Controller
         $page = Page::where('slug', 'about')->firstorFail();
         return  view('frontend.pages.about')->withTeams($teams)
         ->withPage($page);
+        // return  view('frontend.pages.about');
     }
     public function getContact()
     {

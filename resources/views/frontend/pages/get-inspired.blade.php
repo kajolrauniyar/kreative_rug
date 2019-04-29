@@ -5,6 +5,8 @@
 @section('content')
 <section class="mbr-section content5 cid-roVpHHpR3O mbr-parallax-background" style="background-image: url('{{$page->banner}}');"
     id="content5-p">
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+        </div>
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
