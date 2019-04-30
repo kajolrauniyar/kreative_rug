@@ -19,17 +19,12 @@
                                 <label for="title">Title</label>
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <button type="button" class="btn btn-block ink-reaction btn-info" data-toggle="modal" data-target="#myModal">
                                  <i class="far fa-image"></i>  Header Image
                                 </button>
                             </div>
-                        </div>
-                        <div class="col-sm-2  ">
-                            <button type="button" class="btn btn-block ink-reaction btn-warning" data-toggle="modal" data-target="#sectionImage">
-                                <i class="far fa-image"></i>  Section Image
-                            </button>
                         </div>
                     </div>
                     @foreach ($page->content as $content)                       
@@ -95,7 +90,6 @@
                             </div>
                             <div class="modal-body text-center">
                                 <select name="image" id="image-picker">
-                                    <option></option>
                                     @foreach($medias  as $image)
                                         <option data-img-src="{{asset($image->thumb)}}" value="{{$image->id}}"> </option>
                                     @endforeach
@@ -108,31 +102,6 @@
 
                     </div>
                 </div>
-
-                <div id="sectionImage" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Media Images</h4>
-                                </div>
-                                <div class="modal-body text-center">
-                                    <select name="sectionImage[]" id="sectionImages"  multiple="multiple">
-                                        <option></option>
-                                        @foreach($medias  as $image)
-                                            <option data-img-src="{{asset($image->thumb)}}" value="{{$image->id}}"> </option>
-                                        @endforeach
-                                </select>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-
-
                 <div class="card-actionbar">
                     <div class="card-actionbar-row">
                         <div class="col-sm-8 col-sm-offset-2">
@@ -156,12 +125,6 @@
     <div class="col-md-2  ">
         <a href="javascript:void(0)" class="btn btn-danger remove"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</a>
     </div>
-    <div class="col-sm-2  ">
-        <button type="button" class="btn btn-block ink-reaction btn-warning" data-toggle="modal" data-target="#sectionImage">
-            <i class="far fa-image"></i>  Section Image
-        </button>
-    </div>    
-
     <div class="col-sm-12 ">
         <div class="form-group">
             <h4>Section Content</h4>

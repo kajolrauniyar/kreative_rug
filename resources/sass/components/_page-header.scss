@@ -1,16 +1,16 @@
-.image-page-header {
-    .image-wrapper {
-        @extend .uk-height-medium;
-        @extend .uk-flex;
-        @extend .uk-flex-right;
-        @extend .uk-flex-middle;
-        @extend .uk-background-cover;
-        height: 70vh;
-        .image-header-text {
-            @extend .uk-padding-large;
-        }
-    }
+.image-page-header{
+    @extend  .uk-height-large , .uk-flex , .uk-flex-center , .uk-flex-middle , .uk-background-cover , .uk-light;
+    height: 40vh;
+    position: relative;
+
+
 }
+.page-title__wrapper{
+        @extend .uk-position-cover, .uk-flex;
+        background: rgba(34, 34, 34, 0.2);
+    }
+
+
 .product-category {
     &__item {
         &--img {

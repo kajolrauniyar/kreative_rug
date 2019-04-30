@@ -1,14 +1,11 @@
 @extends('layouts.frontend') 
 @section('content')
-<header class="header" uk-img data-src="{{ asset($home->banner) }}">
-    <div class="header__text-box">
-        <h1 class="heading-primary">
-            <span class="heading-primary--main">{{$home->heading}}</span>
-            <span class="heading-primary--sub">{{{$home->subheading}}}</span>
-        </h1>
-    </div>
+<header class="header" data-src="{{asset($home->banner)}}" uk-img>
+     <div class="uk-position-center-center header--text">
+        <h1 class="uk-margin-remove">{{$home->heading}}</h1>
+        <h2>{{$home->subheading}}</h2>
+     </div>
 </header>
-
 <main>
 
     <section class="section-intro">
@@ -88,26 +85,3 @@
     </section>
 </main>
 @endsection
- {{-- 
-@section('scripts')
-<script src="https://www.google.com/recaptcha/api.js?render=6LdduJkUAAAAAPlnAnEXImFmW16i5P3Tbzjix5Z5"></script>
-<script>
-    grecaptcha.ready(function() {
-    grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-       ...
-    });
-});
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-@stop --}}

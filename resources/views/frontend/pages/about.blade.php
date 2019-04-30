@@ -1,11 +1,10 @@
-@section('title') | About Us @endsection
+@section('title') | About Us
+@endsection
+ 
 @extends('layouts.frontend') 
 @section('content')
-<section class="image-page-header">
-    <div class="image-wrapper uk-light" data-src="{{asset($page->banner)}}" uk-img>
-        <h1 class="image-header-text">{{$page->title}}</h1>
-    </div>
-</section>
+    @include('frontend.partials._page-header')
+@if (isset($page->content{0}->sectionTitle) && isset($page->content{0}->sectionContent))
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
         <div uk-grid>
@@ -25,26 +24,7 @@
         </div>
     </div>
 </section>
-<section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
-    <div uk-grid class="uk-padding">
-        <div class=" uk-width-1-5"></div>
-        <div class=" uk-width-3-5">
-            <div class="section-title">
-                <h3 class="heading-tertiary">{{$page->content{1}->sectionTitle}}</h3>
-                <span class="divide-line"></span>
-            </div>
-            <div class="section-content">
-                <div class="section-content__centered">
-                    <p class="uk-text-center">
-                        {!!$page->content{1}->sectionContent!!}
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class=" uk-width-1-5">
-        </div>
-    </div>
-</section>
+@endif
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
     <div class="uk-container uk-padding">
         @foreach($teams->chunk(3) as $items)
@@ -75,19 +55,27 @@
             @endforeach
         </div>
         @endforeach
-        <div uk-grid>
-            <div class="uk-width-1-5"></div>
-            <div class="uk-width-3-5 uk-text-center">
-                <h5 class="uk-text-lead">{{$page->content{2}->sectionTitle}}s</h5>
-                <p>{!! $page->content{2}->sectionContent !!}</p>
-            </div>
-            <div class="uk-width-1-5"></div>
-        </div>
     </div>
 </div>
-
-
-
-
-
+@if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
+<div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
+    <div class="section-title">
+        <h3 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h3>
+        <span class="divide-line"></span>
+    </div>
+    <div class="uk-container uk-padding uk-padding-remove-top">
+    <div class="uk-background-cover uk-height-large uk-panel " style="background-image: url('{{asset($page->content{0}->sectionImage)}}');">
+        </div>
+    </div>
+    <div uk-grid>
+        <div class="uk-width-1-5 uk-margin-remove-top"></div>
+        <div class="uk-width-3-5 uk-margin-remove-top">
+            <p class="uk-text-center">
+                {!!$page->content{1}->sectionContent!!}
+            </p>
+        </div>
+        <div class="uk-width-1-5 uk-margin-remove-top"></div>
+    </div>
+</div>
+@endif 
 @stop
