@@ -1,11 +1,7 @@
 @section('title') | Rug Making Process @endsection
 @extends('layouts.frontend') 
 @section('content')
-<section class="image-page-header">
-    <div class="image-wrapper uk-light" data-src="{{asset('img/process.jpg')}}" uk-img>
-        <h1 class="image-header-text">Rug Making Process</h1>
-    </div>
-</section>
+@include('frontend.partials._page-header')
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
         <p class="uk-h4 uk-text-center">Small paragraph to stress about our commitments Our rugs are handcrafted in a traditional manner, just as it used
