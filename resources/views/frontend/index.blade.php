@@ -1,139 +1,113 @@
 @extends('layouts.frontend') 
 @section('content')
-<section class="header9 cid-roViXoCzPj mbr-fullscreen" id="header9-0" style="background-image: url('{{$home->banner}}');">
+<header class="header" uk-img data-src="{{ asset($home->banner) }}">
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">{{$home->heading}}</span>
+            <span class="heading-primary--sub">{{{$home->subheading}}}</span>
+        </h1>
+    </div>
+</header>
 
-    
+<main>
 
-        <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+    <section class="section-intro">
+        <div class="section-title">
+            <h2 class="heading-secondary">{{$home->section1_title}}</h2>
+            <span class="divide-line"></span>
         </div>
-    
-        <div class="container">
-            <div class="media-container-column mbr-white col-lg-8 col-md-10 m-auto">
-                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1"><span style="font-weight: normal;">
-                    {{$home->heading}}
-                </span></h1>
-                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2"><span style="font-style: normal;">
-                        {{$home->subheading}}</span>
-                </h3>
-                
-                
+        <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
+            <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                <p class="paragraph">
+                    {{$home->section1_content}}
+                </p>
             </div>
-        </div>
-    
-        <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#next">
-                <i class="mbri-down mbr-iconfont"></i>
-            </a>
-        </div>
-    </section>
-
-<section class="header3 cid-roVkN41TA4" id="header3-7">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 90%;">
+            <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                <!--840x360-->
                 <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
             </div>
+        </div>
+    </section>
 
-            <div class="media-content">
-
-                <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-2">
-                    {{$home->section1_title}}
-                </h3>
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        {{$home->section1_content}}
-                    </p>
-                </div>
-
+    <section class="section-featured">
+        <div class="section-title">
+            <h2 class="heading-secondary">{{$home->section2_title}}</h2>
+            <span class="divide-line"></span>
+        </div>
+        <div class="section-content">
+            <div class="section-content__centered">
+                {{$home->section2_content}}
             </div>
         </div>
-    </div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-</section>
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
+                @foreach ($categories as $category)
+                <li>
+                    <img src="{{$category->thumb}}" alt="{{$category->slug}}">
+                    <div class="uk-position-center uk-panel">
+                        <h3><a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a></h3>
+                    </div>
+                </li>
+                @endforeach
+            </ul>
 
-<section class="header3 cid-roVlIlHZzX"  id="header3-8">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 90%;">
-                <img src="{{$home->section2_image}}" alt="{{config('app.name')}}">
-            </div>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
-            <div class="media-content">
-
-                <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-2">
-                    {{$home->section2_title}}
-                </h3>
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        {{$home->section2_content}}
-                    </p>
-                </div>
-
-            </div>
         </div>
-    </div>
+    </section>
 
-</section>
-
-<section class="mbr-section info3 cid-roVmqkjWQh" id="info3-b" style="background-image: url({{asset($home->section3_image)}});" >    
-
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
-        </div>
-    
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="media-container-column title col-12 col-md-10">
-                    <h2 class="align-left mbr-bold mbr-white pb-3 mbr-fonts-style display-5">
-                        {{$home->section3_title}}
-                    </h2>
-                    
-                    <p class="mbr-text align-left mbr-white mbr-fonts-style display-7">
-                        {{$home->section3_content}}
-                    </p>
-                    <div class="mbr-section-btn align-left py-4"><a class="btn btn-white-outline display-4" href="#">Discover</a></div>
-                </div>
+    <section class="section-bg">
+        <div class="uk-inline uk-margin">
+            <img src="{{asset('img/h-highquality.jpg')}}" alt="">
+            <div class="uk-position-large uk-position-center-right uk-overlay overlay__right">
+                <h3 class="heading-secondary">{{$home->section3_title}}</h3>
+                <p>{{$home->section3_content}}</p>
             </div>
         </div>
     </section>
 
-<section class="header3 cid-roVmMtPRRm" id="header3-c">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 90%;">
-                <img src="{{$home->section4_image}}" alt="{{config('app.name')}}">
-            </div>
-
-            <div class="media-content">
-
-                <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-2">
-                   {{$home->section4_title}}
-                </h3>
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        {{$home->section4_content}}
-                    </p>
-                </div>
-
+    <section class="section-form">
+        <div class="section-title">
+            <h3 class="heading-secondary">View Our Rugs</h3>
+            <span class="divide-line"></span>
+        </div>
+        <div class="section-content__centered">
+            Get inspired by exploring the latest collections of our designers.
+            <br>
+            <a href="#" class="uk-button uk-button-secondary uk-button-small">Browse</a>
+        </div>
+        <div class="uk-inline uk-margin">
+            <img src="{{asset('img/beinspired-2nd.jpg')}}" alt="">
+            <div class="uk-position-large uk-position-center-left uk-overlay overlay__left">
+                <h3 class="heading-secondary">{{$home->section4_title}}</h3>
+                <p>{{$home->section4_content}}</p>
             </div>
         </div>
-    </div>
+    </section>
+</main>
+@endsection
+ {{-- 
+@section('scripts')
+<script src="https://www.google.com/recaptcha/api.js?render=6LdduJkUAAAAAPlnAnEXImFmW16i5P3Tbzjix5Z5"></script>
+<script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+       ...
+    });
+});
 
-</section>
+</script>
 
-<section class="mbr-section content5 cid-roVniTiCv4" style="background-image: url({{asset($home->section5_image)}});" id="content5-e">
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
 
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
-                        {{$home->section5_title}}
-                </h3>
-                <p class="mbr-text align-center mbr-white pb-3 mbr-fonts-style display-7">
-                        {{$home->section5_content}}
-                </p>
 
-            </div>
-        </div>
-    </div>
-</section>
-@stop
+
+
+
+
+
+
+
+
+@stop --}}
