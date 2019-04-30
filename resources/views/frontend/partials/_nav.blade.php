@@ -67,8 +67,8 @@
                     {{-- </div> --}}
                 </div>
             </li>
-            <li class="navigation__nav__list__item "><a href="{{route('frontend.order')}}" class="navigation__nav__list__item__link ">Order Process</a></li>
-            <li class="navigation__nav__list__item "><a href="{{route('frontend.design')}}" class="navigation__nav__list__item__link ">Rug Making Process</a></li>
+            <li class="navigation__nav__list__item "><a href="{{route('frontend.design')}}" class="navigation__nav__list__item__link ">Design Your Rug</a></li>
+            <li class="navigation__nav__list__item "><a href="{{route('frontend.process')}}" class="navigation__nav__list__item__link ">Rug Making Process</a></li>
             <li class="navigation__nav__list__item "><a href="/about" class="navigation__nav__list__item__link ">About Us</a></li>
             <li class="navigation__nav__list__item "><a href="/faq" class="navigation__nav__list__item__link ">FAQ</a></li>
             <li class="navigation__nav__list__item "><a href="/contact" class="navigation__nav__list__item__link ">Contact</a></li>
@@ -107,8 +107,8 @@
                     @endforeach                    
                 </ul>
             </li>
-            <li><a href="{{ route('frontend.order') }}">Order Process</a></li>
-            <li><a href="{{ route('frontend.design') }}">Rug Making Process</a></li>
+            <li><a href="{{ route('frontend.design') }}">Design Your Rug</a></li>
+            <li><a href="{{ route('frontend.process') }}">Rug Making Process</a></li>
             <li><a href="{{ route('frontend.about') }}">About Us</a></li>
             <li><a href="{{ route('frontend.faq') }}">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
