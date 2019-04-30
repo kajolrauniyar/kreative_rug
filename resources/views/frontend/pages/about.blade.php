@@ -64,8 +64,10 @@
         <span class="divide-line"></span>
     </div>
     <div class="uk-container uk-padding uk-padding-remove-top">
-    <div class="uk-background-cover uk-height-large uk-panel " style="background-image: url('{{asset($page->content{0}->sectionImage)}}');">
-        </div>
+        @isset($page->content{0}->sectionImage)
+        <div class="uk-background-cover uk-height-large uk-panel " style="background-image: url('{{asset($page->content{0}->sectionImage)}}');">
+            </div>
+        @endisset
     </div>
     <div uk-grid>
         <div class="uk-width-1-5 uk-margin-remove-top"></div>
