@@ -16532,12 +16532,12 @@ a:hover {
 }
 
 .image-page-header {
-  height: 40vh;
+  height: 60vh;
   position: relative;
 }
 
 .page-title__wrapper {
-  background: rgba(34, 34, 34, 0.2);
+  background: rgba(34, 34, 34, 0.4);
 }
 
 .product-category__item--img {

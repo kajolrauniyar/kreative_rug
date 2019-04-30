@@ -1,13 +1,13 @@
 .image-page-header{
     @extend  .uk-height-large , .uk-flex , .uk-flex-center , .uk-flex-middle , .uk-background-cover , .uk-light;
-    height: 40vh;
+    height: 60vh;
     position: relative;
 
 
 }
 .page-title__wrapper{
         @extend .uk-position-cover, .uk-flex;
-        background: rgba(34, 34, 34, 0.2);
+        background: rgba(34, 34, 34, 0.4);
     }
 
 
