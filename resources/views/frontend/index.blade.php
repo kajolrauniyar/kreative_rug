@@ -7,6 +7,73 @@
      </div>
 </header>
 <main>
+        <section class="section-intro">
+                <div class="section-title">
+                    <h2 class="heading-secondary">{{$home->section1_title}}</h2>
+                    <span class="divide-line"></span>
+                </div>
+                <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
+                    <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                        <p class="paragraph">
+                            {{$home->section1_content}}
+                        </p>
+                    </div>
+                    <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                        <!--840x360-->
+                        <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
+                    </div>
+                </div>
+            </section>
+<section class="value-grid">
+    <div class="uk-child-width-1-4@m" uk-grid>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-media-top">
+                    <img src="https://source.unsplash.com/450x300/?vinyl" alt="">
+                </div>
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">High Quality Raw Materials</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Traditionally Hand Knotted in Nepal</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="https://source.unsplash.com/450x300/?cup" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-media-top">
+                    <img src="https://source.unsplash.com/450x300/?vase" alt="">
+                </div>
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Design Your Custom Rug</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>        
+        <div>
+            <div class="value-item">
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Environmental Friendly Rugs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="https://source.unsplash.com/450x300/?cup" alt="">
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
+
+<!--
 <section class="value-grid">
     <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
         <div>
@@ -57,7 +124,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>  -->
     {{-- <section class="section-intro">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section1_title}}</h2>
