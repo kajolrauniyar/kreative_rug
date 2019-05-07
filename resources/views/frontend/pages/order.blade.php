@@ -4,10 +4,9 @@
 @include('frontend.partials._page-header')
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
-        <p class="uk-h4 uk-text-center">Small paragraph to stress about our commitments Our rugs are handcrafted in a traditional manner, just as it used
-            to be centuries ago. unlike other rugs made using machines, our rugs are made lovingly by hand hence it posses
-            an exquisite look. Each rug takes several days & weeks to complete. Our experienced & dedicated craftsman have
-            a visionary eye to excel in art & drive creativity.
+        <p class="uk-h4 uk-text-center">
+            @if (isset($page->content{0}->sectionContent))
+            @endif
         </p>
         <div uk-grid>
             <div class="uk-width-1-2">
