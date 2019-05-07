@@ -8,7 +8,7 @@
 </header>
 <main>
 <section class="value-grid">
-    <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
+    <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
@@ -20,6 +20,7 @@
                 </div>
             </div>
         </div>
+
         <div>
             <div class="value-item">
                 <div class="uk-card-body uk-paddin-small">
@@ -31,6 +32,7 @@
                 </div>
             </div>
         </div>
+
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
@@ -41,7 +43,19 @@
                     <p>{{$home->section4_title}}</p>
                 </div>
             </div>
-        </div>        
+        </div>      
+        
+        <div>
+            <div class="value-item">
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">{{$home->section5_title}}</h3>
+                    <p>{{$home->section5_content}}</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="{{ asset($home->section5_image) }}" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
     {{-- <section class="section-intro">
