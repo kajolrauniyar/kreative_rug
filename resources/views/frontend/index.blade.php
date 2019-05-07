@@ -25,6 +25,10 @@
                 </div>
             </section>
 <section class="value-grid">
+        <div class="section-title">
+                <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
+                <span class="divide-line"></span>
+            </div>
     <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
         <div>
             <div class="value-item">
