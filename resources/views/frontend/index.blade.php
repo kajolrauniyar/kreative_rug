@@ -8,7 +8,7 @@
 </header>
 <main>
 <section class="value-grid">
-    <div class="uk-child-width-1-3@m" uk-grid>
+    <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
