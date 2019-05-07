@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="429d3aec-861e-40df-9203-f5f8054a9030" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/kreative-rugs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kreative-rugs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="429d3aec-861e-40df-9203-f5f8054a9030" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,107 +12,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/common.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/product_tabs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="n#render#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
-                <element signature="n#index#0;n#ControllerJournal2ProductTabs#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/quickview.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="551" column="31" selection-start-line="551" selection-start-column="31" selection-end-line="551" selection-end-column="31" />
-              <folding>
-                <element signature="n#renderView#0;n#ControllerJournal2Quickview#0;n#!!top" />
-                <element signature="n#index#0;n#ControllerJournal2Quickview#0;n#!!top" />
-                <element signature="n#index2#0;n#ControllerJournal2Quickview#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/search.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/settings.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/snippets.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1311" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/ajax.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/assets.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="n#render#0;n#ControllerJournal2Assets#0;n#!!top" />
-                <element signature="n#css#0;n#ControllerJournal2Assets#0;n#!!top" />
-                <element signature="e#808#1554#0#PHP" />
-                <element signature="n#js#0;n#ControllerJournal2Assets#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
-              <folding>
-                <element signature="n#renderView#0;n#ControllerJournal2Blog#0;n#!!top" />
-                <element signature="n#__construct#0;n#ControllerJournal2Blog#0;n#!!top" />
-                <element signature="n#index#0;n#ControllerJournal2Blog#0;n#!!top" />
-                <element signature="n#post#0;n#ControllerJournal2Blog#0;n#!!top" />
-                <element signature="n#comment#0;n#ControllerJournal2Blog#0;n#!!top" />
-                <element signature="n#feed#0;n#ControllerJournal2Blog#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <element signature="n#render#0;n#ControllerJournal2Category#0;n#!!top" />
-                <element signature="n#refine_images#0;n#ControllerJournal2Category#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -251,7 +145,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="166" />
+    <option name="x" value="165" />
     <option name="y" value="-35" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
@@ -310,11 +204,12 @@
       <workItem from="1556265976174" duration="485000" />
       <workItem from="1556266953365" duration="284000" />
       <workItem from="1556267424623" duration="6362000" />
+      <workItem from="1556699828386" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21414000" />
+    <option name="totallyTimeSpent" value="22016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -608,9 +503,6 @@
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/checkout.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/common.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/layout_parser.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -618,6 +510,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/modules.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/common.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/product_tabs.php">
@@ -649,31 +544,8 @@
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/settings.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="n#render#0;n#ControllerJournal2Category#0;n#!!top" />
-            <element signature="n#refine_images#0;n#ControllerJournal2Category#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
-          <folding>
-            <element signature="n#renderView#0;n#ControllerJournal2Blog#0;n#!!top" />
-            <element signature="n#__construct#0;n#ControllerJournal2Blog#0;n#!!top" />
-            <element signature="n#index#0;n#ControllerJournal2Blog#0;n#!!top" />
-            <element signature="n#post#0;n#ControllerJournal2Blog#0;n#!!top" />
-            <element signature="n#comment#0;n#ControllerJournal2Blog#0;n#!!top" />
-            <element signature="n#feed#0;n#ControllerJournal2Blog#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/ajax.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/assets.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,13 +560,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/ajax.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="514" column="7" lean-forward="true" selection-start-line="514" selection-start-column="7" selection-end-line="514" selection-end-column="7" />
+          <folding>
+            <element signature="n#renderView#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#__construct#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#index#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#post#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#comment#0;n#ControllerJournal2Blog#0;n#!!top" />
+            <element signature="n#feed#0;n#ControllerJournal2Blog#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="n#render#0;n#ControllerJournal2Category#0;n#!!top" />
+            <element signature="n#refine_images#0;n#ControllerJournal2Category#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/public_html/catalog/controller/journal2/snippets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1311" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
