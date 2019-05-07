@@ -25,7 +25,7 @@
                 </div>
             </section>
 <section class="value-grid">
-    <div class="uk-child-width-1-4@m" uk-grid>
+    <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
