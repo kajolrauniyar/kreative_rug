@@ -2672,8 +2672,8 @@ select.uk-form-width-xsmall {
 .section-featured,
 .section-carousel,
 .section-form,
-.mega-menu,
-.logo-wrapper__logo-box {
+.nav-wrapper,
+.logo-wrapper {
   /* 1 */
   box-sizing: content-box;
   max-width: 1200px;
@@ -2693,8 +2693,8 @@ select.uk-form-width-xsmall {
   .section-featured,
   .section-carousel,
   .section-form,
-  .mega-menu,
-  .logo-wrapper__logo-box {
+  .nav-wrapper,
+  .logo-wrapper {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -2710,8 +2710,8 @@ select.uk-form-width-xsmall {
   .section-featured,
   .section-carousel,
   .section-form,
-  .mega-menu,
-  .logo-wrapper__logo-box {
+  .nav-wrapper,
+  .logo-wrapper {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -2728,8 +2728,8 @@ select.uk-form-width-xsmall {
 .section-featured::before,
 .section-carousel::before,
 .section-form::before,
-.mega-menu::before,
-.logo-wrapper__logo-box::before,
+.nav-wrapper::before,
+.logo-wrapper::before,
 .uk-container::after,
 .content-wrapper::after,
 .section-bg::after,
@@ -2737,8 +2737,8 @@ select.uk-form-width-xsmall {
 .section-featured::after,
 .section-carousel::after,
 .section-form::after,
-.mega-menu::after,
-.logo-wrapper__logo-box::after {
+.nav-wrapper::after,
+.logo-wrapper::after {
   content: "";
   display: table;
 }
@@ -2750,8 +2750,8 @@ select.uk-form-width-xsmall {
 .section-featured::after,
 .section-carousel::after,
 .section-form::after,
-.mega-menu::after,
-.logo-wrapper__logo-box::after {
+.nav-wrapper::after,
+.logo-wrapper::after {
   clear: both;
 }
 
@@ -2766,8 +2766,8 @@ select.uk-form-width-xsmall {
 .section-featured > :last-child,
 .section-carousel > :last-child,
 .section-form > :last-child,
-.mega-menu > :last-child,
-.logo-wrapper__logo-box > :last-child {
+.nav-wrapper > :last-child,
+.logo-wrapper > :last-child {
   margin-bottom: 0;
 }
 
@@ -2824,38 +2824,38 @@ select.uk-form-width-xsmall {
 .section-featured .section-form,
 .section-carousel .section-form,
 .section-form .section-form,
-.mega-menu .uk-container,
-.mega-menu .content-wrapper,
-.mega-menu .section-bg,
-.mega-menu .section-intro,
-.mega-menu .section-featured,
-.mega-menu .section-carousel,
-.mega-menu .section-form,
-.uk-container .mega-menu,
-.content-wrapper .mega-menu,
-.section-bg .mega-menu,
-.section-intro .mega-menu,
-.section-featured .mega-menu,
-.section-carousel .mega-menu,
-.section-form .mega-menu,
-.mega-menu .mega-menu,
-.logo-wrapper__logo-box .uk-container,
-.logo-wrapper__logo-box .content-wrapper,
-.logo-wrapper__logo-box .section-bg,
-.logo-wrapper__logo-box .section-intro,
-.logo-wrapper__logo-box .section-featured,
-.logo-wrapper__logo-box .section-carousel,
-.logo-wrapper__logo-box .section-form,
-.logo-wrapper__logo-box .mega-menu,
-.uk-container .logo-wrapper__logo-box,
-.content-wrapper .logo-wrapper__logo-box,
-.section-bg .logo-wrapper__logo-box,
-.section-intro .logo-wrapper__logo-box,
-.section-featured .logo-wrapper__logo-box,
-.section-carousel .logo-wrapper__logo-box,
-.section-form .logo-wrapper__logo-box,
-.mega-menu .logo-wrapper__logo-box,
-.logo-wrapper__logo-box .logo-wrapper__logo-box {
+.nav-wrapper .uk-container,
+.nav-wrapper .content-wrapper,
+.nav-wrapper .section-bg,
+.nav-wrapper .section-intro,
+.nav-wrapper .section-featured,
+.nav-wrapper .section-carousel,
+.nav-wrapper .section-form,
+.uk-container .nav-wrapper,
+.content-wrapper .nav-wrapper,
+.section-bg .nav-wrapper,
+.section-intro .nav-wrapper,
+.section-featured .nav-wrapper,
+.section-carousel .nav-wrapper,
+.section-form .nav-wrapper,
+.nav-wrapper .nav-wrapper,
+.logo-wrapper .uk-container,
+.logo-wrapper .content-wrapper,
+.logo-wrapper .section-bg,
+.logo-wrapper .section-intro,
+.logo-wrapper .section-featured,
+.logo-wrapper .section-carousel,
+.logo-wrapper .section-form,
+.logo-wrapper .nav-wrapper,
+.uk-container .logo-wrapper,
+.content-wrapper .logo-wrapper,
+.section-bg .logo-wrapper,
+.section-intro .logo-wrapper,
+.section-featured .logo-wrapper,
+.section-carousel .logo-wrapper,
+.section-form .logo-wrapper,
+.nav-wrapper .logo-wrapper,
+.logo-wrapper .logo-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
@@ -4816,7 +4816,7 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar,
-.navigation-mobile {
+.nav-wrapper .navbar {
   display: flex;
   /* 1 */
   position: relative;
@@ -4826,8 +4826,7 @@ ul.uk-nav-sub {
  ========================================================================== */
 
 .uk-navbar-container:not(.uk-navbar-transparent),
-.navigation-mobile:not(.uk-navbar-transparent),
-.navigation:not(.uk-navbar-transparent) {
+.nav-wrapper .navbar:not(.uk-navbar-transparent) {
   background: #f8f8f8;
 }
 
@@ -4836,11 +4835,9 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-container > ::before,
-.navigation-mobile > ::before,
-.navigation > ::before,
+.nav-wrapper .navbar > ::before,
 .uk-navbar-container > ::after,
-.navigation-mobile > ::after,
-.navigation > ::after {
+.nav-wrapper .navbar > ::after {
   display: none !important;
 }
 
@@ -4855,7 +4852,6 @@ ul.uk-nav-sub {
 .uk-navbar-left,
 .uk-navbar-right,
 .uk-navbar-center,
-.navigation__nav,
 .uk-navbar-center-left > *,
 .uk-navbar-center-right > * {
   display: flex;
@@ -4876,16 +4872,14 @@ ul.uk-nav-sub {
   margin-left: auto;
 }
 
-.uk-navbar-center:only-child,
-.navigation__nav:only-child {
+.uk-navbar-center:only-child {
   margin-left: auto;
   margin-right: auto;
   /* 1 */
   position: relative;
 }
 
-.uk-navbar-center:not(:only-child),
-.navigation__nav:not(:only-child) {
+.uk-navbar-center:not(:only-child) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4898,13 +4892,10 @@ ul.uk-nav-sub {
 /* 3 */
 
 .uk-navbar-center:not(:only-child) .uk-navbar-nav > li > a,
-.uk-navbar-center:not(:only-child) .navigation__nav__list > li > a,
-.navigation__nav:not(:only-child) .uk-navbar-nav > li > a,
-.navigation__nav:not(:only-child) .navigation__nav__list > li > a,
+.uk-navbar-center:not(:only-child) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-navbar-center:not(:only-child) .nav-list > li > a,
 .uk-navbar-center:not(:only-child) .uk-navbar-item,
-.navigation__nav:not(:only-child) .uk-navbar-item,
-.uk-navbar-center:not(:only-child) .uk-navbar-toggle,
-.navigation__nav:not(:only-child) .uk-navbar-toggle {
+.uk-navbar-center:not(:only-child) .uk-navbar-toggle {
   white-space: nowrap;
 }
 
@@ -4925,7 +4916,8 @@ ul.uk-nav-sub {
 }
 
 [class*=uk-navbar-center-] .uk-navbar-nav > li > a,
-[class*=uk-navbar-center-] .navigation__nav__list > li > a,
+[class*=uk-navbar-center-] .nav-wrapper .nav-list > li > a,
+.nav-wrapper [class*=uk-navbar-center-] .nav-list > li > a,
 [class*=uk-navbar-center-] .uk-navbar-item,
 [class*=uk-navbar-center-] .uk-navbar-toggle {
   white-space: nowrap;
@@ -4939,7 +4931,7 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-nav,
-.navigation__nav__list {
+.nav-wrapper .nav-list {
   display: flex;
   /* 1 */
   margin: 0;
@@ -4954,8 +4946,7 @@ ul.uk-nav-sub {
 
 .uk-navbar-left,
 .uk-navbar-right,
-.uk-navbar-center:only-child,
-.navigation__nav:only-child {
+.uk-navbar-center:only-child {
   flex-wrap: wrap;
 }
 
@@ -4968,7 +4959,7 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-nav > li > a,
-.navigation__nav__list > li > a,
+.nav-wrapper .nav-list > li > a,
 .uk-navbar-item,
 .uk-navbar-toggle {
   /* 1 */
@@ -4991,7 +4982,7 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-nav > li > a,
-.navigation__nav__list > li > a {
+.nav-wrapper .nav-list > li > a {
   color: #999;
 }
 
@@ -5001,11 +4992,11 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-nav > li:hover > a,
-.navigation__nav__list > li:hover > a,
+.nav-wrapper .nav-list > li:hover > a,
 .uk-navbar-nav > li > a:focus,
-.navigation__nav__list > li > a:focus,
+.nav-wrapper .nav-list > li > a:focus,
 .uk-navbar-nav > li > a.uk-open,
-.navigation__nav__list > li > a.uk-open {
+.nav-wrapper .nav-list > li > a.uk-open {
   color: #666;
   outline: none;
 }
@@ -5013,14 +5004,14 @@ ul.uk-nav-sub {
 /* OnClick */
 
 .uk-navbar-nav > li > a:active,
-.navigation__nav__list > li > a:active {
+.nav-wrapper .nav-list > li > a:active {
   color: #333;
 }
 
 /* Active */
 
 .uk-navbar-nav > li.uk-active > a,
-.navigation__nav__list > li.uk-active > a {
+.nav-wrapper .nav-list > li.uk-active > a {
   color: #333;
 }
 
@@ -5074,8 +5065,7 @@ ul.uk-nav-sub {
  * 4. Style
  */
 
-.uk-navbar-dropdown,
-.mega-menu {
+.uk-navbar-dropdown {
   /* 1 */
   display: none;
   /* 2 */
@@ -5092,8 +5082,7 @@ ul.uk-nav-sub {
 
 /* Show */
 
-.uk-navbar-dropdown.uk-open,
-.uk-open.mega-menu {
+.uk-navbar-dropdown.uk-open {
   display: block;
 }
 
@@ -5615,7 +5604,6 @@ ul.uk-nav-sub {
  */
 
 .uk-tab-left,
-.mega-menu__vtabs,
 .uk-tab-right {
   flex-direction: column;
   /* 1 */
@@ -5625,13 +5613,11 @@ ul.uk-nav-sub {
 /* 1 */
 
 .uk-tab-left > *,
-.mega-menu__vtabs > *,
 .uk-tab-right > * {
   padding-left: 0;
 }
 
-.uk-tab-left > * > a,
-.mega-menu__vtabs > * > a {
+.uk-tab-left > * > a {
   text-align: left;
 }
 
@@ -9220,7 +9206,8 @@ ul.uk-nav-sub {
 .content-wrapper .content,
 .section-bg__image,
 .section-content__centered,
-.section-title {
+.section-title,
+.logo-wrapper {
   text-align: center !important;
 }
 
@@ -9621,8 +9608,7 @@ iframe.uk-cover {
 /* Color
  ========================================================================== */
 
-.uk-background-default,
-.mega-menu {
+.uk-background-default {
   background-color: #fff;
 }
 
@@ -11166,8 +11152,7 @@ section[class^=section]:last-child {
 .section-intro,
 .section-featured,
 .section-carousel,
-.section-form,
-.mega-menu {
+.section-form {
   padding: 30px;
 }
 
@@ -11180,8 +11165,7 @@ section[class^=section]:last-child {
   .section-intro,
   .section-featured,
   .section-carousel,
-  .section-form,
-  .mega-menu {
+  .section-form {
     padding: 40px;
   }
 }
@@ -14847,36 +14831,53 @@ section[class^=section]:not(:last-child) {
 .image-header .uk-navbar-nav > li > a,
 .section-bg__image .uk-navbar-nav > li > a,
 .home-product-category .uk-navbar-nav > li > a,
-.uk-light .navigation__nav__list > li > a,
-.image-header .navigation__nav__list > li > a,
-.section-bg__image .navigation__nav__list > li > a,
-.home-product-category .navigation__nav__list > li > a,
+.uk-light .nav-wrapper .nav-list > li > a,
+.image-header .nav-wrapper .nav-list > li > a,
+.section-bg__image .nav-wrapper .nav-list > li > a,
+.home-product-category .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-light .nav-list > li > a,
+.nav-wrapper .image-header .nav-list > li > a,
+.nav-wrapper .section-bg__image .nav-list > li > a,
+.nav-wrapper .home-product-category .nav-list > li > a,
 .header .uk-navbar-nav > li > a,
-.header .navigation__nav__list > li > a,
+.header .nav-wrapper .nav-list > li > a,
+.nav-wrapper .header .nav-list > li > a,
 .image-page-header .uk-navbar-nav > li > a,
-.image-page-header .navigation__nav__list > li > a,
+.image-page-header .nav-wrapper .nav-list > li > a,
+.nav-wrapper .image-page-header .nav-list > li > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li > a,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li > a,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li > a,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li > a,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li > a,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li > a,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li > a,
-.uk-card-primary.uk-card-body .navigation__nav__list > li > a,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li > a,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li > a,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li > a,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li > a,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li > a,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li > a,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li > a,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li > a,
 .uk-overlay-primary .uk-navbar-nav > li > a,
 .home-product-category__overlay .uk-navbar-nav > li > a,
-.uk-overlay-primary .navigation__nav__list > li > a,
-.home-product-category__overlay .navigation__nav__list > li > a,
+.uk-overlay-primary .nav-wrapper .nav-list > li > a,
+.home-product-category__overlay .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-overlay-primary .nav-list > li > a,
+.nav-wrapper .home-product-category__overlay .nav-list > li > a,
 .uk-offcanvas-bar .uk-navbar-nav > li > a,
-.uk-offcanvas-bar .navigation__nav__list > li > a {
+.uk-offcanvas-bar .nav-wrapper .nav-list > li > a,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li > a {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -14884,104 +14885,155 @@ section[class^=section]:not(:last-child) {
 .image-header .uk-navbar-nav > li:hover > a,
 .section-bg__image .uk-navbar-nav > li:hover > a,
 .home-product-category .uk-navbar-nav > li:hover > a,
-.uk-light .navigation__nav__list > li:hover > a,
-.image-header .navigation__nav__list > li:hover > a,
-.section-bg__image .navigation__nav__list > li:hover > a,
-.home-product-category .navigation__nav__list > li:hover > a,
+.uk-light .nav-wrapper .nav-list > li:hover > a,
+.image-header .nav-wrapper .nav-list > li:hover > a,
+.section-bg__image .nav-wrapper .nav-list > li:hover > a,
+.home-product-category .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-light .nav-list > li:hover > a,
+.nav-wrapper .image-header .nav-list > li:hover > a,
+.nav-wrapper .section-bg__image .nav-list > li:hover > a,
+.nav-wrapper .home-product-category .nav-list > li:hover > a,
 .header .uk-navbar-nav > li:hover > a,
-.header .navigation__nav__list > li:hover > a,
+.header .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .header .nav-list > li:hover > a,
 .image-page-header .uk-navbar-nav > li:hover > a,
-.image-page-header .navigation__nav__list > li:hover > a,
+.image-page-header .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .image-page-header .nav-list > li:hover > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li:hover > a,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li:hover > a,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li:hover > a,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li:hover > a,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li:hover > a,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li:hover > a,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li:hover > a,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li:hover > a,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li:hover > a,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li:hover > a,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li:hover > a,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li:hover > a,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li:hover > a,
-.uk-card-primary.uk-card-body .navigation__nav__list > li:hover > a,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li:hover > a,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li:hover > a,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li:hover > a,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li:hover > a,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li:hover > a,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li:hover > a,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li:hover > a,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li:hover > a,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li:hover > a,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li:hover > a,
 .uk-overlay-primary .uk-navbar-nav > li:hover > a,
 .home-product-category__overlay .uk-navbar-nav > li:hover > a,
-.uk-overlay-primary .navigation__nav__list > li:hover > a,
-.home-product-category__overlay .navigation__nav__list > li:hover > a,
+.uk-overlay-primary .nav-wrapper .nav-list > li:hover > a,
+.home-product-category__overlay .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-overlay-primary .nav-list > li:hover > a,
+.nav-wrapper .home-product-category__overlay .nav-list > li:hover > a,
 .uk-offcanvas-bar .uk-navbar-nav > li:hover > a,
-.uk-offcanvas-bar .navigation__nav__list > li:hover > a,
+.uk-offcanvas-bar .nav-wrapper .nav-list > li:hover > a,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li:hover > a,
 .uk-light .uk-navbar-nav > li > a:focus,
 .image-header .uk-navbar-nav > li > a:focus,
 .section-bg__image .uk-navbar-nav > li > a:focus,
 .home-product-category .uk-navbar-nav > li > a:focus,
-.uk-light .navigation__nav__list > li > a:focus,
-.image-header .navigation__nav__list > li > a:focus,
-.section-bg__image .navigation__nav__list > li > a:focus,
-.home-product-category .navigation__nav__list > li > a:focus,
+.uk-light .nav-wrapper .nav-list > li > a:focus,
+.image-header .nav-wrapper .nav-list > li > a:focus,
+.section-bg__image .nav-wrapper .nav-list > li > a:focus,
+.home-product-category .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-light .nav-list > li > a:focus,
+.nav-wrapper .image-header .nav-list > li > a:focus,
+.nav-wrapper .section-bg__image .nav-list > li > a:focus,
+.nav-wrapper .home-product-category .nav-list > li > a:focus,
 .header .uk-navbar-nav > li > a:focus,
-.header .navigation__nav__list > li > a:focus,
+.header .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .header .nav-list > li > a:focus,
 .image-page-header .uk-navbar-nav > li > a:focus,
-.image-page-header .navigation__nav__list > li > a:focus,
+.image-page-header .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .image-page-header .nav-list > li > a:focus,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:focus,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li > a:focus,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li > a:focus,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:focus,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a:focus,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li > a:focus,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:focus,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li > a:focus,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li > a:focus,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:focus,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a:focus,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li > a:focus,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li > a:focus,
-.uk-card-primary.uk-card-body .navigation__nav__list > li > a:focus,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li > a:focus,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:focus,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li > a:focus,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li > a:focus,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li > a:focus,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li > a:focus,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li > a:focus,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:focus,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li > a:focus,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li > a:focus,
 .uk-overlay-primary .uk-navbar-nav > li > a:focus,
 .home-product-category__overlay .uk-navbar-nav > li > a:focus,
-.uk-overlay-primary .navigation__nav__list > li > a:focus,
-.home-product-category__overlay .navigation__nav__list > li > a:focus,
+.uk-overlay-primary .nav-wrapper .nav-list > li > a:focus,
+.home-product-category__overlay .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-overlay-primary .nav-list > li > a:focus,
+.nav-wrapper .home-product-category__overlay .nav-list > li > a:focus,
 .uk-offcanvas-bar .uk-navbar-nav > li > a:focus,
-.uk-offcanvas-bar .navigation__nav__list > li > a:focus,
+.uk-offcanvas-bar .nav-wrapper .nav-list > li > a:focus,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li > a:focus,
 .uk-light .uk-navbar-nav > li > a.uk-open,
 .image-header .uk-navbar-nav > li > a.uk-open,
 .section-bg__image .uk-navbar-nav > li > a.uk-open,
 .home-product-category .uk-navbar-nav > li > a.uk-open,
-.uk-light .navigation__nav__list > li > a.uk-open,
-.image-header .navigation__nav__list > li > a.uk-open,
-.section-bg__image .navigation__nav__list > li > a.uk-open,
-.home-product-category .navigation__nav__list > li > a.uk-open,
+.uk-light .nav-wrapper .nav-list > li > a.uk-open,
+.image-header .nav-wrapper .nav-list > li > a.uk-open,
+.section-bg__image .nav-wrapper .nav-list > li > a.uk-open,
+.home-product-category .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-light .nav-list > li > a.uk-open,
+.nav-wrapper .image-header .nav-list > li > a.uk-open,
+.nav-wrapper .section-bg__image .nav-list > li > a.uk-open,
+.nav-wrapper .home-product-category .nav-list > li > a.uk-open,
 .header .uk-navbar-nav > li > a.uk-open,
-.header .navigation__nav__list > li > a.uk-open,
+.header .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .header .nav-list > li > a.uk-open,
 .image-page-header .uk-navbar-nav > li > a.uk-open,
-.image-page-header .navigation__nav__list > li > a.uk-open,
+.image-page-header .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .image-page-header .nav-list > li > a.uk-open,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a.uk-open,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li > a.uk-open,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li > a.uk-open,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a.uk-open,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a.uk-open,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li > a.uk-open,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a.uk-open,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li > a.uk-open,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li > a.uk-open,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a.uk-open,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a.uk-open,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li > a.uk-open,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li > a.uk-open,
-.uk-card-primary.uk-card-body .navigation__nav__list > li > a.uk-open,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li > a.uk-open,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a.uk-open,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li > a.uk-open,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li > a.uk-open,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li > a.uk-open,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li > a.uk-open,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li > a.uk-open,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a.uk-open,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li > a.uk-open,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li > a.uk-open,
 .uk-overlay-primary .uk-navbar-nav > li > a.uk-open,
 .home-product-category__overlay .uk-navbar-nav > li > a.uk-open,
-.uk-overlay-primary .navigation__nav__list > li > a.uk-open,
-.home-product-category__overlay .navigation__nav__list > li > a.uk-open,
+.uk-overlay-primary .nav-wrapper .nav-list > li > a.uk-open,
+.home-product-category__overlay .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-overlay-primary .nav-list > li > a.uk-open,
+.nav-wrapper .home-product-category__overlay .nav-list > li > a.uk-open,
 .uk-offcanvas-bar .uk-navbar-nav > li > a.uk-open,
-.uk-offcanvas-bar .navigation__nav__list > li > a.uk-open {
+.uk-offcanvas-bar .nav-wrapper .nav-list > li > a.uk-open,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li > a.uk-open {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -14989,36 +15041,53 @@ section[class^=section]:not(:last-child) {
 .image-header .uk-navbar-nav > li > a:active,
 .section-bg__image .uk-navbar-nav > li > a:active,
 .home-product-category .uk-navbar-nav > li > a:active,
-.uk-light .navigation__nav__list > li > a:active,
-.image-header .navigation__nav__list > li > a:active,
-.section-bg__image .navigation__nav__list > li > a:active,
-.home-product-category .navigation__nav__list > li > a:active,
+.uk-light .nav-wrapper .nav-list > li > a:active,
+.image-header .nav-wrapper .nav-list > li > a:active,
+.section-bg__image .nav-wrapper .nav-list > li > a:active,
+.home-product-category .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-light .nav-list > li > a:active,
+.nav-wrapper .image-header .nav-list > li > a:active,
+.nav-wrapper .section-bg__image .nav-list > li > a:active,
+.nav-wrapper .home-product-category .nav-list > li > a:active,
 .header .uk-navbar-nav > li > a:active,
-.header .navigation__nav__list > li > a:active,
+.header .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .header .nav-list > li > a:active,
 .image-page-header .uk-navbar-nav > li > a:active,
-.image-page-header .navigation__nav__list > li > a:active,
+.image-page-header .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .image-page-header .nav-list > li > a:active,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li > a:active,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li > a:active,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a:active,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li > a:active,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li > a:active,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li > a:active,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li > a:active,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li > a:active,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li > a:active,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li > a:active,
-.uk-card-primary.uk-card-body .navigation__nav__list > li > a:active,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li > a:active,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:active,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li > a:active,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li > a:active,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li > a:active,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li > a:active,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li > a:active,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li > a:active,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li > a:active,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li > a:active,
 .uk-overlay-primary .uk-navbar-nav > li > a:active,
 .home-product-category__overlay .uk-navbar-nav > li > a:active,
-.uk-overlay-primary .navigation__nav__list > li > a:active,
-.home-product-category__overlay .navigation__nav__list > li > a:active,
+.uk-overlay-primary .nav-wrapper .nav-list > li > a:active,
+.home-product-category__overlay .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-overlay-primary .nav-list > li > a:active,
+.nav-wrapper .home-product-category__overlay .nav-list > li > a:active,
 .uk-offcanvas-bar .uk-navbar-nav > li > a:active,
-.uk-offcanvas-bar .navigation__nav__list > li > a:active {
+.uk-offcanvas-bar .nav-wrapper .nav-list > li > a:active,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li > a:active {
   color: #fff;
 }
 
@@ -15026,36 +15095,53 @@ section[class^=section]:not(:last-child) {
 .image-header .uk-navbar-nav > li.uk-active > a,
 .section-bg__image .uk-navbar-nav > li.uk-active > a,
 .home-product-category .uk-navbar-nav > li.uk-active > a,
-.uk-light .navigation__nav__list > li.uk-active > a,
-.image-header .navigation__nav__list > li.uk-active > a,
-.section-bg__image .navigation__nav__list > li.uk-active > a,
-.home-product-category .navigation__nav__list > li.uk-active > a,
+.uk-light .nav-wrapper .nav-list > li.uk-active > a,
+.image-header .nav-wrapper .nav-list > li.uk-active > a,
+.section-bg__image .nav-wrapper .nav-list > li.uk-active > a,
+.home-product-category .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-light .nav-list > li.uk-active > a,
+.nav-wrapper .image-header .nav-list > li.uk-active > a,
+.nav-wrapper .section-bg__image .nav-list > li.uk-active > a,
+.nav-wrapper .home-product-category .nav-list > li.uk-active > a,
 .header .uk-navbar-nav > li.uk-active > a,
-.header .navigation__nav__list > li.uk-active > a,
+.header .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .header .nav-list > li.uk-active > a,
 .image-page-header .uk-navbar-nav > li.uk-active > a,
-.image-page-header .navigation__nav__list > li.uk-active > a,
+.image-page-header .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .image-page-header .nav-list > li.uk-active > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-section-primary:not(.uk-preserve-color) .navigation__nav__list > li.uk-active > a,
+.uk-section-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-section-primary:not(.uk-preserve-color) .nav-list > li.uk-active > a,
 .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-section-secondary:not(.uk-preserve-color) .navigation__nav__list > li.uk-active > a,
+.uk-section-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-section-secondary:not(.uk-preserve-color) .nav-list > li.uk-active > a,
 .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-tile-primary:not(.uk-preserve-color) .navigation__nav__list > li.uk-active > a,
+.uk-tile-primary:not(.uk-preserve-color) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-tile-primary:not(.uk-preserve-color) .nav-list > li.uk-active > a,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-tile-secondary:not(.uk-preserve-color) .navigation__nav__list > li.uk-active > a,
+.uk-tile-secondary:not(.uk-preserve-color) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-tile-secondary:not(.uk-preserve-color) .nav-list > li.uk-active > a,
 .uk-card-primary.uk-card-body .uk-navbar-nav > li.uk-active > a,
-.uk-card-primary.uk-card-body .navigation__nav__list > li.uk-active > a,
+.uk-card-primary.uk-card-body .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-card-primary.uk-card-body .nav-list > li.uk-active > a,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-navbar-nav > li.uk-active > a,
-.uk-card-primary > :not([class*=uk-card-media]) .navigation__nav__list > li.uk-active > a,
+.uk-card-primary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-card-primary > :not([class*=uk-card-media]) .nav-list > li.uk-active > a,
 .uk-card-secondary.uk-card-body .uk-navbar-nav > li.uk-active > a,
-.uk-card-secondary.uk-card-body .navigation__nav__list > li.uk-active > a,
+.uk-card-secondary.uk-card-body .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-card-secondary.uk-card-body .nav-list > li.uk-active > a,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-navbar-nav > li.uk-active > a,
-.uk-card-secondary > :not([class*=uk-card-media]) .navigation__nav__list > li.uk-active > a,
+.uk-card-secondary > :not([class*=uk-card-media]) .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-card-secondary > :not([class*=uk-card-media]) .nav-list > li.uk-active > a,
 .uk-overlay-primary .uk-navbar-nav > li.uk-active > a,
 .home-product-category__overlay .uk-navbar-nav > li.uk-active > a,
-.uk-overlay-primary .navigation__nav__list > li.uk-active > a,
-.home-product-category__overlay .navigation__nav__list > li.uk-active > a,
+.uk-overlay-primary .nav-wrapper .nav-list > li.uk-active > a,
+.home-product-category__overlay .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-overlay-primary .nav-list > li.uk-active > a,
+.nav-wrapper .home-product-category__overlay .nav-list > li.uk-active > a,
 .uk-offcanvas-bar .uk-navbar-nav > li.uk-active > a,
-.uk-offcanvas-bar .navigation__nav__list > li.uk-active > a {
+.uk-offcanvas-bar .nav-wrapper .nav-list > li.uk-active > a,
+.nav-wrapper .uk-offcanvas-bar .nav-list > li.uk-active > a {
   color: #fff;
 }
 
@@ -16485,7 +16571,7 @@ h6,
 
 body {
   color: #555;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 a:hover {
@@ -16558,17 +16644,8 @@ a:hover {
   color: inherit;
 }
 
-.logo-wrapper {
-  background-color: #fff;
-  text-align: center;
-}
-
-.logo-wrapper__logo-box--logo {
-  height: 7.5rem;
-}
-
 .header {
-  height: 95vh;
+  height: 78.5vh;
 }
 
 .header--text h1,
@@ -16576,23 +16653,25 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
-.navigation {
+.logo-wrapper {
+  background-color: #fff;
+}
+
+.logo-wrapper a img {
+  height: 5rem;
+}
+
+.nav-wrapper nav {
   background-color: #fff !important;
 }
 
-.navigation__nav__list li a {
-  font-size: 1.125rem;
-  color: #333;
+.nav-wrapper .nav-list__item--link {
+  font-weight: 500;
+  color: #333 !important;
 }
 
-.navigation__nav__list li a:visited,
-.navigation__nav__list li a:active,
-.navigation__nav__list li a:hover {
-  color: #555;
-}
-
-.navigation-mobile {
-  background-color: #fff !important;
+.nav-wrapper .nav-list__item .uk-panel a {
+  color: #000;
 }
 
 .section-intro,

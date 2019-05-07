@@ -1,30 +1,29 @@
-.navigation {
-    @extend .uk-navbar-container;
-    background-color: $color-white !important;
-    &__nav {
-        @extend .uk-navbar-center;
-
-        &__list {
-            @extend .uk-navbar-nav;
-            li a {
-                font-size: 1.125rem;
-                color: $color-grey-dark-3;
-                &:visited,
-                &:active,
-                &:hover {
-                    color: $color-grey-dark-4;
-                }
-            }
-        }
+.logo-wrapper{
+    @extend .uk-container, .uk-text-center;
+    background-color: $color-white;
+    a img{
+        height: 5rem;;
     }
 }
-.navigation-mobile {
-    @extend .uk-navbar, .uk-navbar-container;
-    background-color: $color-white !important;
-}
-.mega-menu {
-    @extend .uk-container, .uk-navbar-dropdown, .uk-padding, .uk-background-default;
-    &__vtabs {
-        @extend .uk-tab-left;
+.nav-wrapper{    
+    @extend .uk-container;
+    nav{        
+        background-color: $color-white !important;
+    }
+    .navbar{
+        @extend .uk-navbar-container, .uk-navbar;
+
+    }
+    .nav-list{
+        @extend .uk-navbar-nav;
+        &__item{
+            &--link{
+                font-weight: 500;
+                color: $color-grey-dark-3 !important;
+            }
+            .uk-panel a{
+                color:$color-black;
+            }
+        }
     }
 }

@@ -1,62 +1,6 @@
-.logo-wrapper {
-    background-color: $color-white;
-    text-align: center;
-    &__logo-box {
-        @extend .uk-container;
-        &--logo {
-            height: 7.5rem;
-        }
-    }
-}
-
-// .header {
-//     @extend .uk-flex,
-//         .uk-flex-right,
-//         .uk-flex-middle,
-//         .uk-background-cover,
-//         .uk-light;
-//     position: relative;
-// 	height: 95vh;
-
-// 	&__text-box{
-// 		.heading-primary{
-// 			padding: 0 1.5rem;
-// 		}
-// 	}
-// }
-
-// .heading-primary {
-//     color: $color-white;
-//     text-transform: uppercase;
-//     backface-visibility: hidden;
-
-//     &--main {
-//         display: block;
-//         font-size: 3rem;
-//         font-weight: 400;
-//         letter-spacing: 1rem;
-
-//         animation-name: moveInLeft;
-//         animation-duration: 1s;
-//         animation-timing-function: ease-out;
-
-//         /*
-//         animation-delay: 3s;
-//         animation-iteration-count: 3;
-//         */
-//     }
-
-//     &--sub {
-//         display: block;
-//         font-size: 1.5rem;
-//         font-weight: normal;
-//         letter-spacing: .5rem;
-//         animation: moveInRight 1s ease-out;
-//     }
-// }
 .header{
     @extend  .uk-height-large , .uk-flex , .uk-flex-center , .uk-flex-middle , .uk-background-cover , .uk-light;
-    height: 95vh;
+    height: 78.5vh;
     &--text{
         h1,h2{
          @extend .uk-margin-remove;
