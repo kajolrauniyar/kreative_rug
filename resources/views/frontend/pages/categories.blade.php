@@ -1,11 +1,12 @@
 @section('title') | {!!$category->name!!} @endsection
 @extends('layouts.frontend') 
 @section('content')
-<section class="image-page-header">
-    <div class="image-wrapper" data-src="{{asset($category->path)}}" uk-img>
-        <h1 class="image-header-text">{{$category->name}}</h1>
-    </div>
+<section class="image-page-header" data-src="{{asset($category->path)}}" uk-img>
+        <div class="page-title__wrapper">
+            <h1 class="uk-position-large uk-position-center-right">{{$category->name}}</h1>
+        </div>
 </section>
+
 <section class="uk-section uk-section-muted">
     <div class="uk-container">
         <div uk-grid>

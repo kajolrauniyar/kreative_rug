@@ -1,11 +1,7 @@
 @section('title') | Get Inspired @endsection
 @extends('layouts.frontend') 
 @section('content')
-<section class="image-page-header">
-    <div class="image-wrapper" data-src="{{$page->banner}}" uk-img>
-        <h1 class="image-header-text">{!!$page->content{0}->sectionTitle!!}</h1>
-    </div>
-</section>
+@include('frontend.partials._page-header')
 <section class="uk-section uk-section-muted">
     <div class="uk-container">
         <div uk-grid>

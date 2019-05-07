@@ -16,7 +16,7 @@
         </div>
         <div class="uk-grid-small uk-padding-small" uk-grid>
             <div class="uk-width-1-2@l uk-width-1-1@s">
-                <img src="{{ asset('img/product.jpg') }}" alt="">
+                <img src="https://source.unsplash.com/480x640/?object" alt="">
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@s">
                 <div class="uk-text-left">
