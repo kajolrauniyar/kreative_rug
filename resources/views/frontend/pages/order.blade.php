@@ -6,6 +6,7 @@
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
         <p class="uk-h4 uk-text-center">
             @if (isset($page->content{0}->sectionContent))
+            {{strip_tags($page->content{0}->sectionContent)}}
             @endif
         </p>
         <div uk-grid>
