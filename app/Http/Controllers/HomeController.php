@@ -237,7 +237,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section5_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
 
                 $home->section5_image = $imagePath;
                 File::delete(public_path($oldImage));
