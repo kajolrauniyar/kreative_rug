@@ -7,8 +7,44 @@
      </div>
 </header>
 <main>
-
-    <section class="section-intro">
+<section class="value-grid">
+    <div class="uk-child-width-1-3@m" uk-grid>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-media-top">
+                    <img src="https://source.unsplash.com/1800x1200/?vinyl" alt="">
+                </div>
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Media Top</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Media Bottom</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="https://source.unsplash.com/1800x1200/?cup" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="value-item">
+                <div class="uk-card-media-top">
+                    <img src="https://source.unsplash.com/1800x1200/?vase" alt="">
+                </div>
+                <div class="uk-card-body uk-paddin-small">
+                    <h3 class="uk-card-title">Media Top</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
+    {{-- <section class="section-intro">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section1_title}}</h2>
             <span class="divide-line"></span>
@@ -82,6 +118,6 @@
                 <p>{{$home->section4_content}}</p>
             </div>
         </div>
-    </section>
+    </section> --}}
 </main>
 @endsection

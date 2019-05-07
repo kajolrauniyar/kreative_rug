@@ -101,27 +101,27 @@ class HomeController extends Controller
 
             $media = Media::find($request->section1_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
             $home->section1_image = $thumb;
 
             $media = Media::find($request->section2_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
             $home->section2_image = $thumb;            
 
             $media = Media::find($request->section3_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
             $home->section3_image = $thumb;
 
             $media = Media::find($request->section4_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
             $home->section4_image = $thumb;     
             
             $media = Media::find($request->section5_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 840,360);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
             $home->section5_image = $thumb;            
 
             $home->save();
@@ -189,7 +189,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section1_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
 
                 $home->section1_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -201,7 +201,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section2_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
 
                 $home->section2_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -213,7 +213,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section3_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,768);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
 
                 $home->section3_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -225,7 +225,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section4_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 640,480);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
 
                 $home->section4_image = $imagePath;
                 File::delete(public_path($oldImage));

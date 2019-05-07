@@ -2667,6 +2667,7 @@ select.uk-form-width-xsmall {
 
 .uk-container,
 .content-wrapper,
+.value-grid,
 .section-bg,
 .section-intro,
 .section-featured,
@@ -2688,6 +2689,7 @@ select.uk-form-width-xsmall {
 @media (min-width: 640px) {
   .uk-container,
   .content-wrapper,
+  .value-grid,
   .section-bg,
   .section-intro,
   .section-featured,
@@ -2705,6 +2707,7 @@ select.uk-form-width-xsmall {
 @media (min-width: 960px) {
   .uk-container,
   .content-wrapper,
+  .value-grid,
   .section-bg,
   .section-intro,
   .section-featured,
@@ -2723,6 +2726,7 @@ select.uk-form-width-xsmall {
 
 .uk-container::before,
 .content-wrapper::before,
+.value-grid::before,
 .section-bg::before,
 .section-intro::before,
 .section-featured::before,
@@ -2732,6 +2736,7 @@ select.uk-form-width-xsmall {
 .logo-wrapper::before,
 .uk-container::after,
 .content-wrapper::after,
+.value-grid::after,
 .section-bg::after,
 .section-intro::after,
 .section-featured::after,
@@ -2745,6 +2750,7 @@ select.uk-form-width-xsmall {
 
 .uk-container::after,
 .content-wrapper::after,
+.value-grid::after,
 .section-bg::after,
 .section-intro::after,
 .section-featured::after,
@@ -2761,6 +2767,7 @@ select.uk-form-width-xsmall {
 
 .uk-container > :last-child,
 .content-wrapper > :last-child,
+.value-grid > :last-child,
 .section-bg > :last-child,
 .section-intro > :last-child,
 .section-featured > :last-child,
@@ -2779,25 +2786,37 @@ select.uk-form-width-xsmall {
 .content-wrapper .uk-container,
 .uk-container .content-wrapper,
 .content-wrapper .content-wrapper,
+.value-grid .uk-container,
+.value-grid .content-wrapper,
+.uk-container .value-grid,
+.content-wrapper .value-grid,
+.value-grid .value-grid,
 .section-bg .uk-container,
 .section-bg .content-wrapper,
+.section-bg .value-grid,
 .uk-container .section-bg,
 .content-wrapper .section-bg,
+.value-grid .section-bg,
 .section-bg .section-bg,
 .section-intro .uk-container,
 .section-intro .content-wrapper,
+.section-intro .value-grid,
 .section-intro .section-bg,
 .section-featured .uk-container,
 .section-featured .content-wrapper,
+.section-featured .value-grid,
 .section-featured .section-bg,
 .section-carousel .uk-container,
 .section-carousel .content-wrapper,
+.section-carousel .value-grid,
 .section-carousel .section-bg,
 .section-form .uk-container,
 .section-form .content-wrapper,
+.section-form .value-grid,
 .section-form .section-bg,
 .uk-container .section-intro,
 .content-wrapper .section-intro,
+.value-grid .section-intro,
 .section-bg .section-intro,
 .section-intro .section-intro,
 .section-featured .section-intro,
@@ -2805,6 +2824,7 @@ select.uk-form-width-xsmall {
 .section-form .section-intro,
 .uk-container .section-featured,
 .content-wrapper .section-featured,
+.value-grid .section-featured,
 .section-bg .section-featured,
 .section-intro .section-featured,
 .section-featured .section-featured,
@@ -2812,6 +2832,7 @@ select.uk-form-width-xsmall {
 .section-form .section-featured,
 .uk-container .section-carousel,
 .content-wrapper .section-carousel,
+.value-grid .section-carousel,
 .section-bg .section-carousel,
 .section-intro .section-carousel,
 .section-featured .section-carousel,
@@ -2819,6 +2840,7 @@ select.uk-form-width-xsmall {
 .section-form .section-carousel,
 .uk-container .section-form,
 .content-wrapper .section-form,
+.value-grid .section-form,
 .section-bg .section-form,
 .section-intro .section-form,
 .section-featured .section-form,
@@ -2826,6 +2848,7 @@ select.uk-form-width-xsmall {
 .section-form .section-form,
 .nav-wrapper .uk-container,
 .nav-wrapper .content-wrapper,
+.nav-wrapper .value-grid,
 .nav-wrapper .section-bg,
 .nav-wrapper .section-intro,
 .nav-wrapper .section-featured,
@@ -2833,6 +2856,7 @@ select.uk-form-width-xsmall {
 .nav-wrapper .section-form,
 .uk-container .nav-wrapper,
 .content-wrapper .nav-wrapper,
+.value-grid .nav-wrapper,
 .section-bg .nav-wrapper,
 .section-intro .nav-wrapper,
 .section-featured .nav-wrapper,
@@ -2841,6 +2865,7 @@ select.uk-form-width-xsmall {
 .nav-wrapper .nav-wrapper,
 .logo-wrapper .uk-container,
 .logo-wrapper .content-wrapper,
+.logo-wrapper .value-grid,
 .logo-wrapper .section-bg,
 .logo-wrapper .section-intro,
 .logo-wrapper .section-featured,
@@ -2849,6 +2874,7 @@ select.uk-form-width-xsmall {
 .logo-wrapper .nav-wrapper,
 .uk-container .logo-wrapper,
 .content-wrapper .logo-wrapper,
+.value-grid .logo-wrapper,
 .section-bg .logo-wrapper,
 .section-intro .logo-wrapper,
 .section-featured .logo-wrapper,
@@ -3556,7 +3582,8 @@ select.uk-form-width-xsmall {
    Component: Card
  ========================================================================== */
 
-.uk-card {
+.uk-card,
+.value-grid .value-item {
   position: relative;
   box-sizing: border-box;
 }
@@ -3671,16 +3698,19 @@ select.uk-form-width-xsmall {
  * Note: Header and Footer are only implemented for the default style
  */
 
-.uk-card-default {
+.uk-card-default,
+.value-grid .value-item {
   background: #ffffff;
   color: #666;
 }
 
-.uk-card-default .uk-card-title {
+.uk-card-default .uk-card-title,
+.value-grid .value-item .uk-card-title {
   color: #333;
 }
 
-.uk-card-default.uk-card-hover:hover {
+.uk-card-default.uk-card-hover:hover,
+.value-grid .uk-card-hover.value-item:hover {
   background-color: #ebebeb;
 }
 
@@ -10222,7 +10252,8 @@ iframe.uk-cover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.uk-box-shadow-large {
+.uk-box-shadow-large,
+.value-grid .value-item {
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -11147,6 +11178,7 @@ section[class^=section]:last-child {
  ========================================================================== */
 
 .uk-padding,
+.value-grid,
 .section-bg__image p,
 .section-bg,
 .section-intro,
@@ -11160,6 +11192,7 @@ section[class^=section]:last-child {
 
 @media (min-width: 1200px) {
   .uk-padding,
+  .value-grid,
   .section-bg__image p,
   .section-bg,
   .section-intro,
@@ -11224,6 +11257,7 @@ section[class^=section]:not(:last-child) {
 
 .uk-padding-remove-horizontal,
 .footer__social__list,
+.value-grid,
 .product-category__item--name {
   padding-left: 0 !important;
   padding-right: 0 !important;
