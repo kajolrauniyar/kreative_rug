@@ -52,7 +52,7 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $this->validate($request, [
             'heading' => 'required',
             'subheading' => 'required',

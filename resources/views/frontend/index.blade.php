@@ -12,33 +12,33 @@
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
-                    <img src="https://source.unsplash.com/1800x1200/?vinyl" alt="">
+                    <img src="{{ asset($home->section2_image) }}" alt="">
                 </div>
                 <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">Media Top</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <h3 class="uk-card-title">{{$home->section2_title}}</h3>
+                    <p>{{$home->section2_content}}</p>
                 </div>
             </div>
         </div>
         <div>
             <div class="value-item">
                 <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">Media Bottom</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">{{$home->section3_title}}</h3>
+                    <p>{{$home->section3_content}}</p>
                 </div>
                 <div class="uk-card-media-bottom">
-                    <img src="https://source.unsplash.com/1800x1200/?cup" alt="">
+                    <img src="{{ asset($home->section3_image) }}" alt="">
                 </div>
             </div>
         </div>
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
-                    <img src="https://source.unsplash.com/1800x1200/?vase" alt="">
+                    <img src="{{ asset($home->section4_image) }}" alt="">
                 </div>
                 <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">Media Top</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">{{$home->section4_title}}</h3>
+                    <p>{{$home->section4_title}}</p>
                 </div>
             </div>
         </div>        
