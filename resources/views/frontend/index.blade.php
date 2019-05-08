@@ -58,7 +58,7 @@
                     <img src="https://source.unsplash.com/450x300/?vase" alt="">
                 </div>
                 <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">Design Your Custom Rug</h3>
+                    <h3 class="uk-card-title">Environment Friendly</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>

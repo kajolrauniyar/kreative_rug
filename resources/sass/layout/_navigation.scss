@@ -29,7 +29,7 @@
 }
 .mobile-menu{
     @extend .uk-navbar, .uk-navbar-container;
-    background-color: $color-white;
+    background-color: $color-white !important;
     .mobile-logo-wrapper{
         @extend .uk-navbar-item, .uk-logo;
         img{

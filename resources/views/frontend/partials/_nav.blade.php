@@ -45,54 +45,33 @@
     </div>
     <div class="uk-navbar-right">
         <div>
-            <a class="uk-navbar-toggle uk-navbar-toggle-icon uk-icon"  uk-toggle="target: #offcanvas-nav" href="#" uk-navbar-toggle-icon="" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a>
+            <a class="uk-navbar-toggle uk-navbar-toggle-icon uk-icon"  uk-toggle="target: #offcanvas-nav" href="#" uk-navbar-toggle-icon="" aria-expanded="false">
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+                    <rect y="9" width="20" height="2"></rect>
+                    <rect y="3" width="20" height="2"></rect>
+                    <rect y="15" width="20" height="2"></rect>
+                </svg>
+            </a>
         </div>
     </div>
 </nav>
 
-{{-- <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button>
-
-<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Default Nav</button>
-
-<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li class="uk-parent">
-                <a href="#">Parent</a>
-                <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
-                </ul>
-            </li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-        </ul>
-
-    </div>
-</div>
---}}
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+<div id="offcanvas-nav" uk-offcanvas="overlay: true;flip: true;">
     <div class="uk-offcanvas-bar">
-
         <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-active"><a href="/">Home</a></li>            
             <li class="uk-parent">
-                <a href="#">Parent</a>
+                <a href="{{ route('frontend.inspire') }}">Get Inspired</a>
                 <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
+                    @foreach ($categories as $category)
+                        <li><a href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a></li>
+                    @endforeach
                 </ul>
             </li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            <li class="uk-active"><a href="{{ route('frontend.design') }}">Design Your Rug</a></li>
+            <li class="uk-active"><a href="{{ route('frontend.process') }}">Rug Making Process</a></li>
+            <li class="uk-active"><a href="{{ route('frontend.about') }}">About</a></li>
+            <li class="uk-active"><a href="{{ route('frontend.contact') }}">Contact</a></li>
         </ul>
 
     </div>

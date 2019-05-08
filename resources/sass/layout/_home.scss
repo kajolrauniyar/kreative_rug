@@ -105,7 +105,7 @@ section[class^="section"] {
 }
 
 .value-grid{
-    @extend .uk-container ,.uk-padding , .uk-padding-remove-horizontal;
+    @extend .uk-container ,.uk-padding-large , .uk-padding-remove-horizontal;
     .value-item{
         @extend .uk-card, .uk-card-default, .uk-box-shadow-large;
     }

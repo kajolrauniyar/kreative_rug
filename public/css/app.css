@@ -11191,7 +11191,6 @@ section[class^=section]:last-child {
  ========================================================================== */
 
 .uk-padding,
-.value-grid,
 .section-bg__image p,
 .section-bg,
 .section-intro,
@@ -11205,7 +11204,6 @@ section[class^=section]:last-child {
 
 @media (min-width: 1200px) {
   .uk-padding,
-  .value-grid,
   .section-bg__image p,
   .section-bg,
   .section-intro,
@@ -11227,14 +11225,16 @@ section[class^=section]:last-child {
 /* Large
  ========================================================================== */
 
-.uk-padding-large {
+.uk-padding-large,
+.value-grid {
   padding: 30px;
 }
 
 /* Desktop and bigger */
 
 @media (min-width: 1200px) {
-  .uk-padding-large {
+  .uk-padding-large,
+  .value-grid {
     padding: 70px;
   }
 }
@@ -16892,7 +16892,7 @@ a:hover {
 }
 
 .mobile-menu {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .mobile-menu .mobile-logo-wrapper img {
