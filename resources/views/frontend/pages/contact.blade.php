@@ -1,8 +1,7 @@
 @section('title') | Contact Us @endsection
-@extends('layouts.frontend') 
+@extends('layouts.frontend')
 @section('content')
-<div class="image-header" data-src="https://source.unsplash.com/weekly?contact"
-    uk-img>
+<div class="image-header" data-src="https://source.unsplash.com/weekly?contact" uk-img>
     <h1>Contact Us</h1>
 </div>
 <section class="uk-section uk-section-default">
@@ -15,9 +14,12 @@
                 <h4 class="uk-margin-small uk-margin-remove-horizontal">Follow us on:</h4>
                 <div class="contact__social-box__contact__social">
                     @isset($setting->facebook)
-                    <a href="{{$setting->facebook}}"><span uk-icon="facebook"></span></a> @endisset @isset($setting->twiter)
-                    <a href="{{$setting->twitter}}"><span uk-icon="twitter"></span></a> @endisset @isset($setting->instagram)
-                    <a href="{{$setting->instagram}}"><span uk-icon="instagram"></span></a> @endisset @isset($setting->youtube)
+                    <a href="{{$setting->facebook}}"><span uk-icon="facebook"></span></a> @endisset
+                    @isset($setting->twitter)
+                    <a href="{{$setting->twitter}}"><span uk-icon="twitter"></span></a> @endisset
+                    @isset($setting->instagram)
+                    <a href="{{$setting->instagram}}"><span uk-icon="instagram"></span></a> @endisset
+                    @isset($setting->youtube)
                     <a href="{{$setting->youtube}}"><span uk-icon="youtube"></span></a> @endisset
                 </div>
             </div>
@@ -41,7 +43,8 @@
                         <div class="uk-width-1-1 uk-width-1-3@m">
                             <label class="uk-form-label" for="email">Email</label>
                             <div class="uk-form-controls">
-                                <input class="uk-input" id="email" type="email" name="email" placeholder="jane.doe@example.com">
+                                <input class="uk-input" id="email" type="email" name="email"
+                                    placeholder="jane.doe@example.com">
                             </div>
                         </div>
                     </div>
@@ -49,12 +52,14 @@
                         <div class="uk-width-1-1">
                             <label class="uk-form-label" for="message">Message</label>
                             <div class="uk-form-controls">
-                                <textarea name="message" id="message" rows="10" class="uk-textarea" style="resize: none;" placeholder="Your message"></textarea>
+                                <textarea name="message" id="message" rows="10" class="uk-textarea"
+                                    style="resize: none;" placeholder="Your message"></textarea>
                             </div>
                         </div>
                         <div class="uk-width-1-1 uk-text-center">
-                            <button type="submit" class="btn btn__outline" class="g-recaptcha" data-sitekey="6LervpkUAAAAAOfNki8EXyYihvjafwUPSL9OY0bb"
-                                data-callback='onSubmit'>Send </button>
+                            <button type="submit" class="btn btn__outline" class="g-recaptcha"
+                                data-sitekey="6LervpkUAAAAAOfNki8EXyYihvjafwUPSL9OY0bb" data-callback='onSubmit'>Send
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -63,7 +68,7 @@
     </div>
 </section>
 @endsection
- 
+
 @section('scripts')
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>

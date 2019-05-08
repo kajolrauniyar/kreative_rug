@@ -26,6 +26,10 @@
 </section>
 @endif
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
+    <div class="section-title">
+        <h3 class="heading-tertiary">Our Team</h3>
+        <span class="divide-line"></span>
+    </div>
     <div class="uk-container uk-padding">
         @foreach($teams->chunk(3) as $items)
         <div uk-grid>
@@ -60,7 +64,7 @@
 @if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
     <div class="section-title">
-        <h3 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h3>
+        <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
         <span class="divide-line"></span>
     </div>
     <div class="uk-container uk-padding uk-padding-remove-top">

@@ -1,5 +1,6 @@
 @extends('layouts.frontend') 
 @section('content')
+@include('frontend.partials._page-header')
 <section class="uk-section uk-section-muted">
   <div class="uk-container">
     <div class="section-title">

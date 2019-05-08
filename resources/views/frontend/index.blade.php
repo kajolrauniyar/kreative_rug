@@ -105,7 +105,7 @@
         </div>
     </section>
 
-<!--
+
 <section class="value-grid">
     <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
         <div>
@@ -156,7 +156,7 @@
             </div>
         </div>
     </div>
-</section>  -->
+</section>  
     {{-- <section class="section-intro">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section1_title}}</h2>
