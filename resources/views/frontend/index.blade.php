@@ -13,12 +13,12 @@
                     <span class="divide-line"></span>
                 </div>
                 <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
-                    <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                    <div>
                         <p class="paragraph">
                             {{$home->section1_content}}
                         </p>
                     </div>
-                    <div class="uk-width-1-2@m uk-width-1-2@l uk-width-1-1@s">
+                    <div>
                         <!--840x360-->
                         <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
                     </div>
