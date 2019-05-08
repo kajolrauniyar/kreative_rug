@@ -29,7 +29,7 @@
                 <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
                 <span class="divide-line"></span>
             </div>
-    <div class="uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
+    <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small" uk-grid>
         <div>
             <div class="value-item">
                 <div class="uk-card-media-top">
@@ -60,17 +60,6 @@
                 <div class="uk-card-body uk-paddin-small">
                     <h3 class="uk-card-title">Design Your Custom Rug</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-        </div>        
-        <div>
-            <div class="value-item">
-                <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">Environmental Friendly Rugs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-                <div class="uk-card-media-bottom">
-                    <img src="https://source.unsplash.com/450x300/?cup" alt="">
                 </div>
             </div>
         </div>        

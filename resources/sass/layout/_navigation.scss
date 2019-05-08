@@ -27,3 +27,13 @@
         }
     }
 }
+.mobile-menu{
+    @extend .uk-navbar, .uk-navbar-container;
+    background-color: $color-white;
+    .mobile-logo-wrapper{
+        @extend .uk-navbar-item, .uk-logo;
+        img{
+            height:5rem;
+        }
+    }
+}
