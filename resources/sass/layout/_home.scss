@@ -108,5 +108,10 @@ section[class^="section"] {
     @extend .uk-container ,.uk-padding-large , .uk-padding-remove-horizontal;
     .value-item{
         @extend .uk-card, .uk-card-default, .uk-box-shadow-large;
+        &__title{
+            font-size: 1.1rem;
+            line-height: 1.4;
+            font-weight: bold;
+        }
     }
 }

@@ -38,7 +38,7 @@
                         <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                        <h4>{{$home->section2_title}}</h4>
+                       <span class="value-item__title">{{$home->section2_title}}</span>
                         <p>{{$home->section2_content}}
                         </p>
                     </div>
@@ -47,7 +47,7 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
-                        <h4>{{$home->section3_title}}</h4>
+                       <span class="value-item__title">{{$home->section3_title}}</span>
                         <p>{{$home->section3_content}}
                         </p>
                     </div>
@@ -62,7 +62,7 @@
                         <img src="{{ asset($home->section4_image) }}" alt="{{$home->section4_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                        <h4>{{$home->section4_title}}</h4>
+                       <span class="value-item__title">{{$home->section4_title}}</span>
                         <p>{{$home->section4_content}}
                         </p>
                     </div>
