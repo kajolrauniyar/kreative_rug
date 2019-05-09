@@ -101,7 +101,7 @@ class HomeController extends Controller
 
             $media = Media::find($request->section1_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 1024,512);
             $home->section1_image = $thumb;
 
             $media = Media::find($request->section2_image);
@@ -189,7 +189,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section1_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,512);
 
                 $home->section1_image = $imagePath;
                 File::delete(public_path($oldImage));
