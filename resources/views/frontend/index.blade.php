@@ -35,7 +35,7 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="{{ asset({{$home->section2_image}}) }}" alt="{{$home->section2_title}}">
+                        <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
                         <h3 class="uk-card-title">{{$home->section2_title}}</h3>
