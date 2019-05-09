@@ -35,11 +35,11 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="https://source.unsplash.com/450x300/?vinyl" alt="">
+                        <img src="{{ asset({{$home->section2_image}}) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                        <h3 class="uk-card-title">High Quality Raw Materials</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        <h3 class="uk-card-title">{{$home->section2_title}}</h3>
+                        <p>{{$home->section2_content}}
                         </p>
                     </div>
                 </div>
@@ -47,23 +47,23 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
-                        <h3 class="uk-card-title">Traditionally Hand Knotted in Nepal</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        <h3 class="uk-card-title">{{$home->section3_title}}</h3>
+                        <p>{{$home->section3_content}}
                         </p>
                     </div>
                     <div class="uk-card-media-bottom">
-                        <img src="https://source.unsplash.com/450x300/?cup" alt="">
+                        <img src="{{ asset($home->section3_image) }}" alt="{{$home->section3_title}}">
                     </div>
                 </div>
             </div>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="https://source.unsplash.com/450x300/?vase" alt="">
+                        <img src="{{ asset({{$home->section4_image}}) }}" alt="{{$home->section4_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                        <h3 class="uk-card-title">Environment Friendly</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        <h3 class="uk-card-title">{{$home->section4_title}}</h3>
+                        <p>{{$home->section4_content}}
                         </p>
                     </div>
                 </div>
@@ -72,12 +72,12 @@
     </section>
     <section class="section-featured">
         <div class="section-title">
-            <h2 class="heading-secondary">{{$home->section2_title}}</h2>
+            <h2 class="heading-secondary">{{$home->section5_title}}</h2>
             <span class="divide-line"></span>
         </div>
         <div class="section-content">
             <div class="section-content__centered">
-                {{$home->section2_content}}
+                {{$home->section5_content}}
             </div>
         </div>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
@@ -101,47 +101,6 @@
         </div>
     </section>
 
-
-<section class="value-grid">
-    <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small" uk-grid>
-        <div>
-            <div class="value-item">
-                <div class="uk-card-media-top">
-                    <img src="{{ asset($home->section2_image) }}" alt="">
-                </div>
-                <div class="uk-card-body uk-paddin-small">
-                <h3 class="uk-card-title">{{$home->section2_title}}</h3>
-                    <p>{{$home->section2_content}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="value-item">
-                <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">{{$home->section3_title}}</h3>
-                    <p>{{$home->section3_content}}</p>
-                </div>
-                <div class="uk-card-media-bottom">
-                    <img src="{{ asset($home->section3_image) }}" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="value-item">
-                <div class="uk-card-media-top">
-                    <img src="{{ asset($home->section4_image) }}" alt="">
-                </div>
-                <div class="uk-card-body uk-paddin-small">
-                    <h3 class="uk-card-title">{{$home->section4_title}}</h3>
-                    <p>{{$home->section4_title}}</p>
-                </div>
-            </div>
-        </div>      
-        
-    </div>
-</section> 
     {{-- <section class="section-intro">
         <div class="section-title">
             <h2 class="heading-secondary">{{$home->section1_title}}</h2>
