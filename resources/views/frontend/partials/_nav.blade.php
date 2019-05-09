@@ -29,6 +29,7 @@
                     <li class="nav-list__item"><a class="nav-list__item--link" href="{{ route('frontend.design') }}">Design Your Rug</a></li>
                     <li class="nav-list__item"><a class="nav-list__item--link" href="{{ route('frontend.process') }}">Rug Making Process</a></li>
                     <li class="nav-list__item"><a class="nav-list__item--link" href="{{ route('frontend.about') }}">About</a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--link" href="{{ route('frontend.faq') }}">FAQ</a></li>
                     <li class="nav-list__item"><a class="nav-list__item--link" href="{{ route('frontend.contact') }}">Contact</a></li>
             </ul>            
         </div>
@@ -71,6 +72,7 @@
             <li class="uk-active"><a href="{{ route('frontend.design') }}">Design Your Rug</a></li>
             <li class="uk-active"><a href="{{ route('frontend.process') }}">Rug Making Process</a></li>
             <li class="uk-active"><a href="{{ route('frontend.about') }}">About</a></li>
+            <li class="uk-active"><a href="{{ route('frontend.faq') }}">FAQ</a></li>
             <li class="uk-active"><a href="{{ route('frontend.contact') }}">Contact</a></li>
         </ul>
 
