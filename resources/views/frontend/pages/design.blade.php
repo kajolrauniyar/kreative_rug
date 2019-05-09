@@ -1,7 +1,18 @@
-@extends('layouts.frontend') 
+@extends('layouts.frontend')
 @section('content')
 @include('frontend.partials._page-header')
 <section class="uk-section uk-section-muted">
+  <div class="uk-container uk-margin-top">
+    <div class="section-title">
+      <h2 class="heading-secondary">{!!$page->content{0}->sectionTitle!!}</h2>
+      <span class="divide-line"></span>
+    </div>
+    <div class="section-content">
+      <div class="section-content__centered">
+        {!!$page->content{0}->sectionContent!!}
+      </div>
+    </div>
+  </div>
   <div class="uk-container">
     <div class="section-title">
       <h2 class="heading-secondary">The Creative Process</h2>
@@ -58,7 +69,8 @@
           Strike Off
         </div>
         <div class="step-content">
-          Upon approva, a carefully selected sample of selected portion of the rug will be woven and sen to you to ensure the color
+          Upon approva, a carefully selected sample of selected portion of the rug will be woven and sen to you to
+          ensure the color
           is right. (Not mandatory, however advised, as rug color may be slightly vary from the digital rendition).
         </div>
       </div>
@@ -68,7 +80,8 @@
           Weaving
         </div>
         <div class="step-content">
-          Upon satisfaction with the 'strike-off', our artisans will start their work and an accurate delivery date will be confirmed.
+          Upon satisfaction with the 'strike-off', our artisans will start their work and an accurate delivery date will
+          be confirmed.
         </div>
       </div>
       <div class="second-row-step">
@@ -77,7 +90,8 @@
           Update
         </div>
         <div class="step-content">
-          Interested in getting updates ? Let us know, and we would be more than happy to send your pictures of your rug as it undergoes
+          Interested in getting updates ? Let us know, and we would be more than happy to send your pictures of your rug
+          as it undergoes
           different stages of production.
         </div>
       </div>
@@ -93,17 +107,66 @@
     </div>
 
   </div>
-
-  <div class="uk-container uk-margin-top">
+</section>
+<div class="uk-container uk-margin-top" style="background:white !important;">
     <div class="section-title">
-      <h2 class="heading-secondary">{!!$page->content{0}->sectionTitle!!}</h2>
+      <h2 class="heading-secondary">Design Your Own Rug</h2>
       <span class="divide-line"></span>
     </div>
     <div class="section-content">
-      <div class="section-content__centered">
-        {!!$page->content{0}->sectionContent!!}
-      </div>
+        <form action="{{ route('frontend.customDesign') }}" method="POST" class="uk-form-stacked" enctype="multipart/form-data">
+          @csrf
+          <div uk-grid>
+              <div class="uk-width-1-1 uk-width-1-2@m">
+                  <label class="uk-form-label" for="name">Name</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="name" type="text" placeholder="Jane Doe" name="fullName">
+                  </div>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-2@m">
+                  <label class="uk-form-label" for="email">Email</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="email" type="email" name="email" placeholder="jane.doe@example.com">
+                  </div>
+              </div>
+          </div>
+          <div uk-grid>
+              <div class="uk-width-1-1 uk-width-1-3@m">
+                  <label class="uk-form-label" for="phone">Phone number</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="phone" name="phone" type="tel">
+                  </div>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-3@m">
+                  <label class="uk-form-label" for="rugSize">Rug Size</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="rugSize" name="rugSize" type="text" placeholder="8.ft x 5.ft">
+                  </div>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-3@m">
+                  <label class="uk-form-label" for="upload">Upload Your Design</label>
+                  <div class="uk-form-controls">
+                      <div uk-form-custom="target: true">
+                          <input type="file" name="upload">
+                          <input class="uk-input uk-form-width-medium" id="upload " type="text" placeholder="Select file" disabled>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div uk-grid>
+              <div class="uk-width-1-1">
+                  <label class="uk-form-label" for="otherDetails">Other Details</label>
+                  <div class="uk-form-controls">
+                      <textarea class="uk-textarea" rows="5" id="otherDetails" placeholder="Other Details" name="otherDetails" style="resize: none"></textarea>
+                  </div>
+              </div>
+          </div>
+          <div uk-grid>
+              <div class="uk-width-1-1 uk-text-center">
+                  <button class="btn btn__outline" type="submit">Send</button>
+              </div>
+          </div>
+      </form>
     </div>
   </div>
-</section>
 @endsection

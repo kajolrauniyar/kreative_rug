@@ -12,8 +12,12 @@
                     <h2 class="heading-secondary">{{$home->section1_title}}</h2>
                     <span class="divide-line"></span>
                 </div>
+                <div uk-grid>
+                        <div class="uk-width-1-2"></div>
+                        <div class="uk-width-1-2"></div>
+                    </div>
                 <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
-                    <div>
+                    <div class="uk-width-3-5">
                         <p class="paragraph">
                             {{$home->section1_content}}
                         </p>
