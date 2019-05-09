@@ -16971,6 +16971,12 @@ a:hover {
   width: 30%;
 }
 
+.value-grid .value-item__title {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
 .footer {
   background-color: #1a1a1a;
 }
