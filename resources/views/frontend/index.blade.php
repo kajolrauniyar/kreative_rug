@@ -13,10 +13,14 @@
             <span class="divide-line"></span>
         </div>
         <div uk-grid>
-            <div class="uk-width-1-1">
+            <div class="uk-width-1-5">
+            </div>
+            <div class="uk-width-3-5">
                 <p class="paragraph">
                     {{$home->section1_content}}
                 </p>
+            </div>
+            <div class="uk-width-1-5">
             </div>
         </div>
         <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
@@ -38,7 +42,7 @@
                         <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                       <span class="value-item__title">{{$home->section2_title}}</span>
+                        <span class="value-item__title">{{$home->section2_title}}</span>
                         <p>{{$home->section2_content}}
                         </p>
                     </div>
@@ -47,7 +51,7 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
-                       <span class="value-item__title">{{$home->section3_title}}</span>
+                        <span class="value-item__title">{{$home->section3_title}}</span>
                         <p>{{$home->section3_content}}
                         </p>
                     </div>
@@ -62,7 +66,7 @@
                         <img src="{{ asset($home->section4_image) }}" alt="{{$home->section4_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
-                       <span class="value-item__title">{{$home->section4_title}}</span>
+                        <span class="value-item__title">{{$home->section4_title}}</span>
                         <p>{{$home->section4_content}}
                         </p>
                     </div>
