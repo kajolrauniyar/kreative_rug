@@ -88,42 +88,40 @@
                 {{$home->section5_content}}
             </div>
         </div>
-        {{-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-large">
-                @foreach ($categories as $category)
-                <li>
-                    <img src="{{$category->thumb}}" alt="{{$category->slug}}">
-                    <div class="uk-position-center uk-panel">
-                        <h3><a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a></h3>
-                    </div>
-                </li>
-                @endforeach
-            </ul>
+        <div uk-slider="" class="uk-slider uk-slider-container">
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                uk-slider-item="next"></a>
-
-        </div> --}}
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large"
+                    style="transform: translateX(0px);">
                     @foreach ($categories as $category)
-                    <li>
-                        <img src="{{$category->thumb}}" alt="{{$category->slug}}">
-                        <div class="uk-position-center uk-panel">
-                            <h3><a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a></h3>
+                    <li class="" style="order: 1;">
+                        <div class="uk-panel uk-transition-toggle">
+                            <img src="{{ asset($category->thumb) }}" alt="{{$category->name}}">
+                            <div class="uk-position-center uk-panel">
+                                <h4 class="uk-transition-slide-bottom-small">{{$category->name}}</h>
+                            </div>
                         </div>
                     </li>
                     @endforeach
                 </ul>
-            
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
+                    href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14px" height="24px"
+                        viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous">
+                        <polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 ">
+                        </polyline>
+                    </svg></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav"
+                    href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14px" height="24px"
+                        viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next">
+                        <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 ">
+                        </polyline>
+                    </svg></a>
+
             </div>
+
+        </div>
     </section>
 </main>
 @endsection
