@@ -163,46 +163,64 @@ class PageController extends Controller
             $page->save();
 
             $contents = Content::where('page_id', $page->id)->get();
+            // for ($i = 0; $i < count($request-> sectionTitle); $i++) {
+
+            //     if (isset($request->contentID[$i])) {
+            //         if (!empty($request->sectionImage[$i])) {
+            //             $oldImg = $page->sectionImage;
+                        
+            //             $media = Media::find($request->sectionImage[$i]);
+            //             $upload = new UploadImage;
+            //             $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+            //             $image = $imagePath;
+            //             Content::updateOrCreate([
+            //                 'id' => $request->contentID[$i],
+            //                 'page_id' => $page->id,
+            //                 'sectionTitle' => $request->sectionTitle[$i],
+            //                 'sectionContent' => $request->sectionContent[$i],
+            //                 'sectionImage' => $image,
+            //             ]);
+            //             File::delete(public_path($oldImg));
+            //         }
+            //         Content::updateOrCreate([
+            //             'id' => $request->contentID[$i],
+            //             'page_id' => $page->id,
+            //             'sectionTitle' => $request->sectionTitle[$i],
+            //             'sectionContent' => $request->sectionContent[$i],
+            //         ]);
+            //     } else {
+            //         $new = new Content;
+            //         $new->page_id = $page->id;
+            //         $new->sectionTitle = $request->sectionTitle[$i];
+            //         $new->sectionContent = $request->sectionContent[$i];
+
+            //         if (!empty($request->sectionImage[$i])) {
+            //             $media = Media::find($request->sectionImage[$i]);
+            //             $upload = new UploadImage;
+            //             $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+            //             $new->contentImage = $imagePath;
+            //         }
+
+            //         $new-> save();
+
+            //     }
+            // }
+
             for ($i = 0; $i < count($request-> sectionTitle); $i++) {
 
                 if (isset($request->contentID[$i])) {
-                    if (!empty($request->sectionImage[$i])) {
-                        $oldImg = $page->sectionImage;
-                        
-                        $media = Media::find($request->sectionImage[$i]);
-                        $upload = new UploadImage;
-                        $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
-                        $image = $imagePath;
-                        Content::updateOrCreate([
-                            'id' => $request->contentID[$i],
-                            'page_id' => $page->id,
-                            'sectionTitle' => $request->sectionTitle[$i],
-                            'sectionContent' => $request->sectionContent[$i],
-                            'sectionImage' => $image,
-                        ]);
-                        File::delete(public_path($oldImg));
-                    }
                     Content::updateOrCreate([
-                        'id' => $request->contentID[$i],
-                        'page_id' => $page->id,
+                        'id' => $request->contentID[$i];
+                        'page_id' => $page->id;
                         'sectionTitle' => $request->sectionTitle[$i],
                         'sectionContent' => $request->sectionContent[$i],
-                    ]);
+                    );
                 } else {
                     $new = new Content;
-                    $new->page_id = $page->id;
-                    $new->sectionTitle = $request->sectionTitle[$i];
-                    $new->sectionContent = $request->sectionContent[$i];
-
-                    if (!empty($request->sectionImage[$i])) {
-                        $media = Media::find($request->sectionImage[$i]);
-                        $upload = new UploadImage;
-                        $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
-                        $new->contentImage = $imagePath;
-                    }
-
+                    $new-> page_id = $page->id;
+                    $new-> sectionTitle = $request->sectionTitle[$i];
+                    $new-> sectionContent = $request->sectionContent[$i];
                     $new-> save();
-
                 }
             }
 

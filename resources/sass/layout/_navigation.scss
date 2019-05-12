@@ -1,21 +1,24 @@
-.logo-wrapper{
-    @extend .uk-container, .uk-text-center;
-    background-color: $color-white;
-    a img{
-        height: 5rem;;
+.navigation{
+    @extend .uk-navbar-container;
+    background-color: $color-white !important;
+    .logo-wrapper{
+        @extend .uk-navbar-item, .uk-logo;
+        img{
+            height: 5rem;;
+        }
     }
 }
-.nav-wrapper{    
-    @extend .uk-container;
-    nav{        
-        background-color: $color-white !important;
-    }
-    .navbar{
-        @extend .uk-navbar-container, .uk-navbar;
+// .nav-wrapper{    
+//     @extend .uk-container;
+//     nav{        
+//         background-color: $color-white !important;
+//     }
+//     .navbar{
+//         @extend .uk-navbar-container, .uk-navbar;
 
-    }
+//     }
     .nav-list{
-        @extend .uk-navbar-nav;
+        @extend .uk-navbar-nav, .uk-margin-xlarge-left;
         &__item{
             &--link{
                 font-weight: 500;
@@ -26,7 +29,6 @@
             }
         }
     }
-}
 .mobile-menu{
     @extend .uk-navbar, .uk-navbar-container;
     background-color: $color-white !important;
