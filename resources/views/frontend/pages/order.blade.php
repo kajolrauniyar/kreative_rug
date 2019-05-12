@@ -31,7 +31,7 @@
             <div class="uk-width-1-2">
             <h3 class="uk-h3">{{$loop->iteration}}. {{$process->title}}</h3>
                 <p>
-                    {{$process->desctiption}}
+                    {{$process->description}}
                 </p>
             </div>
             <div class="uk-width-1-2">
@@ -46,7 +46,7 @@
             <div class="uk-width-1-2">
                 <h3 class="uk-h3">{{$loop->iteration}}. {{$process->title}}</h3>
                 <p>
-                    {{$process->desctiption}}
+                    {{$process->description}}
                 </p>
             </div>
         </div>
