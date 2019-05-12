@@ -2,6 +2,7 @@
     @extend  .uk-height-large , .uk-flex , .uk-flex-center , .uk-flex-middle , .uk-background-cover , .uk-light;
     height: 90vh;
     &--text{
+        @extend .uk-position-center-right, .uk-padding, .uk-padding-remove-vertical;
         h1,h2{
          @extend .uk-margin-remove;
          padding-bottom: 0.5rem;

@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 @section('content')
 <header class="header" data-src="{{asset($home->banner)}}" uk-img>
-    <div class="uk-position-center-right header--text">
+    <div class="header--text">
         <h1 class="uk-margin-remove">{{$home->heading}}</h1>
         <h2>{{$home->subheading}}</h2>
     </div>

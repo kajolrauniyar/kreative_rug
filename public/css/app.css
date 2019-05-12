@@ -11153,7 +11153,8 @@ section[class^=section]:last-child {
 .section-intro,
 .section-featured,
 .section-carousel,
-.section-form {
+.section-form,
+.header--text {
   padding: 30px;
 }
 
@@ -11166,7 +11167,8 @@ section[class^=section]:last-child {
   .section-intro,
   .section-featured,
   .section-carousel,
-  .section-form {
+  .section-form,
+  .header--text {
     padding: 40px;
   }
 }
@@ -11220,7 +11222,8 @@ section[class^=section]:not(:last-child) {
   padding-right: 0 !important;
 }
 
-.uk-padding-remove-vertical {
+.uk-padding-remove-vertical,
+.header--text {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -11331,7 +11334,8 @@ section[class^=section]:not(:last-child) {
   left: 0;
 }
 
-.uk-position-center-right {
+.uk-position-center-right,
+.header--text {
   right: 0;
 }
 
