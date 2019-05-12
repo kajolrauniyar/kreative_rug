@@ -41,14 +41,14 @@
         @else
         <div uk-grid>
             <div class="uk-width-1-2">
-                <img src="{{ asset($process->path) }}" alt="{{$process->title}}">
-            </div>
-            <div class="uk-width-1-2">
                 <h3 class="uk-h3">{{$loop->iteration}}. {{$process->title}}</h3>
                 <p>
                     {{$process->description}}
                 </p>
             </div>
+            <div class="uk-width-1-2">
+                    <img src="{{ asset($process->path) }}" alt="{{$process->title}}">
+                </div>
         </div>
         @endif
         @endforeach
