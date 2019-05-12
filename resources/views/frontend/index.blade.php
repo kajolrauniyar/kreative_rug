@@ -99,7 +99,9 @@
                         <div class="uk-panel uk-transition-toggle">
                             <img src="{{ asset($category->thumb) }}" alt="{{$category->name}}">
                             <div class="uk-position-center uk-panel">
-                                <h4 class="uk-transition-slide-bottom-small">{{$category->name}}</h>
+                                <h4 class="uk-transition-slide-bottom-small">
+                                    <a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
+                                </h4>
                             </div>
                         </div>
                     </li>
