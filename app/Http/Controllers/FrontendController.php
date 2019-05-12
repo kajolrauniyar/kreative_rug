@@ -8,6 +8,7 @@ use App\Page;
 use App\Team;
 use App\Faq;
 use App\Setting;
+use App\Process;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
