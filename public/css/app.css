@@ -11153,8 +11153,7 @@ section[class^=section]:last-child {
 .section-intro,
 .section-featured,
 .section-carousel,
-.section-form,
-.header--text {
+.section-form {
   padding: 30px;
 }
 
@@ -11167,8 +11166,7 @@ section[class^=section]:last-child {
   .section-intro,
   .section-featured,
   .section-carousel,
-  .section-form,
-  .header--text {
+  .section-form {
     padding: 40px;
   }
 }
@@ -11185,7 +11183,8 @@ section[class^=section]:last-child {
  ========================================================================== */
 
 .uk-padding-large,
-.value-grid {
+.value-grid,
+.header--text {
   padding: 30px;
 }
 
@@ -11193,7 +11192,8 @@ section[class^=section]:last-child {
 
 @media (min-width: 1200px) {
   .uk-padding-large,
-  .value-grid {
+  .value-grid,
+  .header--text {
     padding: 70px;
   }
 }
@@ -11334,8 +11334,7 @@ section[class^=section]:not(:last-child) {
   left: 0;
 }
 
-.uk-position-center-right,
-.header--text {
+.uk-position-center-right {
   right: 0;
 }
 
