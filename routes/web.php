@@ -50,6 +50,7 @@ Route::prefix('manage')->middleware('role:superadministrator|administrator|user'
     Route::resource('home', 'HomeController',['only' => ['index','create','store','update']]);    
 
     Route::resource('/faq' ,'FaqController');
+    Route::resource('/process' ,'ProcessController');
 });
 // Route::prefix('ajax')->group(function () {
 // 	Route::post('updateOrder', 'TeamController@updateOrder')->name('updateOrder');

@@ -96,6 +96,12 @@
 					</a>
 				</li>
 				<li>
+					<a href="{{ route('process.index') }}">
+						<div class="gui-icon"><i class="fas fa-shoe-prints md"></i></div>
+						<span class="title">Process</span>
+					</a>
+				</li>
+				<li>
 					<a href="{{ route('team.index') }}">
 						<div class="gui-icon"><i class="far fa-users fa md"></i></div>
 						<span class="title">Team</span>
