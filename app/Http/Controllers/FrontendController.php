@@ -40,7 +40,10 @@ class FrontendController extends Controller
     public function getDesign()
     {
         $page = Page::where('slug', 'rug-making-process')->firstorFail();
-        return view('frontend.pages.order')->withPage($page);
+        $processes = Process::orderBy('id','asc')->get();
+        return view('frontend.pages.order')
+        ->withProcesses($processes)
+        ->withPage($page);
         // return  view('frontend.pages.design');
     }
     public function orderProcess()
