@@ -86,7 +86,7 @@
         </div>
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-large">
                 @foreach ($categories as $category)
                 <li>
                     <img src="{{$category->thumb}}" alt="{{$category->slug}}">

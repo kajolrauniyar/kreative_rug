@@ -10892,11 +10892,13 @@ iframe.uk-cover {
   margin-top: 20px !important;
 }
 
-.uk-margin-top {
+.uk-margin-top,
+.value-grid {
   margin-top: 20px !important;
 }
 
-.uk-margin-bottom {
+.uk-margin-bottom,
+.value-grid {
   margin-bottom: 20px !important;
 }
 
