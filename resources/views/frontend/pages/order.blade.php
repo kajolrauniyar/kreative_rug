@@ -26,7 +26,7 @@
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
         @foreach ($processes as $process)
-        @if ($loop->iteration/2 == 0 )
+        @if ($loop->iteration/2 != 0 )
         <div uk-grid>
             <div class="uk-width-1-2">
             <h3 class="uk-h3">{{$loop->iteration}}. {{$process->title}}</h3>
