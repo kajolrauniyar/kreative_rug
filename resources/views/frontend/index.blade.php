@@ -24,13 +24,13 @@
             </div>
         </div>
         <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
-            <div class="uk-width-1-5">
+            <div class="uk-width-1-6">
             </div>
-            <div class="uk-width-3-5">
+            <div class="uk-width-expand">
                 <!--840x360-->
                 <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
             </div>
-            <div class="uk-width-1-5">
+            <div class="uk-width-1-6">
             </div>
         </div>
     </section>
