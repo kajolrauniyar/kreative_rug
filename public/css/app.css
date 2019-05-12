@@ -10980,8 +10980,7 @@ iframe.uk-cover {
   margin-top: 40px !important;
 }
 
-.uk-margin-large-bottom,
-section[class^=section]:last-child {
+.uk-margin-large-bottom {
   margin-bottom: 40px !important;
 }
 
@@ -11008,8 +11007,7 @@ section[class^=section]:last-child {
     margin-top: 70px !important;
   }
 
-  .uk-margin-large-bottom,
-  section[class^=section]:last-child {
+  .uk-margin-large-bottom {
     margin-bottom: 70px !important;
   }
 
@@ -11149,11 +11147,7 @@ section[class^=section]:last-child {
 
 .uk-padding,
 .section-bg__image p,
-.section-bg,
-.section-intro,
-.section-featured,
-.section-carousel,
-.section-form {
+.section-bg {
   padding: 30px;
 }
 
@@ -11162,11 +11156,7 @@ section[class^=section]:last-child {
 @media (min-width: 1200px) {
   .uk-padding,
   .section-bg__image p,
-  .section-bg,
-  .section-intro,
-  .section-featured,
-  .section-carousel,
-  .section-form {
+  .section-bg {
     padding: 40px;
   }
 }
@@ -11184,6 +11174,10 @@ section[class^=section]:last-child {
 
 .uk-padding-large,
 .value-grid,
+.section-intro,
+.section-featured,
+.section-carousel,
+.section-form,
 .header--text {
   padding: 30px;
 }
@@ -11193,6 +11187,10 @@ section[class^=section]:last-child {
 @media (min-width: 1200px) {
   .uk-padding-large,
   .value-grid,
+  .section-intro,
+  .section-featured,
+  .section-carousel,
+  .section-form,
   .header--text {
     padding: 70px;
   }
@@ -11209,8 +11207,7 @@ section[class^=section]:last-child {
   padding-top: 0 !important;
 }
 
-.uk-padding-remove-bottom,
-section[class^=section]:not(:last-child) {
+.uk-padding-remove-bottom {
   padding-bottom: 0 !important;
 }
 

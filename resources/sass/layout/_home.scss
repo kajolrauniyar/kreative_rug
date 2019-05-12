@@ -2,17 +2,17 @@
 .section-featured,
 .section-carousel,
 .section-form {
-    @extend .uk-container, .uk-padding;
+    @extend .uk-container, .uk-padding-large;
     background-color: $color-white;
 }
-section[class^="section"] {
-    &:last-child {
-        @extend .uk-margin-large-bottom;
-    }
-    &:not(:last-child) {
-        @extend .uk-padding-remove-bottom;
-    }
-}
+// section[class^="section"] {
+//     &:last-child {
+//         @extend .uk-margin-large-bottom;
+//     }
+//     &:not(:last-child) {
+//         @extend .uk-padding-remove-bottom;
+//     }
+// }
 .section-title {
     @extend .uk-text-center, .uk-text-uppercase;
     position: relative;
