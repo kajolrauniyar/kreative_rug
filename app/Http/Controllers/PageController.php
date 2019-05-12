@@ -209,12 +209,29 @@ class PageController extends Controller
             for ($i = 0; $i < count($request-> sectionTitle); $i++) {
 
                 if (isset($request->contentID[$i])) {
-                    Content::updateOrCreate([
-                        'id' => $request->contentID[$i];
-                        'page_id' => $page->id;
-                        'sectionTitle' => $request->sectionTitle[$i],
-                        'sectionContent' => $request->sectionContent[$i],
-                    );
+
+                    if (!empty($request->sectionImage[$i])) {
+                        $oldImg = $page->sectionImage;
+                        
+                        $media = Media::find($request->sectionImage[$i]);
+                        $upload = new UploadImage;
+                        $imagePath = $upload->uploadSingle($this->image, $media->path, 800,600);
+                        $image = $imagePath;
+
+                        $content = Content::find($request->contentID[$i]);
+                        $content->page_id = $page->id;
+                        $content->sectionTitle = $request->sectionTitle[$i];
+                        $content->sectionContent = $request->sectionContent[$i];
+                        $content->sectionImage = $image;
+                        $content->save();
+
+                        File::delete(public_path($oldImg));
+                    }
+                    $content = Content::find($request->contentID[$i]);
+                    $content->page_id = $page->id;
+                    $content->sectionTitle = $request->sectionTitle[$i];
+                    $content->sectionContent = $request->sectionContent[$i];
+                    $content->save();
                 } else {
                     $new = new Content;
                     $new-> page_id = $page->id;
