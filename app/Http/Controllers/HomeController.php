@@ -96,7 +96,7 @@ class HomeController extends Controller
 
             $media = Media::find($request->image);
             $upload = new UploadImage;
-            $banner = $upload->uploadSingle($this->image, $media->path, 1024,512);
+            $banner = $upload->uploadSingle($this->image, $media->path, 1334,750);
             $home->banner = $banner;
 
             $media = Media::find($request->section1_image);
@@ -177,7 +177,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 1024,512);
+                $imagePath = $upload->uploadSingle($this->image, $media->path, 1334,750);
 
                 $home->banner = $imagePath;
                 File::delete(public_path($oldBanner));
