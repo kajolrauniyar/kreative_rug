@@ -22,4 +22,4 @@
         </div>
     </div>
 </footer>
-{{$setting->gtag}}
+{!!$setting->gtag!!}
