@@ -16,7 +16,11 @@
         </div>
         <div class="uk-grid-small uk-padding-small" uk-grid>
             <div class="uk-width-1-2@l uk-width-1-1@s">
-                <img src="https://source.unsplash.com/480x640/?object" alt="">
+                @if(!empty($product->path))
+                <img src="{{ asset($product->path) }}" alt="{{$product->name}}">    
+                @else
+                <img src="https://source.unsplash.com/480x640/?object" alt="alt="{{$product->name}}"">
+                @endif
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@s">
                 <div class="uk-text-left">
