@@ -80,10 +80,11 @@
             </div>
         </div>
     </section>
-    <section class="section-featured">
+    <section class="section-dark">
+    <div class="section-featured">
         <div class="section-title">
-            <h2 class="heading-secondary">{{$home->section5_title}}</h2>
-            <span class="divide-line"></span>
+            <h2 class="heading-secondary--white">{{$home->section5_title}}</h2>
+            <span class="divide-line--white"></span>
         </div>
         <div class="section-content">
             <div class="section-content__centered">
@@ -100,11 +101,11 @@
                     <li class="" style="order: 1;">
                         <div class="uk-panel uk-transition-toggle">
                             <img src="{{ asset($category->thumb) }}" alt="{{$category->name}}">
-                            <div class="uk-position-center uk-panel">
+                            <span class="uk-position-center uk-panel">
                                 <h4 class="uk-transition-slide-bottom-small">
                                     <a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
                                 </h4>
-                            </div>
+                            </span>
                         </div>
                     </li>
                     @endforeach
@@ -126,6 +127,7 @@
             </div>
 
         </div>
+    </div>
     </section>
 </main>
 @endsection

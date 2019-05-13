@@ -17022,7 +17022,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #1a1a1a;
+  background-color: #fff;
 }
 
 .footer__social__list {
@@ -17035,7 +17035,7 @@ a:hover {
 }
 
 .footer__social__list__item--link span {
-  color: #fff;
+  color: #000;
 }
 
 .footer__link__list {

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #1a1a1a;
+    background-color: #fff;
     &__social {
         @extend .uk-margin-small-top , .uk-text-center;
         &__list {
@@ -10,7 +10,7 @@
                 padding: 1rem 0.5rem;
                 &--link {
                     & span {
-                        color: $color-white;
+                        color: $color-black;
                     }
                 }
             }
