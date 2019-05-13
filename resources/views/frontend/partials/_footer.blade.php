@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="uk-container uk-padding-large">
+    <div class="uk-container uk-padding-small">
         <div uk-grid>
             <div class="uk-width-1-1 uk-padding-remove-horizontal" uk-grid>
                 <div class="footer-logo-box uk-width-1-1 uk-text-center">
