@@ -9113,12 +9113,13 @@ ul.uk-nav-sub {
 
 .uk-text-uppercase,
 .section-title,
-.nav-list__item--link {
+.nav-list__item--link,
+.heading-secondary--white,
+.heading-secondary {
   text-transform: uppercase !important;
 }
 
-.uk-text-capitalize,
-.heading-secondary {
+.uk-text-capitalize {
   text-transform: capitalize !important;
 }
 
