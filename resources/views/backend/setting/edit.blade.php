@@ -193,7 +193,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h4>Google Tag </h4>
+                        <h4>Scripts </h4>
                         <div class="form-group  {{$errors->has('gtag') ? 'has-error' : ''}}">
                             <textarea name="gtag"
                             id="gtag {{$errors->has('gtag') ? 'inputError' : ''}}"
