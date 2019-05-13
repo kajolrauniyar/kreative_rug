@@ -7,30 +7,32 @@
     </div>
 </header>
 <main>
-    <section class="section-intro">
-        <div class="section-title">
-            <h2 class="heading-secondary">{{$home->section1_title}}</h2>
-            <span class="divide-line"></span>
-        </div>
-        <div uk-grid>
-            <div class="uk-width-1-5">
+    <section class="section-dark">
+        <div class="section-intro">
+            <div class="section-title">
+                <h2 class="heading-secondary--white">{{$home->section1_title}}</h2>
+                <span class="divide-line--white"></span>
             </div>
-            <div class="uk-width-3-5">
-                <p class="uk-text-center">
-                    {{$home->section1_content}}
-                </p>
+            <div uk-grid>
+                <div class="uk-width-1-5">
+                </div>
+                <div class="uk-width-3-5">
+                    <p class="uk-text-center">
+                        {{$home->section1_content}}
+                    </p>
+                </div>
+                <div class="uk-width-1-5">
+                </div>
             </div>
-            <div class="uk-width-1-5">
-            </div>
-        </div>
-        <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
-            <div class="uk-width-1-6">
-            </div>
-            <div class="uk-width-expand">
-                <!--840x360-->
-                <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
-            </div>
-            <div class="uk-width-1-6">
+            <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
+                <div class="uk-width-1-6">
+                </div>
+                <div class="uk-width-expand">
+                    <!--840x360-->
+                    <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
+                </div>
+                <div class="uk-width-1-6">
+                </div>
             </div>
         </div>
     </section>

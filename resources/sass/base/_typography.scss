@@ -11,6 +11,9 @@ h1,h2,h3,h4,h5,h6,
 }
 .heading-secondary {
     @extend .uk-text-capitalize;
+    &--white{
+        color: $color-white;
+    }
 }
 .heading-tertiary{
     margin-bottom: .5rem;
@@ -24,6 +27,14 @@ h1,h2,h3,h4,h5,h6,
     display: block;
     content: "";
     background-color: #333;
+    width: 5rem;
+    height: 3px;
+    margin:20px auto 20px auto;
+}
+.divide-line--white{
+    display: block;
+    content: "";
+    background-color: #ffffff;
     width: 5rem;
     height: 3px;
     margin:20px auto 20px auto;

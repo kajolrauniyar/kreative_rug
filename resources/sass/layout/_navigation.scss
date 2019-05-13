@@ -18,11 +18,12 @@
 
 //     }
     .nav-list{
-        @extend .uk-navbar-nav, .uk-margin-xlarge-left;
+        @extend .uk-navbar-nav, .uk-margin-large-left;
         &__item{
             &--link{
                 font-weight: 500;
                 color: $color-grey-dark-3 !important;
+                @extend .uk-text-uppercase;
             }
             .uk-panel a{
                 color:$color-black;

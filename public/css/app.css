@@ -9112,7 +9112,8 @@ ul.uk-nav-sub {
  ========================================================================== */
 
 .uk-text-uppercase,
-.section-title {
+.section-title,
+.nav-list__item--link {
   text-transform: uppercase !important;
 }
 
@@ -10986,7 +10987,8 @@ iframe.uk-cover {
   margin-bottom: 40px !important;
 }
 
-.uk-margin-large-left {
+.uk-margin-large-left,
+.nav-list {
   margin-left: 40px !important;
 }
 
@@ -11013,7 +11015,8 @@ iframe.uk-cover {
     margin-bottom: 70px !important;
   }
 
-  .uk-margin-large-left {
+  .uk-margin-large-left,
+  .nav-list {
     margin-left: 70px !important;
   }
 
@@ -11041,8 +11044,7 @@ iframe.uk-cover {
   margin-bottom: 70px !important;
 }
 
-.uk-margin-xlarge-left,
-.nav-list {
+.uk-margin-xlarge-left {
   margin-left: 70px !important;
 }
 
@@ -11069,8 +11071,7 @@ iframe.uk-cover {
     margin-bottom: 140px !important;
   }
 
-  .uk-margin-xlarge-left,
-  .nav-list {
+  .uk-margin-xlarge-left {
     margin-left: 140px !important;
   }
 
@@ -11180,6 +11181,7 @@ iframe.uk-cover {
 .section-featured,
 .section-carousel,
 .section-form,
+.section-dark,
 .header--text {
   padding: 30px;
 }
@@ -11193,6 +11195,7 @@ iframe.uk-cover {
   .section-featured,
   .section-carousel,
   .section-form,
+  .section-dark,
   .header--text {
     padding: 70px;
   }
@@ -11230,6 +11233,7 @@ iframe.uk-cover {
 .uk-padding-remove-horizontal,
 .footer__social__list,
 .value-grid,
+.section-dark,
 .product-category__item--name {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -16800,6 +16804,10 @@ h6,
   font-family: "Helvetica Neue", sans-serif !important;
 }
 
+.heading-secondary--white {
+  color: #fff;
+}
+
 .heading-tertiary {
   margin-bottom: 0.5rem;
 }
@@ -16808,6 +16816,15 @@ h6,
   display: block;
   content: "";
   background-color: #333;
+  width: 5rem;
+  height: 3px;
+  margin: 20px auto 20px auto;
+}
+
+.divide-line--white {
+  display: block;
+  content: "";
+  background-color: #ffffff;
   width: 5rem;
   height: 3px;
   margin: 20px auto 20px auto;
@@ -16922,11 +16939,13 @@ a:hover {
   height: 5rem;
 }
 
-.section-intro,
-.section-featured,
-.section-carousel,
-.section-form {
-  background-color: #fff;
+.section-dark {
+  background-color: #000;
+}
+
+.section-dark div {
+  background-color: #000;
+  color: #fff;
 }
 
 .section-title {

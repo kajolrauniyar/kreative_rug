@@ -1,9 +1,19 @@
+.section-dark{
+    background-color: $color-black;
+    @extend .uk-padding-large, .uk-padding-remove-horizontal;
+    div{
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
+
+
 .section-intro,
 .section-featured,
 .section-carousel,
 .section-form {
     @extend .uk-container, .uk-padding-large;
-    background-color: $color-white;
+    // background-color: $color-white;
 }
 // section[class^="section"] {
 //     &:last-child {
