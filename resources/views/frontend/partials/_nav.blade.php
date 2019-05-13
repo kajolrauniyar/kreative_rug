@@ -1,4 +1,4 @@
-<nav class="navigation">
+<nav class="navigation uk-visible@m">
     <div class="uk-container">
         <div class="uk-navbar" uk-navbar="align: left; boundary-align: true">
             <div class="uk-navbar-left">
