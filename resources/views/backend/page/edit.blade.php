@@ -31,7 +31,7 @@
                     
                 <div class="row fieldGroup" id="dataRow{{$content->id}}">
                     <input type="hidden" name="contentID[]" value="{{$content->id}}">
-                        <div class="col-sm-10  ">
+                        <div class="col-sm-8 ">
                             <div class="form-group floating-label {{$errors->has('sectionTitle') ? 'has-error' : ''}}">
                                 <input type="text" name="sectionTitle[]" id="sectionTitle" class="form-control" value="{{$content->sectionTitle}}">                                @if($errors->has('sectionTitle'))
                                 <span class="help-block">{{ $errors->first('sectionTitle') }}</span> @endif
@@ -39,6 +39,14 @@
                             </div>
                         </div>
                         <div class="col-sm-2  ">
+                            <div class="form-group">
+                            <button type="button" class="btn btn-block ink-reaction btn-warning" data-toggle="modal" data-target="#sectionImage">
+                                <i class="far fa-image"></i>  Section Image
+                            </button>
+                        </div>
+                    </div>
+                        <div class="col-sm-2  ">
+                            <div class="form-group">
                             @if($loop->first)
                             <a href="javascript:void(0)" class="btn btn-success addMore">
                                 <span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span> Add Section
@@ -46,6 +54,7 @@
                             @else
                             <a href="javascript:void(0)" class="btn btn-danger removeData" id="id-delete" data-id="{{$content->id}}"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</a>                  
                             @endif
+                            </div>
                         </div>
                         <div class="col-sm-12  ">
                             <div class="form-group">
@@ -102,6 +111,29 @@
 
                     </div>
                 </div>
+
+                <div id="sectionImage" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Media Images</h4>
+                            </div>
+                            <div class="modal-body text-center">
+                                <select name="sectionImage" id="sectionImage-multiple" multiple>
+                                    @foreach($medias  as $image)
+                                        <option data-img-src="{{asset($image->thumb)}}" value="{{$image->id}}"> </option>
+                                    @endforeach
+                            </select>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="card-actionbar">
                     <div class="card-actionbar-row">
                         <div class="col-sm-8 col-sm-offset-2">
@@ -115,15 +147,20 @@
 </div>
 
 <div class="row" id="fieldGroupTemplate">
-    <div class="col-md-10  ">
+    <div class="col-md-8">
         <div class="form-group floating-label">
             <label for="sectionTitle">Section Title</label>
             <input type="text" name="sectionTitle[]" id="sectionTitle" class="form-control">
 
         </div>
     </div>
+    <div class="col-sm-2  ">
+            <button type="button" class="btn btn-block ink-reaction btn-warning" data-toggle="modal" data-target="#sectionImage">
+                <i class="far fa-image"></i>  Section Image
+            </button>
+    </div>
     <div class="col-md-2  ">
-        <a href="javascript:void(0)" class="btn btn-danger remove"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</a>
+            <a href="javascript:void(0)" class="btn btn-danger remove"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</a>
     </div>
     <div class="col-sm-12 ">
         <div class="form-group">
@@ -211,6 +248,7 @@
             });          
 
             $("#image-picker").imagepicker();
+            $("#sectionImage-multiple").imagepicker();
 
 });
 

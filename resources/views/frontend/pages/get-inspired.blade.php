@@ -6,7 +6,7 @@
     <div class="uk-container">
         <div uk-grid>
             <div class="uk-width-1-1">
-                <div class="section-title">
+                <div class="uk-text-center uk-h4">
                     {!!$page->content{0}->sectionContent!!}
                     <span class="divide-line"></span>
                 </div>

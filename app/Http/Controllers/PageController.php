@@ -53,7 +53,6 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
         
         $this->validate($request, [
             'title' => 'required',
@@ -222,7 +221,7 @@ class PageController extends Controller
                         $content->page_id = $page->id;
                         $content->sectionTitle = $request->sectionTitle[$i];
                         $content->sectionContent = $request->sectionContent[$i];
-                        $content->sectionImage = $image;
+                        $content->contentImage = $image;
                         $content->save();
 
                         File::delete(public_path($oldImg));
