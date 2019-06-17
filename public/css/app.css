@@ -9075,6 +9075,7 @@ ul.uk-nav-sub {
  ========================================================================== */
 
 .uk-text-lead,
+.mobile-step-title,
 .second-row .second-row-step .step-title,
 .first-row .step-first-row .step-title {
   font-size: 1.5rem;
@@ -9193,6 +9194,8 @@ ul.uk-nav-sub {
 }
 
 .uk-text-center,
+.mobile-step-content,
+.mobile-step-title,
 .second-row .second-row-step .step-content,
 .second-row .second-row-step .step-title,
 .first-row .step-first-row .step-content,
@@ -11085,6 +11088,8 @@ iframe.uk-cover {
  ========================================================================== */
 
 .uk-margin-remove,
+.mobile-even-wrapper,
+.mobile-odd-wrapper,
 .header--text h1,
 .header--text h2 {
   margin: 0 !important;
@@ -16170,86 +16175,103 @@ iframe.uk-cover {
 }
 
 .uk-light .uk-text-lead,
+.uk-light .mobile-step-title,
 .uk-light .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-light .step-title,
 .uk-light .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-light .step-title,
 .image-header .uk-text-lead,
+.image-header .mobile-step-title,
 .image-header .second-row .second-row-step .step-title,
 .second-row .second-row-step .image-header .step-title,
 .image-header .first-row .step-first-row .step-title,
 .first-row .step-first-row .image-header .step-title,
 .section-bg__image .uk-text-lead,
+.section-bg__image .mobile-step-title,
 .section-bg__image .second-row .second-row-step .step-title,
 .second-row .second-row-step .section-bg__image .step-title,
 .section-bg__image .first-row .step-first-row .step-title,
 .first-row .step-first-row .section-bg__image .step-title,
 .home-product-category .uk-text-lead,
+.home-product-category .mobile-step-title,
 .home-product-category .second-row .second-row-step .step-title,
 .second-row .second-row-step .home-product-category .step-title,
 .home-product-category .first-row .step-first-row .step-title,
 .first-row .step-first-row .home-product-category .step-title,
 .header .uk-text-lead,
+.header .mobile-step-title,
 .header .second-row .second-row-step .step-title,
 .second-row .second-row-step .header .step-title,
 .header .first-row .step-first-row .step-title,
 .first-row .step-first-row .header .step-title,
 .image-page-header .uk-text-lead,
+.image-page-header .mobile-step-title,
 .image-page-header .second-row .second-row-step .step-title,
 .second-row .second-row-step .image-page-header .step-title,
 .image-page-header .first-row .step-first-row .step-title,
 .first-row .step-first-row .image-page-header .step-title,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-lead,
+.uk-section-primary:not(.uk-preserve-color) .mobile-step-title,
 .uk-section-primary:not(.uk-preserve-color) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-section-primary:not(.uk-preserve-color) .step-title,
 .uk-section-primary:not(.uk-preserve-color) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-section-primary:not(.uk-preserve-color) .step-title,
 .uk-section-secondary:not(.uk-preserve-color) .uk-text-lead,
+.uk-section-secondary:not(.uk-preserve-color) .mobile-step-title,
 .uk-section-secondary:not(.uk-preserve-color) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-section-secondary:not(.uk-preserve-color) .step-title,
 .uk-section-secondary:not(.uk-preserve-color) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-section-secondary:not(.uk-preserve-color) .step-title,
 .uk-tile-primary:not(.uk-preserve-color) .uk-text-lead,
+.uk-tile-primary:not(.uk-preserve-color) .mobile-step-title,
 .uk-tile-primary:not(.uk-preserve-color) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-tile-primary:not(.uk-preserve-color) .step-title,
 .uk-tile-primary:not(.uk-preserve-color) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-tile-primary:not(.uk-preserve-color) .step-title,
 .uk-tile-secondary:not(.uk-preserve-color) .uk-text-lead,
+.uk-tile-secondary:not(.uk-preserve-color) .mobile-step-title,
 .uk-tile-secondary:not(.uk-preserve-color) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-tile-secondary:not(.uk-preserve-color) .step-title,
 .uk-tile-secondary:not(.uk-preserve-color) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-tile-secondary:not(.uk-preserve-color) .step-title,
 .uk-card-primary.uk-card-body .uk-text-lead,
+.uk-card-primary.uk-card-body .mobile-step-title,
 .uk-card-primary.uk-card-body .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-card-primary.uk-card-body .step-title,
 .uk-card-primary.uk-card-body .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-card-primary.uk-card-body .step-title,
 .uk-card-primary > :not([class*=uk-card-media]) .uk-text-lead,
+.uk-card-primary > :not([class*=uk-card-media]) .mobile-step-title,
 .uk-card-primary > :not([class*=uk-card-media]) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-card-primary > :not([class*=uk-card-media]) .step-title,
 .uk-card-primary > :not([class*=uk-card-media]) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-card-primary > :not([class*=uk-card-media]) .step-title,
 .uk-card-secondary.uk-card-body .uk-text-lead,
+.uk-card-secondary.uk-card-body .mobile-step-title,
 .uk-card-secondary.uk-card-body .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-card-secondary.uk-card-body .step-title,
 .uk-card-secondary.uk-card-body .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-card-secondary.uk-card-body .step-title,
 .uk-card-secondary > :not([class*=uk-card-media]) .uk-text-lead,
+.uk-card-secondary > :not([class*=uk-card-media]) .mobile-step-title,
 .uk-card-secondary > :not([class*=uk-card-media]) .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-card-secondary > :not([class*=uk-card-media]) .step-title,
 .uk-card-secondary > :not([class*=uk-card-media]) .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-card-secondary > :not([class*=uk-card-media]) .step-title,
 .uk-overlay-primary .uk-text-lead,
+.uk-overlay-primary .mobile-step-title,
 .uk-overlay-primary .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-overlay-primary .step-title,
 .uk-overlay-primary .first-row .step-first-row .step-title,
 .first-row .step-first-row .uk-overlay-primary .step-title,
 .home-product-category__overlay .uk-text-lead,
+.home-product-category__overlay .mobile-step-title,
 .home-product-category__overlay .second-row .second-row-step .step-title,
 .second-row .second-row-step .home-product-category__overlay .step-title,
 .home-product-category__overlay .first-row .step-first-row .step-title,
 .first-row .step-first-row .home-product-category__overlay .step-title,
 .uk-offcanvas-bar .uk-text-lead,
+.uk-offcanvas-bar .mobile-step-title,
 .uk-offcanvas-bar .second-row .second-row-step .step-title,
 .second-row .second-row-step .uk-offcanvas-bar .step-title,
 .uk-offcanvas-bar .first-row .step-first-row .step-title,
@@ -17184,6 +17206,46 @@ a:hover {
 
 .second-row .second-row-step:nth-child(even):not(:first-child):after {
   border-right-color: #fff !important;
+}
+
+.mobile-odd-wrapper {
+  padding: 5px;
+}
+
+.mobile-odd-wrapper .first {
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.mobile-odd-wrapper .first .mobile-step-title {
+  color: #fff;
+}
+
+.mobile-odd-wrapper .second {
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+}
+
+.mobile-even-wrapper {
+  padding: 5px;
+}
+
+.mobile-even-wrapper .first {
+  padding: 15px;
+  background-color: #fff;
+  color: #333;
+}
+
+.mobile-even-wrapper .second {
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.mobile-even-wrapper .second .mobile-step-title {
+  color: #fff;
 }
 
 .product__share--link {

@@ -107,3 +107,45 @@
       }
     }
   }
+  .mobile-step-title{
+    @extend .uk-text-center, .uk-text-lead;
+  }
+  .mobile-step-content{
+    @extend .uk-text-center;
+  }
+  .mobile-odd-wrapper{
+    @extend .uk-margin-remove;
+    padding: 5px;
+    .first {
+      padding: 15px;
+      background-color: #333;
+      color:#fff;
+      .mobile-step-title{
+        color: #fff;
+      }
+    }
+    
+    .second {
+      padding: 15px;
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  .mobile-even-wrapper{
+    @extend .uk-margin-remove;
+    padding: 5px;
+    .first {
+      padding: 15px;
+      background-color: #fff;
+      color: #333;
+    }
+    
+    .second {
+      padding: 15px;
+      background-color: #333;
+      color:#fff;
+      .mobile-step-title{
+        color: #fff;
+      }
+    }
+  }
