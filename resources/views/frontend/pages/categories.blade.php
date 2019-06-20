@@ -18,9 +18,9 @@
             </div>
         </div>
 
-        @foreach($products->chunk(4) as $row)
-        <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
-            @foreach($row as $product)
+        {{-- @foreach($products->chunk(4) as $row) --}}
+        <div class="uk-grid-large uk-child-width-1-3@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
+            @foreach($products as $product)
             <div class="product-category__item">
                 <a href="{{ route('frontend.product', [$product->category->slug,$product->slug]) }}">
                     <img src="{{$product->thumb}}" alt="{{$product->slug}}" class="product-category__item--img">
@@ -33,7 +33,8 @@
             </div>
             @endforeach
         </div>
-        @endforeach {{--
+        {{-- @endforeach  --}}
+        {{--
         <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
             <div class="product-category__item">
                 <img src="https://source.unsplash.com/300x450/?daisy" alt="" class="product-category__item--img">
