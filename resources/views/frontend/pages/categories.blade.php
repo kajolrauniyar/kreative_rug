@@ -19,7 +19,7 @@
         </div>
 
         {{-- @foreach($products->chunk(4) as $row) --}}
-        <div class="uk-grid-large uk-child-width-1-3@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
+        <div class="uk-grid-large uk-child-width-1-2@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
             @foreach($products as $product)
             <div class="product-category__item">
                 <a href="{{ route('frontend.product', [$product->category->slug,$product->slug]) }}">
