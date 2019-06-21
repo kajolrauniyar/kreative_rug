@@ -27,6 +27,10 @@
     @extend .uk-text-center, .uk-text-uppercase;
     position: relative;
 }
+.section-title-regular {
+    @extend .uk-text-center;
+    position: relative;
+}
 
 .section-content {
     @extend .uk-margin-medium-bottom;

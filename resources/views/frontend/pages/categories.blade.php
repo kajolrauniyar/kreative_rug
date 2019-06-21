@@ -11,7 +11,7 @@
     <div class="uk-container">
         <div uk-grid>
             <div class="uk-width-1-1">
-                <div class="section-title">
+                <div class="section-title-regular">
                     <p>{!!$category->description!!}</p>
                     <span class="divide-line"></span>
                 </div>
@@ -19,7 +19,7 @@
         </div>
 
         {{-- @foreach($products->chunk(4) as $row) --}}
-        <div class="uk-grid-large uk-child-width-1-2@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
+        <div class="uk-grid-large uk-child-width-1-2@l uk-child-width-1-2@s uk-text-center product-category uk-grid-match" uk-grid>
             @foreach($products as $product)
             <div class="product-category__item">
                 <a href="{{ route('frontend.product', [$product->category->slug,$product->slug]) }}">
