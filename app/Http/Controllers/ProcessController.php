@@ -109,7 +109,7 @@ class ProcessController extends Controller
             'featured' => 'sometimes'
         ]);
         
-        $process = Category::find($request->id);
+        $process = Process::find($request->id);
         $process->title = $request->title;
         $process->description = $request->description;
 
