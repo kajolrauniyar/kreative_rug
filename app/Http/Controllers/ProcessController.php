@@ -120,12 +120,12 @@ class ProcessController extends Controller
             $media = Media::find($request->featured);
             $UploadImage = new UploadImage;
             $path = $UploadImage->uploadSingle($this->path,$media->path,800,600);
-           $category->path = $path;
+           $process->path = $path;
 
             //delete old image
             File::delete(public_path($oldPath));
         }
-        $category->save();
+        $process->save();
 
         return redirect()->route('process.index');
     }
