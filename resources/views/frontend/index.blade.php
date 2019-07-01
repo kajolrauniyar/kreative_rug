@@ -3,7 +3,7 @@
 <header class="header" data-src="{{asset($home->banner)}}" uk-img>
     <div class="{{$home->position}} header--text">
         <h1 class="uk-margin-remove">
-            <span style="    padding: 1rem 1.5rem;">
+            <span>
                     {{$home->heading}}
             </span>
         </h1>
