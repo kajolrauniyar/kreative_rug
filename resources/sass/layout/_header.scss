@@ -1,18 +1,25 @@
-.header{
-    @extend  .uk-height-large , .uk-flex , .uk-flex-center , .uk-flex-middle , .uk-background-cover , .uk-light;
+.header {
+    @extend .uk-height-large,
+        .uk-flex,
+        .uk-flex-center,
+        .uk-flex-middle,
+        .uk-background-cover,
+        .uk-light;
     height: 90vh;
-    &--text{
+    &--text {
         @extend .uk-padding-large, .uk-padding-remove-vertical;
-        h1,h2{
-         @extend .uk-margin-remove;
-         padding-bottom: 0.5rem;
+        h1,
+        h2 {
+            @extend .uk-margin-remove;
+            padding-bottom: 0.5rem;
         }
     }
-    .header--text__heading{
-		padding-left: 35%; font-size: 3rem; font-weight: bold;
-	}
-	.header--text__subheading{
-        padding-left: 35%; 
-        color:#333;
-	}
+    &--text {
+        display: block;
+        width: 40%;
+    }
+    .header--text__heading {
+        font-size: 3rem;
+        font-weight: bold;
+    }
 }
