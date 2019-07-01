@@ -36,6 +36,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <h4>Text Position</h4>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-left"> Center Left
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-center"> Center Center
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-right"> Center Right
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-left"> Bottom Left
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-center"> Bottom Center
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-right"> Bottom Right
+                        </div>                        
+                    </div>
 
                     <div class="row">
                         <h4>Introduction Section</h4>

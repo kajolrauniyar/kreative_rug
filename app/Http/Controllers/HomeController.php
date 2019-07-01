@@ -79,6 +79,8 @@ class HomeController extends Controller
             $home->heading = $request->heading;
             $home->subheading = $request->subheading;
 
+            $home->position = $request->position;
+
             $home->section1_title = $request->section1_title;
             $home->section1_content = $request->section1_content;
 
@@ -155,7 +157,10 @@ class HomeController extends Controller
 
             $home->heading = $request->heading;
             $home->subheading = $request->subheading;
-
+            if (!empty($request->position)) {
+                $home->position = $request->position;
+            }
+            
             $home->section1_title = $request->section1_title;
             $home->section1_content = $request->section1_content;
 
