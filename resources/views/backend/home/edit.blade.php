@@ -39,22 +39,33 @@
                     <div class="row">
                             <h4>Text Position</h4>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-left"> Center Left
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-left" 
+                                @if($home->position == 'uk-position-large uk-position-center-left') checked @endif> Center Left
                             </div>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-center"> Center Center
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-center"
+                                @if($home->position == 'uk-position-large uk-position-center-center') checked @endif
+                                > Center Center
                             </div>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-right"> Center Right
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-center-right"
+                                @if($home->position == 'uk-position-large uk-position-center-right') checked @endif
+                                > Center Right
                             </div>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-left"> Bottom Left
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-left"
+                                @if($home->position == 'uk-position-large uk-position-bottom-left') checked @endif
+                                > Bottom Left
                             </div>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-center"> Bottom Center
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-center"
+                                @if($home->position == 'uk-position-large uk-position-bottom-center') checked @endif
+                                > Bottom Center
                             </div>
                             <div class="col-sm-4">
-                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-right"> Bottom Right
+                                <input type="radio" name="position" id="position" value="uk-position-large uk-position-bottom-right"
+                                @if($home->position == 'uk-position-large uk-position-bottom-right') checked @endif
+                                > Bottom Right
                             </div>                        
                         </div>
 
