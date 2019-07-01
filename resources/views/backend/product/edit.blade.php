@@ -12,7 +12,7 @@
             @method('PATCH')
             <div class="card">
                 <div class="card-head style-primary">
-                    <header>Create new product</header>
+                    <header>Edit {{$product->name}} </header>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -95,12 +95,6 @@
                         <div class="form-group">
                             <h4>Overview</h4>
                             <textarea name="overview" value="{{old('description')}}" >{{$product->description}}</textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-                            <h4>Note</h4>
-                            <textarea name="note" value="{{old('note')}}" class="form-control">{{$product->note}}</textarea>
                         </div>
                     </div>
                     {{--Overview --}}

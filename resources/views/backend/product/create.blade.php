@@ -92,12 +92,6 @@
                             <textarea name="overview" value="{{old('overview')}}"></textarea>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="form-group">
-                            <h4>Note</h4>
-                            <textarea name="note" value="{{old('note')}}" class="form-control"></textarea>
-                        </div>
-                    </div>
                     {{--Overview --}}
 
                     <div class="row">

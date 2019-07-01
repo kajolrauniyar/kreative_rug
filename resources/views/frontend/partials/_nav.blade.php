@@ -9,25 +9,6 @@
                     <li class="nav-list__item"><a href="/" class="nav-list__item--link">Home</a></li>
                     <li class="nav-list__item">
                         <a href="{{ route('frontend.inspire') }}" class="nav-list__item--link" aria-expanded="false" class="">Get Inspired</a>
-                        <div class="uk-navbar-dropdown uk-navbar-dropdown-boundary uk-navbar-dropdown-bottom-center"
-                            uk-drop="cls-drop: uk-navbar-dropdown; boundary: !nav; boundary-align: true; pos: bottom-justify; flip: x">
-                            <div class="uk-container">
-                                    <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider>
-                                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid-small">
-                                                @foreach ($categories as $category)
-                                                <li>
-                                                    <div class="uk-panel">
-                                                        <a href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a>
-                                                        <img src="{{ asset($category->nav) }}"  alt="{{$category->name}}">
-                                                    </div>
-                                                </li>
-                                                @endforeach
-                                            </ul>
-                                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>                                
-                                        </div>
-                            </div>
-                        </div>
                     </li>
                     <li class="nav-list__item"><a href="{{ route('frontend.design') }}" class="nav-list__item--link">Design Your Rug</a></li>
                     <li class="nav-list__item"><a href="{{ route('frontend.process') }}" class="nav-list__item--link">Rug Making Process</a></li>
@@ -70,13 +51,8 @@
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-default">
             <li class="uk-active"><a href="/">Home</a></li>
-            <li class="uk-parent">
+            <li class="uk-active">
                 <a href="{{ route('frontend.inspire') }}">Get Inspired</a>
-                <ul class="uk-nav-sub">
-                    @foreach ($categories as $category)
-                    <li><a href="{{ route('frontend.category', $category->slug) }}">{{$category->name}}</a></li>
-                    @endforeach
-                </ul>
             </li>
             <li class="uk-active"><a href="{{ route('frontend.design') }}">Design Your Rug</a></li>
             <li class="uk-active"><a href="{{ route('frontend.process') }}">Rug Making Process</a></li>

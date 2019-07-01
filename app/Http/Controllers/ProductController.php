@@ -81,7 +81,6 @@ class ProductController extends Controller
             $product->category_id = $request->category;
             $product->status = $request->status;
             $product->description = $request->overview;
-            $product->note = $request->note;
             $product->meta_description = $request->description;
             $product->mtitle = $request->mtitle;
 
@@ -157,7 +156,6 @@ class ProductController extends Controller
             }
             $product->category_id = $request->category;
             $product->description = $request->overview;
-            $product->note = $request->note;
             $product->status = $request->status;
             $product->meta_description = $request->description;
             $product->mtitle = $request->mtitle;
