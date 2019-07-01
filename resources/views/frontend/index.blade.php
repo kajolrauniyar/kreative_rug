@@ -90,7 +90,7 @@
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                     <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                     @foreach ($categories as $category)
-                    <li class="uk-padding-remove-horizontal" style="order: 1;">
+                    <li class="uk-padding-remove-horizontal uk-margin-medium-left uk-margin-medium-right">
                         <div class="uk-panel uk-transition-toggle">
                             <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
                             <span class="uk-position-center uk-panel">
