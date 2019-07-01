@@ -88,9 +88,9 @@
         <div uk-slider="" class="uk-slider uk-slider-container">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
                     @foreach ($categories as $category)
-                    <li class="uk-padding-remove-horizontal uk-margin-medium-left uk-margin-medium-right">
+                    <li class="uk-padding-remove-horizontal uk-margin-small-left uk-margin-small-right">
                         <div class="uk-panel uk-transition-toggle">
                             <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
                             <span class="uk-position-center uk-panel">
