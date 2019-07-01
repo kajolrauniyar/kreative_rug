@@ -88,12 +88,12 @@
         <div uk-slider="" class="uk-slider uk-slider-container">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid"
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid"
                     style="transform: translateX(0px);">
                     @foreach ($categories as $category)
                     <li class="uk-padding-remove-horizontal" style="order: 1;">
                         <div class="uk-panel uk-transition-toggle">
-                            <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
+                            <img src="https://source.unsplash.com/400x600/?wine-bottle" alt="{{$category->name}}">
                             <span class="uk-position-center uk-panel">
                                 <h4 class="uk-transition-slide-bottom-small">
                                     <a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
