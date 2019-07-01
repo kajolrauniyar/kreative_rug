@@ -88,7 +88,7 @@
         <div uk-slider="" class="uk-slider uk-slider-container">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-large"
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid"
                     style="transform: translateX(0px);">
                     @foreach ($categories as $category)
                     <li class="" style="order: 1;">
@@ -104,7 +104,7 @@
                     @endforeach
                 </ul>
 
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
+                {{-- <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
                     href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14px" height="24px"
                         viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous">
                         <polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 ">
@@ -115,7 +115,7 @@
                         viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next">
                         <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 ">
                         </polyline>
-                    </svg></a>
+                    </svg></a> --}}
 
             </div>
 
