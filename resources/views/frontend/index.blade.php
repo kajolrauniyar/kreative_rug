@@ -88,7 +88,7 @@
         <div uk-slider="" class="uk-slider uk-slider-container">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid"
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small"
                     style="transform: translateX(0px);">
                     @foreach ($categories as $category)
                     <li class="uk-padding-remove-horizontal" style="order: 1;">
