@@ -69,7 +69,7 @@ class CategoryController extends Controller
             $uploadImage = new UploadImage;
             $path = $uploadImage->uploadSingle($this->path,$media->path,1024,512);
             $thumb = $uploadImage->uploadSingle($this->thumb,$media->path,320,480);
-            $nav = $UploadImage->cropUpload($this->nav,$media->path,320,480);
+            $nav = $UploadImage->cropUpload($this->nav,$media->path,400,600);
             $categories->path = $path;
             $categories->thumb = $thumb;
             $categories->nav = $nav;
