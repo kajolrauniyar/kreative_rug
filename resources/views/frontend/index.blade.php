@@ -1,13 +1,11 @@
 @extends('layouts.frontend')
 @section('content')
 <header class="header" data-src="{{asset($home->banner)}}" uk-img>
-    <div class="{{$home->position}} header--text">
-        <h1 class="uk-margin-remove">
-            <span>
-                    {{$home->heading}}
-            </span>
+    <div class="header--text uk-position-center-right " style="display:block" >
+        <h1 class="header--text__heading" >
+            {{$home->heading}}
         </h1>
-        <h2>{{$home->subheading}}</h2>
+        <h2 class="header--text__subheading" >{{$home->subheading}}</h2>
     </div>
 </header>
 <main>
@@ -25,7 +23,7 @@
                 </div>
             </div>
             <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
-                
+
                 <div class="uk-width-1-1 uk-padding-large uk-padding-remove-vertical">
                     <!--840x360-->
                     <img src="{{$home->section1_image}}" alt="{{config('app.name')}}">
@@ -78,52 +76,54 @@
         </div>
     </section>
     <section class="section-dark">
-    <div class="section-featured">
-        <div class="section-title">
-            <h2 class="heading-secondary--white">{{$home->section5_title}}</h2>
-            <span class="divide-line--white"></span>
-        </div>
-        <div class="section-content">
-            <div class="section-content__centered">
-                {{$home->section5_content}}
+        <div class="section-featured">
+            <div class="section-title">
+                <h2 class="heading-secondary--white">{{$home->section5_title}}</h2>
+                <span class="divide-line--white"></span>
             </div>
-        </div>
+            <div class="section-content">
+                <div class="section-content__centered">
+                    {{$home->section5_content}}
+                </div>
+            </div>
 
-        <div uk-slider="" class="uk-slider uk-slider-container">
+            <div uk-slider="" class="uk-slider uk-slider-container">
 
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                     <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
-                    @foreach ($categories as $category)
-                    <li class="uk-padding-remove-horizontal uk-margin-small-left uk-margin-small-right">
-                        <div class="uk-panel uk-transition-toggle">
-                            <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
-                            <span class="uk-position-center uk-panel">
-                                <h4 class="uk-transition-slide-bottom-small">
-                                    <a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
-                                </h4>
-                            </span>
-                        </div>
-                    </li>
-                    @endforeach
-                </ul>
+                        @foreach ($categories as $category)
+                        <li class="uk-padding-remove-horizontal uk-margin-small-left uk-margin-small-right">
+                            <div class="uk-panel uk-transition-toggle">
+                                <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
+                                <span class="uk-position-center uk-panel">
+                                    <h4 class="uk-transition-slide-bottom-small">
+                                        <a
+                                            href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
+                                    </h4>
+                                </span>
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
 
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
-                    href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14px" height="24px"
-                        viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous">
-                        <polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 ">
-                        </polyline>
-                    </svg></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav"
-                    href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14px" height="24px"
-                        viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next">
-                        <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 ">
-                        </polyline>
-                    </svg></a>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
+                        href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14px" height="24px"
+                            viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous">
+                            <polyline fill="none" stroke="#000" stroke-width="1.4"
+                                points="12.775,1 1.225,12 12.775,23 ">
+                            </polyline>
+                        </svg></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav"
+                        href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14px" height="24px"
+                            viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next">
+                            <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 ">
+                            </polyline>
+                        </svg></a>
+
+                </div>
 
             </div>
-
         </div>
-    </div>
     </section>
 </main>
 @endsection
