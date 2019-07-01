@@ -14,14 +14,14 @@
                 <span class="divide-line--white"></span>
             </div>
             <div uk-grid>
-                <div class="uk-width-1-5">
+                <div class="uk-width-1-6">
                 </div>
-                <div class="uk-width-3-5">
+                <div class="uk-width-expand">
                     <p class="uk-text-center">
                         {{$home->section1_content}}
                     </p>
                 </div>
-                <div class="uk-width-1-5">
+                <div class="uk-width-1-6">
                 </div>
             </div>
             <div class="uk-grid-medium  uk-text-center uk-grid-match" uk-grid>
