@@ -93,7 +93,7 @@
                     @foreach ($categories as $category)
                     <li class="uk-padding-remove-horizontal" style="order: 1;">
                         <div class="uk-panel uk-transition-toggle">
-                            <img src="{{ asset($category->thumb) }}" alt="{{$category->name}}">
+                            <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
                             <span class="uk-position-center uk-panel">
                                 <h4 class="uk-transition-slide-bottom-small">
                                     <a href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
