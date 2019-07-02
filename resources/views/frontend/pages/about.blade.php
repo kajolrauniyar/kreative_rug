@@ -31,43 +31,37 @@
         <span class="divide-line"></span>
     </div>
     <div class="uk-container uk-padding">
+        @foreach ($teams as $team)
         <div uk-grid>
-            {{-- <div class="uk-width-1-6"></div>
-            <div class="uk-width-expand"> --}}
-            @foreach ($teams as $team)
-            @if ($loop->iteration %2 != 0)
-
-            <div class="uk-card uk-card-default uk-grid-collapse  uk-margin" uk-grid>
-                <div class="uk-card-media-left uk-cover-container uk-width-1-3">
-                    <img src="{{ asset($team->avatar) }}" alt="" uk-cover>
-                </div>
-                <div class="uk-width-expand">
-                    <div class="uk-card-body">
-                        <h3 class="uk-margin-remove">{{$team->name}}</h3>
+            <div class="uk-width-1-6"></div>
+            <div class="uk-width-expand">
+                @if ($loop->iteration %2 !== 0)
+                <div uk-grid >
+                    <div class="uk-width-1-3 uk-padding-remove-left">
+                        <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
+                    </div>
+                    <div class="uk-width-2-3 uk-card uk-card-default uk-card-body">
+                        <h4 class="uk-margin-remove">{{$team->name}}</h4>
                         <h5 class="uk-margin-remove">{{$team->designation}}</h5>
-                        {!!$team->description!!}
+                        <p>{!!$team->description!!}</p>
                     </div>
                 </div>
-            </div>
-            @else
-            <div class="uk-card uk-card-default uk-grid-collapse  uk-margin" uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-width-1-3">
-                    <img src="{{ asset($team->avatar) }}" alt="" uk-cover>
-                </div>
-                <div class="uk-width-expand">
-                    <div class="uk-card-body">
-                        <h3 class="uk-margin-remove">{{$team->name}}</h3>
+                @else
+                <div uk-grid>
+                    <div class="uk-width-2-3 uk-card uk-card-default uk-card-body">
+                        <h4 class="uk-margin-remove">{{$team->name}}</h4>
                         <h5 class="uk-margin-remove">{{$team->designation}}</h5>
-                        {!!$team->description!!}
+                        <p>{!!$team->description!!}</p>
+                    </div>
+                    <div class="uk-width-1-3 uk-padding-remove-left">
+                        <img src="{{ asset($team->avatar) }}" alt="{{$team->name}}">
                     </div>
                 </div>
+                @endif
             </div>
-            @endif
-
-            @endforeach
-            {{-- </div>
-            <div class="uk-width-1-6"></div> --}}
+            <div class="uk-width-1-6"></div>
         </div>
+        @endforeach
     </div>
 </div>
 @if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
