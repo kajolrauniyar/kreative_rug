@@ -32,8 +32,8 @@
     </div>
     <div class="uk-container uk-padding">
         <div uk-grid>
-            <div class="uk-width-1-6"></div>
-            <div class="uk-width-expand">
+            {{-- <div class="uk-width-1-6"></div>
+            <div class="uk-width-expand"> --}}
             @foreach ($teams as $team)
             @if ($loop->iteration %2 != 0)
 
@@ -65,8 +65,8 @@
             @endif
 
             @endforeach
-            </div>
-            <div class="uk-width-1-6"></div>
+            {{-- </div>
+            <div class="uk-width-1-6"></div> --}}
         </div>
     </div>
 </div>
