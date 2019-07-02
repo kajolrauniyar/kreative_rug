@@ -1,11 +1,11 @@
 @extends('layouts.frontend')
 @section('content')
 <header class="header" data-src="{{asset($home->banner)}}" uk-img>
-    <div class="header--text uk-position-center-right " >
-        <h1 class="header--text__heading" >
+    <div class="header--text uk-position-center-right ">
+        <h1 class="header--text__heading">
             {{$home->heading}}
         </h1>
-        <h2 class="header--text__subheading" >{{$home->subheading}}</h2>
+        <h2 class="header--text__subheading">{{$home->subheading}}</h2>
     </div>
 </header>
 <main>
@@ -86,41 +86,45 @@
                     {{$home->section5_content}}
                 </div>
             </div>
+            <div uk-slider>
 
-            <div uk-slider="" class="uk-slider uk-slider-container">
+                <div class="uk-position-relative">
 
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
-                        @foreach ($categories as $category)
-                        <li class="uk-padding-remove-horizontal uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-panel uk-transition-toggle">
-                                <img src="{{ asset($category->nav) }}" alt="{{$category->name}}">
-                                <span class="uk-position-center uk-panel">
-                                    <h4 class="uk-transition-slide-bottom-small">
-                                        <a
-                                            href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
-                                    </h4>
-                                </span>
-                            </div>
-                        </li>
-                        @endforeach
-                    </ul>
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small">
+                            @foreach ($categories as $category)
+                            <li>
+                                <div class="uk-panel uk-transition-toggle">
+                                    <img src="{{ asset($category->nav) }}" alt="">
+                                    <span class="uk-position-center uk-panel">
+                                        <h4 class="uk-transition-slide-bottom-small">
+                                            <a
+                                                href="{{ route('frontend.category',$category->slug) }}">{{$category->name}}</a>
+                                        </h4>
+                                    </span>
+                                </div>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
 
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-previous uk-icon uk-slidenav"
-                        href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14px" height="24px"
-                            viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous">
-                            <polyline fill="none" stroke="#000" stroke-width="1.4"
-                                points="12.775,1 1.225,12 12.775,23 ">
-                            </polyline>
-                        </svg></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-next uk-icon uk-slidenav"
-                        href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14px" height="24px"
-                            viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next">
-                            <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 ">
-                            </polyline>
-                        </svg></a>
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                            uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                            uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                            uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                            uk-slider-item="next"></a>
+                    </div>
 
                 </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
             </div>
         </div>
