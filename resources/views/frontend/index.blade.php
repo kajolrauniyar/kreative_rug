@@ -115,7 +115,7 @@
                             uk-slider-item="next"></a>
                     </div>
 
-                    <div class="uk-visible@s">
+                    <div class="uk-visible@s uk-light">
                         <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
                             uk-slider-item="previous"></a>
                         <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
@@ -123,8 +123,6 @@
                     </div>
 
                 </div>
-
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
             </div>
         </div>
