@@ -91,7 +91,7 @@
                 <div class="uk-position-relative">
 
                     <div class="uk-slider-container uk-light">
-                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid-small">
                             @foreach ($categories as $category)
                             <li>
                                 <div class="uk-panel uk-transition-toggle">
