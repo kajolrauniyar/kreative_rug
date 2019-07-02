@@ -34,46 +34,15 @@
                     }} @endforeach
                 </p>
                 <div uk-grid>
-                    <div class="uk-width-1-3">
+                    <div class="uk-width-1-1">
                         <h4 class="uk-margin-remove-bottom">Share</h4>
                         <div class="product__share">
                             <a href="#" class="product__share--link"><span uk-icon="facebook"></span></a>
                             <a href="#" class="product__share--link"><span uk-icon="twitter"></span></a>
                         </div>
                     </div>
-                    <div class="uk-width-1-3">
-                        <button class="uk-button uk-button-secondary" type="button" uk-toggle="target: #make-enquiry">Make Enquiry</button>
-
-                        <!-- This is the modal -->
-                        <div id="make-enquiry" uk-modal>
-                            <div class="uk-modal-dialog uk-modal-body">
-                                <h2 class="uk-modal-title">Make an enquiry</h2>
-                                <form class="uk-form-stacked">
-                                    <div class="uk-margin">
-                                        <label class="uk-form-label" for="name">Name</label>
-                                        <div class="uk-form-controls">
-                                            <input class="uk-input" id="name" type="text" id="name" placeholder="Jane Doe">
-                                        </div>
-                                    </div>
-                                    <div class="uk-margin">
-                                        <label class="uk-form-label" for="email">Email</label>
-                                        <div class="uk-form-controls">
-                                            <input class="uk-input" id="email" type="email" name="email" placeholder="jane.do@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="uk-margin">
-                                        <label class="uk-form-label" for="message">Email</label>
-                                        <div class="uk-form-controls">
-                                            <textarea name="messageContent" id="message" cols="30" rows="5" class="uk-textarea" style="resize:none" placeholder="Your message Here"></textarea>
-                                        </div>
-                                    </div>
-
-                                </form>
-                                <p class="uk-text-center">
-                                    <button class="uk-button uk-button-secondary" type="button">Send</button>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="uk-width-1-1">
+                    <a class="uk-button uk-button-secondary" href="{{ route('frontend.contact') }}">Make Enquiry</a>
                     </div>
                 </div>
             </div>

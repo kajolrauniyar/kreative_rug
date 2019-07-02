@@ -65,6 +65,7 @@ Route::name('frontend.')->group(function () {
     Route::get('/product', 'FrontendController@getSingleProduct')->name('product');
     Route::get('/faq', 'FrontendController@getFAQ')->name('faq');
 
+
     Route::post('/custom-design', 'PostController@customDesign')->name('customDesign');
     Route::post('/contact', 'PostController@contact')->name('contact');
 
