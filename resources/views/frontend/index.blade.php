@@ -32,11 +32,11 @@
         </div>
     </section>
     <section class="value-grid">
-        <div class="section-title uk-margin-medium-bottom">
+        <div class="section-title uk-margin-large-bottom">
             <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
             <span class="divide-line"></span>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-xlarge" uk-grid>
+        <div class="uk-child-width-1-3@m uk-grid-large" uk-grid>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
