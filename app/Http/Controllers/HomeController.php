@@ -108,17 +108,17 @@ class HomeController extends Controller
 
             $media = Media::find($request->section2_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
             $home->section2_image = $thumb;            
 
             $media = Media::find($request->section3_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
             $home->section3_image = $thumb;
 
             $media = Media::find($request->section4_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
+            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
             $home->section4_image = $thumb;     
             
             $media = Media::find($request->section5_image);

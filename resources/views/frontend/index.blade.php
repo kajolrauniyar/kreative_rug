@@ -32,7 +32,7 @@
         </div>
     </section>
     <section class="value-grid">
-        <div class="section-title">
+        <div class="section-title uk-margin-medium-bottom">
             <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
             <span class="divide-line"></span>
         </div>
