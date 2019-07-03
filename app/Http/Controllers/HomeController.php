@@ -98,32 +98,32 @@ class HomeController extends Controller
 
             $media = Media::find($request->image);
             $upload = new UploadImage;
-            $banner = $upload->uploadSingle($this->image, $media->path, 1334,750);
+            $banner = $upload->cropUpload($this->image, $media->path, 1334,750);
             $home->banner = $banner;
 
             $media = Media::find($request->section1_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 700,350);
+            $thumb = $upload->cropUpload($this->image, $media->path, 700,350);
             $home->section1_image = $thumb;
 
             $media = Media::find($request->section2_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
+            $thumb = $upload->cropUpload($this->image, $media->path, 300,300);
             $home->section2_image = $thumb;            
 
             $media = Media::find($request->section3_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
+            $thumb = $upload->cropUpload($this->image, $media->path, 300,300);
             $home->section3_image = $thumb;
 
             $media = Media::find($request->section4_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 300,300);
+            $thumb = $upload->cropUpload($this->image, $media->path, 300,300);
             $home->section4_image = $thumb;     
             
             $media = Media::find($request->section5_image);
             $upload = new UploadImage;
-            $thumb = $upload->uploadSingle($this->image, $media->path, 450,300);
+            $thumb = $upload->cropUpload($this->image, $media->path, 450,300);
             $home->section5_image = $thumb;            
 
             $home->save();
