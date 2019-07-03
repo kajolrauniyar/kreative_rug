@@ -52,7 +52,7 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
+                        <img src="{{ asset($home->section3_image) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section3_title}}</span>
