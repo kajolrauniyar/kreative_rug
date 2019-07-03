@@ -17,7 +17,8 @@
 }
 // section[class^="section"] {
 //     &:last-child {
-//         @extend .uk-margin-large-bottom;
+//         @extend .uk-margin-large-bottomval
+
 //     }
 //     &:not(:last-child) {
 //         @extend .uk-padding-remove-bottom;
@@ -123,7 +124,7 @@
     .value-item{
         @extend .uk-card, .uk-card-default, .uk-box-shadow-large;
         &__title{
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 1.4;
             font-weight: bold;
             color: $color-grey-dark-3;
