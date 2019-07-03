@@ -36,7 +36,7 @@
             <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
             <span class="divide-line"></span>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-match uk-grid-medium" uk-grid>
+        <div class="uk-child-width-1-3@m uk-grid-large" uk-grid>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
