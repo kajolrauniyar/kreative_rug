@@ -36,7 +36,7 @@
             <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
             <span class="divide-line"></span>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-medium" uk-grid>
+        <div class="uk-child-width-1-3@m uk-grid-match uk-grid-medium" uk-grid>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
@@ -51,6 +51,18 @@
             </div>
             <div>
                 <div class="value-item">
+                    <div class="uk-card-media-top">
+                        <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
+                    </div>
+                    <div class="uk-card-body uk-paddin-small">
+                        <span class="value-item__title">{{$home->section3_title}}</span>
+                        <p>{{$home->section3_content}}
+                        </p>
+                    </div>
+                </div>
+            </div>            
+            <!-- <div>
+                <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section3_title}}</span>
                         <p>{{$home->section3_content}}
@@ -60,7 +72,7 @@
                         <img src="{{ asset($home->section3_image) }}" alt="{{$home->section3_title}}">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
