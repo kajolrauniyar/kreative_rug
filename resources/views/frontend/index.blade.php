@@ -48,20 +48,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="value-item">
-                    <div class="uk-card-media-top">
-                        <img src="{{ asset($home->section3_image) }}" alt="{{$home->section2_title}}">
-                    </div>
-                    <div class="uk-card-body uk-paddin-small">
-                        <span class="value-item__title">{{$home->section3_title}}</span>
-                        <p>{{$home->section3_content}}
-                        </p>
-                    </div>
-                </div>
             </div>            
-            <!-- <div>
+            <div>
                 <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section3_title}}</span>
@@ -72,7 +60,7 @@
                         <img src="{{ asset($home->section3_image) }}" alt="{{$home->section3_title}}">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
