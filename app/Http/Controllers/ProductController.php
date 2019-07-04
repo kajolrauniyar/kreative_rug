@@ -87,7 +87,7 @@ class ProductController extends Controller
             $media = Media::find($request->image);
             $upload = new UploadImage;
             $imagePath = $upload->uploadSingle($this->image, $media->path, 480,640);
-            $thumbPath = $upload->uploadSingle($this->thumb, $media->path, 320,480);
+            $thumbPath = $upload->cropUpload($this->thumb, $media->path, 320,480);
 
             $product->path = $imagePath;
             $product->thumb = $thumbPath;
@@ -168,7 +168,7 @@ class ProductController extends Controller
                 $media = Media::find($request->image);
                 $upload = new UploadImage;
                 $imagePath = $upload->uploadSingle($this->image, $media->path, 480,640);
-                $thumbPath = $upload->uploadSingle($this->thumb, $media->path, 320,480);
+                $thumbPath = $upload->cropUpload($this->thumb, $media->path, 320,480);
 
                 $product->path = $imagePath;
                 $product->thumb = $thumbPath;

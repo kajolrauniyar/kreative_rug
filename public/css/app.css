@@ -16940,12 +16940,7 @@ a:hover {
 
 .header--text {
   display: block;
-  width: 40%;
-}
-
-.header .header--text__heading {
-  font-size: 3rem;
-  font-weight: bold;
+  width: 35%;
 }
 
 .navigation {

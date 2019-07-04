@@ -13,7 +13,7 @@ class UploadImage extends Model
 
 		$filename = md5(now().basename($image)).'.'.pathinfo($image, PATHINFO_EXTENSION);
 		$location = $savePath . $filename;
-		Image::make($image)->resize(null, 600, function ($constraint) {
+		Image::make($image)->resize(null, null, function ($constraint) {
 			$constraint->aspectRatio();
 			$constraint->upsize();
 		})->save($location);
