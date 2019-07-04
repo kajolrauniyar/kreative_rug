@@ -16936,6 +16936,11 @@ a:hover {
 .header--text {
   display: block;
   width: 35%;
+  top: 39%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-19%);
+          transform: translateX(-19%);
 }
 
 .header--text h1 {
