@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 @section('content')
 <header class="header" data-src="{{asset($home->banner)}}" uk-img>
-    <div class="header--text uk-position-center-right ">
+    <div class="header--text  ">
         <h1 class="header--text__heading">
             {{$home->heading}}
         </h1>
@@ -36,16 +36,15 @@
             <h2 class="heading-secondary">Essense of Kreative Rugs</h2>
             <span class="divide-line"></span>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
+        <div class="uk-child-width-1-3@m uk-grid-large" uk-grid>
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="https://source.unsplash.com/353x236/?wine-bottle" alt="{{$home->section2_title}}">
+                        <img src="{{ asset($home->section2_image) }}" alt="{{$home->section2_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section2_title}}</span>
-                        <p>
-                        Adopting an ancient technique of production via an art passed down by generations of Tibetan weavers, all our rugs are hand knotted in a traditional loom in Kathmandu - the modern day home of the Tibetan carpets
+                        <p>{{$home->section2_content}}
                         </p>
                     </div>
                 </div>
@@ -54,8 +53,7 @@
                 <div class="value-item">
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section3_title}}</span>
-                        <p>
-                        Ethically sourced from traditional Tibetan shepherds in the Himalayan highlands, the wool and silk we use to make our rugs are 100% organic and natural. - -
+                        <p>{{$home->section3_content}}
                         </p>
                     </div>
                     <div class="uk-card-media-bottom">
@@ -66,11 +64,11 @@
             <div>
                 <div class="value-item">
                     <div class="uk-card-media-top">
-                        <img src="https://source.unsplash.com/353x236/?wine-bottle" alt="{{$home->section4_title}}">
+                        <img src="{{ asset($home->section4_image) }}" alt="{{$home->section4_title}}">
                     </div>
                     <div class="uk-card-body uk-paddin-small">
                         <span class="value-item__title">{{$home->section4_title}}</span>
-                        <p>We are a proud brand - Our raw materials are ethically sourced, our production has zero carbon footprint and we, in no way detriment the environment we live in.
+                        <p>{{$home->section4_content}}
                         </p>
                     </div>
                 </div>
