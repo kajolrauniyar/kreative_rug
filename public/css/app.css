@@ -16939,7 +16939,7 @@ a:hover {
 }
 
 .header--text h1 {
-  font-size: 3rem;
+  font-size: 2.625rem;
   letter-spacing: 4px;
 }
 
@@ -16955,6 +16955,15 @@ a:hover {
 @media only screen and (min-width: 1200px) {
   .header--text {
     width: 30%;
+  }
+
+  .header--text h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .header--text h2 {
+    font-size: 1.6875rem;
   }
 }
 
