@@ -194,7 +194,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section1_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path,700,350);
+                $imagePath = $upload->cropUpload($this->image, $media->path,700,350);
 
                 $home->section1_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -206,7 +206,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section2_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
+                $imagePath = $upload->cropUpload($this->image, $media->path, 450,300);
 
                 $home->section2_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -218,7 +218,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section3_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
+                $imagePath = $upload->cropUpload($this->image, $media->path, 450,300);
 
                 $home->section3_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -230,7 +230,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section4_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
+                $imagePath = $upload->cropUpload($this->image, $media->path, 450,300);
 
                 $home->section4_image = $imagePath;
                 File::delete(public_path($oldImage));
@@ -242,7 +242,7 @@ class HomeController extends Controller
 
                 $media = Media::find($request->section5_image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 450,300);
+                $imagePath = $upload->cropUpload($this->image, $media->path, 450,300);
 
                 $home->section5_image = $imagePath;
                 File::delete(public_path($oldImage));
