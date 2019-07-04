@@ -16952,7 +16952,7 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .header--text {
     width: 30%;
   }
