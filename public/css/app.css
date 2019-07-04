@@ -16933,14 +16933,18 @@ a:hover {
   height: 90vh;
 }
 
-.header--text h1,
-.header--text h2 {
-  padding-bottom: 0.5rem;
-}
-
 .header--text {
   display: block;
   width: 35%;
+}
+
+.header--text h1 {
+  letter-spacing: 2px;
+}
+
+.header--text h1,
+.header--text h2 {
+  padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 1200px) {

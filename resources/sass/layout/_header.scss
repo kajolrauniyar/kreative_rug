@@ -8,20 +8,21 @@
     height: 90vh;
     &--text {
         @extend .uk-padding-large, .uk-padding-remove-vertical;
+        display: block;
+        width: 35%;
+        h1{
+            letter-spacing: 2px;
+        }
         h1,
         h2 {
             @extend .uk-margin-remove;
             padding-bottom: 0.5rem;
         }
     }
-    &--text {
-        display: block;
-        width: 35%;
-    }
-    .header--text__heading {
-        // font-size: 3rem;
-        // font-weight: bold;
-    }
+    // .header--text__heading {
+    //     // font-size: 3rem;
+    //     // font-weight: bold;
+    // }
     
 }
 
