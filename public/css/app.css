@@ -16943,6 +16943,12 @@ a:hover {
   width: 35%;
 }
 
+@media only screen and (min-width: 1200px) {
+  .header--text {
+    width: 30%;
+  }
+}
+
 .navigation {
   background-color: #fff !important;
 }
