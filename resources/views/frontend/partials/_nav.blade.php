@@ -1,7 +1,7 @@
 <nav class="navigation uk-visible@m">
     <div class="uk-container-expand ">
         <div class="uk-navbar" uk-navbar="align: left; boundary-align: true">
-            <div class="uk-navbar-left">
+            <div class="uk-navbar-center">
                 <a class=" logo-wrapper" href="/">
                     <img src="{{asset('img/logo-dark.png')}}" alt="">
                 </a>
