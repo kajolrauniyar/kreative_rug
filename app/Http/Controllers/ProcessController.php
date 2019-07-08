@@ -92,7 +92,7 @@ class ProcessController extends Controller
      */
     public function edit(Process $process)
     {
-        return view('backend.process.edit')->withProcess($process);
+        return view('backend.process.edit')->withProcess($process)->withImages($this->medias);
     }
 
     /**
