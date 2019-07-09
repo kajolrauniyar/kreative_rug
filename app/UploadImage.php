@@ -29,4 +29,12 @@ class UploadImage extends Model
 		ImageOptimizer::optimize($location);
 		return $location;
 	} 	
+
+	public  function  productImage($savePath, $image)
+	{
+		$filename = md5(now().basename($image)).'.'.pathinfo($image, PATHINFO_EXTENSION);
+		$location = $savePath . $filename;
+		Image::make($image)->save($location);
+		return $location;
+	} 
 }

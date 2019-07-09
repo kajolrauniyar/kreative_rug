@@ -18,8 +18,6 @@
             <div class="uk-width-2-3@m uk-width-1-1@s">
                 @if(!empty($product->path))
                 <img src="{{ asset($product->path) }}" alt="{{$product->name}}">    
-                @else
-                <img src="https://source.unsplash.com/480x640/?object" alt="alt="{{$product->name}}"">
                 @endif
             </div>
             <div class="uk-width-1-3@m uk-width-1-1@s">
@@ -33,7 +31,12 @@
                 <p>Material: @foreach ($product->material as $material) {{ $loop->first ? '' : ', ' }} {{ $material->name
                     }} @endforeach
                 </p>
-                <div uk-grid>
+
+                    <div class="uk-width-1-1">
+                    <a class="uk-button uk-button-secondary" href="{{ route('frontend.contact') }}">Make Enquiry</a>
+                    </div>
+
+                    <div uk-grid>
                     <div class="uk-width-1-1">
                         <h4 class="uk-margin-remove-bottom">Share</h4>
                         <div class="product__share">
@@ -41,9 +44,7 @@
                             <a href="#" class="product__share--link"><span uk-icon="twitter"></span></a>
                         </div>
                     </div>
-                    <div class="uk-width-1-1">
-                    <a class="uk-button uk-button-secondary" href="{{ route('frontend.contact') }}">Make Enquiry</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

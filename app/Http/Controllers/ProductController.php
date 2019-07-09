@@ -10,6 +10,7 @@ use App\UploadImage;
 use Session;
 use File;
 use Validator;
+use Image;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -85,8 +86,9 @@ class ProductController extends Controller
             $product->mtitle = $request->mtitle;
 
             $media = Media::find($request->image);
-            $upload = new UploadImage;
-            $imagePath = $upload->uploadSingle($this->image, $media->path, 480,640);
+            $upload = new UploadImage;            
+
+            $imagePath = $upload->productImage($this->image, $media->path);
             $thumbPath = $upload->cropUpload($this->thumb, $media->path, 320,480);
 
             $product->path = $imagePath;
@@ -167,7 +169,7 @@ class ProductController extends Controller
 
                 $media = Media::find($request->image);
                 $upload = new UploadImage;
-                $imagePath = $upload->uploadSingle($this->image, $media->path, 480,640);
+                $imagePath = $upload->productImage($this->image, $media->path);
                 $thumbPath = $upload->cropUpload($this->thumb, $media->path, 320,480);
 
                 $product->path = $imagePath;
