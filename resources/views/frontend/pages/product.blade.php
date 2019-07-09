@@ -16,7 +16,7 @@
             </ul>
         </div>
         <div class="uk-grid-small uk-padding-small uk-grid-medium" uk-grid>
-            <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-width-2-3@m uk-width-1-1@s  zoom-image">
                 @if(!empty($product->path))
                 <img src="{{ asset($product->path) }}" alt="{{$product->name}}">    
                 @endif
@@ -50,7 +50,20 @@
     </div>
 </section>
 
-
+@section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.18/jquery.zoom.min.js"></script>
+<script>
+$(function() {
+  $('.zoom-image').each(function(){
+    var originalImagePath = $(this).find('img').data('original-image');
+    $(this).zoom({
+      url: originalImagePath,
+      magnify: 1
+    });
+  });
+}); 
+</script>
+@stop
 
 
 
