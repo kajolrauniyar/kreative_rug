@@ -18,7 +18,6 @@
             </div>
         </div>
 
-        {{-- @foreach($products->chunk(4) as $row) --}}
         <div class="uk-grid-large uk-child-width-1-2@l uk-child-width-1-2@s uk-text-center product-category uk-grid-match" uk-grid>
             @foreach($products as $product)
             <div class="product-category__item">
@@ -33,47 +32,6 @@
             </div>
             @endforeach
         </div>
-        {{-- @endforeach  --}}
-        {{--
-        <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center product-category" uk-grid>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?daisy" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?sunflower" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?dafodils" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?orchid" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-        </div>
-
-        <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2@s uk-text-center" uk-grid>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?daisy" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?sunflower" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?dafodils" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-
-            <div class="product-category__item">
-                <img src="https://source.unsplash.com/300x450/?orchid" alt="" class="product-category__item--img">
-                <h4 class="product-category__item--name">Category Name</h4>
-            </div>
-        </div> --}}
     </div>
 </section>
 

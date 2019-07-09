@@ -1,6 +1,7 @@
 @section('title') | {!!$product->name!!}
 @endsection
- 
+@section('description'){!! $product->description !!}@stop
+@section('ogImage'){{ asset($product->thumb) }}@stop
 @extends('layouts.frontend') 
 @section('content')
 <section class="uk-section uk-section-muted">
@@ -32,7 +33,7 @@
                     }} @endforeach
                 </p>
 
-                    <div class="uk-width-1-1">
+                    <div class="uk-width-1-1 uk-margin-bottom-small">
                     <a class="uk-button uk-button-secondary" href="{{ route('frontend.contact') }}">Make Enquiry</a>
                     </div>
 

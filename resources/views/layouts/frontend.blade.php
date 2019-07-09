@@ -68,6 +68,28 @@
   <meta name="msapplication-TileImage" content="{{ asset('img/ms-icon-144x144.png') }}">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="@yield('title','Kreative Rugs | Custom Designed Tibetan Rugs')">
+  <meta itemprop="description" content="@yield('description','Custom Designed Tibetan Rugs. Directly from Himalayas to your floor')">
+  <meta itemprop="image" content="@yield('ogImage',asset('img/apple-icon-180x180.png'))">  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@CrusadeHimalaya">
+  <meta name="twitter:title" content="@yield('title','Kreative Rugs | Custom Designed Tibetan Rugs')">
+  <meta name="twitter:description" content="@yield('description','Custom Designed Tibetan Rugs. Directly from Himalayas to your floor')">
+  <meta name="twitter:creator" content="@CrusadeHimalaya">
+  <meta name="twitter:image" content="@yield('ogImage',asset('img/apple-icon-180x180.png'))"> 
+  <!-- Open Graph data -->
+  <meta property="og:title" content="@yield('title','Kreative Rugs | Custom Designed Tibetan Rugs')" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ url()->current() }}" />
+  <meta property="og:image" content="@yield('ogImage',asset('img/apple-icon-180x180.png'))">
+  <meta property="og:description" content="@yield('description','Custom Designed Tibetan Rugs. Directly from Himalayas to your floor')"
+  />
+  <meta property="og:site_name" content="Crusade Himalaya" /> 
+
+
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
   <link rel="stylesheet" href="{{asset('css/icon-font.css')}}">
 
