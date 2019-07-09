@@ -18,7 +18,7 @@
         <div class="uk-grid-small uk-padding-small uk-grid-medium" uk-grid>
             <div class="uk-width-2-3@m uk-width-1-1@s  zoom-image">
                 @if(!empty($product->path))
-                <img src="{{ asset($product->path) }}" alt="{{$product->name}}">    
+                <img src="{{ asset($product->path) }}" alt="{{$product->name}}" style="    max-height: 933px; max-width: 700px;">    
                 @endif
             </div>
             <div class="uk-width-1-3@m uk-width-1-1@s">
