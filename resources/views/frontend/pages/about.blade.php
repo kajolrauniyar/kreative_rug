@@ -31,7 +31,7 @@
                 <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
                 <span class="divide-line"></span>
             </div>
-    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/dark.jpg);">
+    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(https://source.unsplash.com/2024x768/?wine-bottle);">
         <p class="uk-h4">{!!$page->content{1}->sectionContent!!}</p>
     </div>
 @endif
