@@ -14,16 +14,19 @@
                     <span class="divide-line"></span>
                 </div>
             </div>
-            <div class="uk-width-1-5 uk-margin-remove-top"></div>
-            <div class="uk-width-3-5 uk-margin-remove-top">
-                <p class="uk-text-center">
-                    {!!$page->content{0}->sectionContent!!}
-                </p>
-            </div>
-            <div class="uk-width-1-5 uk-margin-remove-top"></div>
         </div>
+
     </div>
 </section>
+<div uk-grid class="uk-background-cover uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(https://source.unsplash.com/user/erondu/1600x900);">
+    <div class="uk-width-1-5 uk-margin-remove-top"></div>
+    <div class="uk-width-3-5 uk-margin-remove-top">
+            <p class="uk-text-center">
+                {!!$page->content{0}->sectionContent!!}
+            </p>
+    </div>
+    <div class="uk-width-1-5 uk-margin-remove-top"></div>
+</div>
 @endif
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
     <div class="section-title">
