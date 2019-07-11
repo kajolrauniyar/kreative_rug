@@ -25,6 +25,17 @@
     </div>
 </section>
 @endif
+@if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
+<div class="uk-child-width-1-2@s uk-light" uk-grid>
+        <div class="section-title">
+                <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
+                <span class="divide-line"></span>
+            </div>
+    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/dark.jpg);">
+        <p class="uk-h4">{!!$page->content{1}->sectionContent!!}</p>
+    </div>
+@endif
+
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
     <div class="section-title">
         <h3 class="heading-tertiary">Our Team</h3>
@@ -64,7 +75,8 @@
         @endforeach
     </div>
 </div>
-@if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
+
+{{-- @if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
 <div class="uk-section-muted uk-padding-small uk-padding-remove-horizontal">
     <div class="section-title">
         <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
@@ -87,5 +99,5 @@
         <div class="uk-width-1-5 uk-margin-remove-top"></div>
     </div>
 </div>
-@endif
+@endif --}}
 @stop
