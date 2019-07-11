@@ -16911,6 +16911,10 @@ a:hover {
   background: rgba(34, 34, 34, 0.4);
 }
 
+.page-title__wrapper h1 {
+  right: 20%;
+}
+
 .product-category__item--img {
   transition: all 0.2s;
 }
