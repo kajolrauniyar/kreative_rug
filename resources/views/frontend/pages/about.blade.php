@@ -33,7 +33,15 @@
             </div>
     <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-width-1-1" style="background-image: url(https://source.unsplash.com/2024x768/?wine-bottle);">
         {{-- {!!$page->content{1}->sectionContent!!} --}}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident impedit atque eius? Dolorem deleniti perferendis deserunt nisi magnam minima sed aperiam? Eos blanditiis nisi, culpa explicabo beatae possimus, quisquam inventore accusantium aut excepturi ratione optio? Magnam vero expedita dolores odio esse animi praesentium nobis iste modi nisi hic commodi illo adipisci eum ullam minus, voluptatum facere eius, distinctio at deleniti consectetur amet? Hic temporibus, quis maxime id porro eos excepturi doloremque expedita magnam, ipsum laboriosam, blanditiis tempora accusantium tempore provident perferendis. Vel laboriosam consequuntur voluptatum fugit nobis tempora. Mollitia minima quos quae quisquam ullam temporibus illum, ex dolore maxime saepe et natus sapiente facilis facere! Numquam neque deserunt reprehenderit natus debitis, dolor eligendi sequi provident maxime quo. Deleniti consectetur quia cum quis fuga blanditiis ea nesciunt optio perspiciatis, voluptates et sed sunt exercitationem sint natus. Quibusdam placeat quaerat laborum fuga officia, delectus distinctio impedit, totam molestias molestiae ipsum consequuntur vero sint accusantium doloremque repudiandae! Nostrum debitis expedita rerum itaque distinctio eos, at pariatur ipsa quia voluptatibus modi veniam incidunt numquam porro perspiciatis, odit aut. Eveniet repellendus illo nihil hic ducimus sit, ab cumque modi asperiores aut exercitationem, odit obcaecati dolore! Corrupti fugit ipsam quam exercitationem consequuntur ratione sunt aperiam accusantium?
+        <div uk-grid>
+                <div class="uk-width-1-5 uk-margin-remove-top"></div>
+                <div class="uk-width-3-5 uk-margin-remove-top">
+                    <p class="uk-text-center">
+                        {!!$page->content{1}->sectionContent!!}
+                    </p>
+                </div>
+                <div class="uk-width-1-5 uk-margin-remove-top"></div>
+            </div>
     </div>
 </div>
 @endif
