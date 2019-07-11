@@ -27,12 +27,12 @@
 @endif
 @if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
 <div class="uk-light" uk-grid>
-        <div class="section-title">
+        <div class="section-title uk-width-1-1">
                 <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
                 <span class="divide-line"></span>
             </div>
-    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(https://source.unsplash.com/2024x768/?wine-bottle);">
-        <p>{!!$page->content{1}->sectionContent!!}</p>
+    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-width-1-1" style="background-image: url(https://source.unsplash.com/2024x768/?wine-bottle);">
+        {!!$page->content{1}->sectionContent!!}
     </div>
 </div>
 @endif
