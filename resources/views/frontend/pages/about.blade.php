@@ -26,7 +26,7 @@
 </section>
 @endif
 @if (isset($page->content{1}->sectionTitle) && isset($page->content{1}->sectionContent))
-<div class="uk-child-width-1-2@s uk-light" uk-grid>
+<div class="uk-light" uk-grid>
         <div class="section-title">
                 <h4 class="heading-tertiary">{!!$page->content{1}->sectionTitle!!}</h4>
                 <span class="divide-line"></span>
