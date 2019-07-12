@@ -16911,7 +16911,11 @@ a:hover {
   background: rgba(34, 34, 34, 0.4);
 }
 
-.page-title__wrapper h1 {
+.page-title__wrapper .get-inspired h1 {
+  right: 5%;
+}
+
+.page-title__wrapper .about h1 {
   right: 20%;
 }
 

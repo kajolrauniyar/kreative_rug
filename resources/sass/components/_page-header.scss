@@ -8,9 +8,16 @@
 .page-title__wrapper{
         @extend .uk-position-cover, .uk-flex;
         background: rgba(34, 34, 34, 0.4);
-        h1{
-            right: 20%;
+        .get-inspired {
+            h1{
+                right: 5%;
+            }
         }
+        .about{
+            h1{
+                right: 20%;
+            }
+        }        
     }
 
 
