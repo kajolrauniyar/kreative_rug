@@ -3,7 +3,7 @@
 @section('content')
 <section class="image-page-header" data-src="{{asset($page->banner)}}" uk-img>
     <div class="page-title__wrapper process">
-        <h1 class="uk-position-large uk-position-center-right">{{$page->title}}</h1>
+        <h1 class="uk-position-large uk-position-center-right" style="right:5%">{{$page->title}}</h1>
     </div>
 </section>
 @if (isset($page->content{0}->sectionTitle) && isset($page->content{0}->sectionContent))

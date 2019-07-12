@@ -16912,7 +16912,7 @@ a:hover {
 }
 
 .page-title__wrapper .process h1 {
-  right: 5%;
+  right: 5% !important;
 }
 
 .page-title__wrapper .about h1 {
