@@ -1,7 +1,11 @@
 @section('title') | Rug Making Process @endsection
 @extends('layouts.frontend')
 @section('content')
-@include('frontend.partials._page-header')
+<section class="image-page-header" data-src="{{asset($page->banner)}}" uk-img>
+    <div class="page-title__wrapper process">
+        <h1 class="uk-position-large uk-position-center-right">{{$page->title}}</h1>
+    </div>
+</section>
 @if (isset($page->content{0}->sectionTitle) && isset($page->content{0}->sectionContent))
 <section class="uk-section-default uk-padding-small-top uk-padding-small-bottom">
     <div class="uk-container uk-padding uk-padding-remove-horizontal">
