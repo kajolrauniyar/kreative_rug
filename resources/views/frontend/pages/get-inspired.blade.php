@@ -3,7 +3,7 @@
 @section('content')
 <section class="image-page-header" data-src="{{asset($page->banner)}}" uk-img>
     <div class="page-title__wrapper get-inspired">
-        <h1 class="uk-position-large uk-position-center-right">{{$page->title}}</h1>
+        <h1 class="uk-position-large uk-position-bottom-left" style="bottom: 16%; left: 4%;">{{$page->title}}</h1>
     </div>
 </section>
 <section class="uk-section uk-section-muted">
